@@ -1,7 +1,7 @@
-# PaxSwiftSDK
+# PaxMposSDK
 
 ## Overview
-This guide helps iOS developers integrate **FINIX PaxSwiftSDK** into their applications for communicating with mPOS devices.
+This guide helps iOS developers integrate **FINIX PaxMposSDK** into their applications for communicating with mPOS devices.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -12,7 +12,7 @@ This guide helps iOS developers integrate **FINIX PaxSwiftSDK** into their appli
 ## Installation
 Add the SDK to your project via Swift Package Manager using:
 ```
-https://github.com/tom-nguyen-finix/PaxSwiftSDK
+https://github.com/finix-payments/PaxMposSDK
 ```
 
 ## Pre-requisites
@@ -23,7 +23,7 @@ https://github.com/tom-nguyen-finix/PaxSwiftSDK
 ## Integration Guide
 ### 1. Initialize the SDK
 ```swift
-import PaxSwift
+import PaxMposSDK
 
 let finixClient = FinixClient(config: FinixConfig(
             environment: TEST_ENVIRONMENT,
@@ -84,21 +84,4 @@ Device status:
 - Light turns off + beeping: Card detected
 
 ## Sample App
-1. Clone the repository:
-```bash
-git clone https://github.com/tom-nguyen-finix/PaxSwiftSDK
-```
-2. Open the demo project:
-```
-PaxSwiftSDK/Example/PaxSwiftSDKDemo/PaxSwiftSDKDemo.xcodeproj
-```
-3. Run on a physical device:
-    1. Tap `Scan for Devices` to show the device list view and start scanning.
-     When running for the first time after installing, the bluetooth permission prompt will be shown.
-     Tap `Allow` and dismiss the device list view, then tap `Scan for Devices` again.
-     **This behavior can be improved by prompting the bluetooth permission before tapping `Scan for Devices`
-     for the first time.**
-    2. Select the device you want to pair with.
-    3. After the device is connected, adjust the amount in the text field, and try Sale, Auth, or Refund buttons
-       to initiate a transaction.
-    4. Interact with the mPOS device with a card to finish the transaction.
+[PaxMposSDKDemo](https://github.com/finix-payments/PaxMposSDKDemo)
