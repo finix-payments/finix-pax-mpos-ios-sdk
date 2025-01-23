@@ -1,0 +1,6 @@
+framework module PaxMposSDK {
+  umbrella header "PaxMposSDK.h"
+  export *
+
+  module * { export * }
+}
