@@ -6838,84 +6838,84 @@
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 279,
+      "offset": 278,
       "length": 31,
       "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSZZZZZ\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
       "kind": "IntegerLiteral",
-      "offset": 425,
+      "offset": 424,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 474,
+      "offset": 473,
       "length": 13,
       "value": "\"en_US_POSIX\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixAPIResponse+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 5163,
+      "offset": 5162,
       "length": 12,
       "value": "\"first_name\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixAPIResponse+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 5204,
+      "offset": 5203,
       "length": 11,
       "value": "\"last_name\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixAPIResponse+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 5271,
+      "offset": 5270,
       "length": 15,
       "value": "\"business_name\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixAPIResponse+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 5319,
+      "offset": 5318,
       "length": 15,
       "value": "\"business_type\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixAPIResponse+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 5370,
+      "offset": 5369,
       "length": 19,
       "value": "\"doing_business_as\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixAPIResponse+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 5445,
+      "offset": 5444,
       "length": 16,
       "value": "\"business_phone\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixAPIResponse+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 5497,
+      "offset": 5496,
       "length": 18,
       "value": "\"personal_address\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixAPIResponse+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 5551,
+      "offset": 5550,
       "length": 18,
       "value": "\"business_address\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixAPIResponse+Ext.swift",
       "kind": "StringLiteral",
-      "offset": 6082,
+      "offset": 6081,
       "length": 13,
       "value": "\"postal_code\""
     },
