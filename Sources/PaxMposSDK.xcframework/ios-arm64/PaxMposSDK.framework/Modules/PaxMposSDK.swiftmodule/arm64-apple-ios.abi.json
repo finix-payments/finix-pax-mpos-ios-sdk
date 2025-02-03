@@ -7174,56 +7174,56 @@
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9259,
+      "offset": 9346,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9294,
+      "offset": 9381,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9329,
+      "offset": 9416,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9361,
+      "offset": 9448,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9394,
+      "offset": 9481,
       "length": 1,
       "value": "4"
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9426,
+      "offset": 9513,
       "length": 1,
       "value": "5"
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9461,
+      "offset": 9548,
       "length": 1,
       "value": "6"
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 9486,
+      "offset": 9573,
       "length": 4,
       "value": "0xFF"
     },
@@ -7741,28 +7741,21 @@
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Public\/DeviceManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 794,
+      "offset": 792,
       "length": 2,
       "value": "30"
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Public\/DeviceManager.swift",
-      "kind": "IntegerLiteral",
-      "offset": 799,
-      "length": 4,
-      "value": "1000"
-    },
-    {
-      "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Public\/DeviceManager.swift",
       "kind": "StringLiteral",
-      "offset": 916,
+      "offset": 907,
       "length": 25,
       "value": "\"com.finix.DeviceManager\""
     },
     {
       "filePath": "\/Users\/tom.nguyen\/finix\/pax-mpos-ios-sdk\/PaxMposSDK\/Public\/DeviceManager.swift",
       "kind": "Dictionary",
-      "offset": 1126,
+      "offset": 1117,
       "length": 3,
       "value": "[]"
     }
