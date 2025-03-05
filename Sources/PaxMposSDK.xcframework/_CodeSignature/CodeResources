@@ -148,25 +148,29 @@
 		<data>
 		zWgLLeUdf9/uytedV0KlV8rZHI4=
 		</data>
+		<key>ios-arm64/PaxMposSDK.framework/Headers/ci_post_xcodebuild.sh</key>
+		<data>
+		d09oT+rr16pdaoJRj8GAYURL6G0=
+		</data>
 		<key>ios-arm64/PaxMposSDK.framework/Info.plist</key>
 		<data>
-		3Ul4AyG8EtejMxURafMqWSpSD+A=
+		WxI6xBCFuhXn84m9sbj9U0j09jU=
 		</data>
 		<key>ios-arm64/PaxMposSDK.framework/Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		A1MTNBl5N/5Xldw+mRESSwFvrD4=
+		Ixn94zO/JL4SOyLqim9u/VNDSgw=
 		</data>
 		<key>ios-arm64/PaxMposSDK.framework/Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		DkCf4MpObXZvMr1lK+PXl/CB74U=
+		KJTTuip5lSFktVhuYfrbT74i68A=
 		</data>
 		<key>ios-arm64/PaxMposSDK.framework/Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		a/ueydnTkYmKdDvTthzDwYig29E=
+		J14rxly/8gSkLdRvcYplOW/j/6s=
 		</data>
 		<key>ios-arm64/PaxMposSDK.framework/Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		DkCf4MpObXZvMr1lK+PXl/CB74U=
+		KJTTuip5lSFktVhuYfrbT74i68A=
 		</data>
 		<key>ios-arm64/PaxMposSDK.framework/Modules/module.modulemap</key>
 		<data>
@@ -174,11 +178,15 @@
 		</data>
 		<key>ios-arm64/PaxMposSDK.framework/PaxMposSDK</key>
 		<data>
-		cCv93iA34xO1+csLl7X+FR8ycYM=
+		QBgiJheDREX7puOmprrG8Txpe2k=
 		</data>
 		<key>ios-arm64/PaxMposSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
-		HGzaUIe9/vwEnNSO4T5/fyRZjP8=
+		2AhE40We4YI//mT7ccCojbV5CTA=
+		</data>
+		<key>ios-arm64/PaxMposSDK.framework/ci_post_xcodebuild.sh</key>
+		<data>
+		d09oT+rr16pdaoJRj8GAYURL6G0=
 		</data>
 		<key>ios-arm64/PaxMposSDK.framework/clss_param.clss</key>
 		<data>
@@ -194,11 +202,11 @@
 		</data>
 		<key>ios-arm64/dSYMs/PaxMposSDK.framework.dSYM/Contents/Resources/DWARF/PaxMposSDK</key>
 		<data>
-		IclgrH4O7PzpyzlluccszH1jAqY=
+		c/psSWGQGQphpCfjVgi5c4VVVD4=
 		</data>
 		<key>ios-arm64/dSYMs/PaxMposSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/PaxMposSDK.yml</key>
 		<data>
-		Hje7jlHHWb7icOBq9bjo7R+3sJc=
+		08xQKRz+H7mUwCTAtUqGH2vS2NI=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -301,6 +309,11 @@
 			<data>
 			b17OmaQMfSG+MuYVLWFOqdmgLo4zzZ8Ke/im4vrk99U=
 			</data>
+		</dict>
+		<key>ios-arm64/PaxMposSDK.framework/Headers/Headers</key>
+		<dict>
+			<key>symlink</key>
+			<string>../PaxEasyLinkController.xcframework/ios-arm64/Headers</string>
 		</dict>
 		<key>ios-arm64/PaxMposSDK.framework/Headers/ISyncAndProcessListener.h</key>
 		<dict>
@@ -599,59 +612,70 @@
 			N0zjwv47mTnx2Br15pNFHNB7c2pQOueldPB7Be4Nb+Y=
 			</data>
 		</dict>
+		<key>ios-arm64/PaxMposSDK.framework/Headers/ci_post_xcodebuild.sh</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d09oT+rr16pdaoJRj8GAYURL6G0=
+			</data>
+			<key>hash2</key>
+			<data>
+			HGoJkLY1wT1VvjWmy1uwWkxaMKC4VNei1rP0pQmbRiI=
+			</data>
+		</dict>
 		<key>ios-arm64/PaxMposSDK.framework/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			3Ul4AyG8EtejMxURafMqWSpSD+A=
+			WxI6xBCFuhXn84m9sbj9U0j09jU=
 			</data>
 			<key>hash2</key>
 			<data>
-			fsdfIip5lZMxFE3XH1/fdv+sqwH5bnJ3yZUJeNirwhk=
+			Y3JHQCLBu23jR29rcU6T0Oq/Q/XPoNJHyr9xQzs05ls=
 			</data>
 		</dict>
 		<key>ios-arm64/PaxMposSDK.framework/Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			A1MTNBl5N/5Xldw+mRESSwFvrD4=
+			Ixn94zO/JL4SOyLqim9u/VNDSgw=
 			</data>
 			<key>hash2</key>
 			<data>
-			5WNXc5L2qmMtjVgNG06vBDuUO9bklHlJh6AKfIMK8uI=
+			idpJ9K+Bfyf9vl/LTemDClJTPfZpCQOAJG6zUgkit0M=
 			</data>
 		</dict>
 		<key>ios-arm64/PaxMposSDK.framework/Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DkCf4MpObXZvMr1lK+PXl/CB74U=
+			KJTTuip5lSFktVhuYfrbT74i68A=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z/SCW9QQWvHFYDvvyIoZ3el2okagudsCR1Xm0Jzrdac=
+			vAmtOSJ/YZsbKi/Iwd3tYGtlckkvfknBibs/VlNYNiA=
 			</data>
 		</dict>
 		<key>ios-arm64/PaxMposSDK.framework/Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			a/ueydnTkYmKdDvTthzDwYig29E=
+			J14rxly/8gSkLdRvcYplOW/j/6s=
 			</data>
 			<key>hash2</key>
 			<data>
-			ii0IWLEqLG9NlEnp2GvGFhoMH7P0YZzuij8raKh0YK0=
+			3NGVbuUxZAwuHGnO5TbtI+BRgza2GRJnYY6QmM+SoCg=
 			</data>
 		</dict>
 		<key>ios-arm64/PaxMposSDK.framework/Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			DkCf4MpObXZvMr1lK+PXl/CB74U=
+			KJTTuip5lSFktVhuYfrbT74i68A=
 			</data>
 			<key>hash2</key>
 			<data>
-			Z/SCW9QQWvHFYDvvyIoZ3el2okagudsCR1Xm0Jzrdac=
+			vAmtOSJ/YZsbKi/Iwd3tYGtlckkvfknBibs/VlNYNiA=
 			</data>
 		</dict>
 		<key>ios-arm64/PaxMposSDK.framework/Modules/module.modulemap</key>
@@ -669,22 +693,33 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			cCv93iA34xO1+csLl7X+FR8ycYM=
+			QBgiJheDREX7puOmprrG8Txpe2k=
 			</data>
 			<key>hash2</key>
 			<data>
-			F1nmxlygCP63KHQpQx02ezQ9HPNkkTQ9GlY5R8rTNH0=
+			Aj9aGU4AbQ6Dvck6kS36OG48x19dzj6YPYjsisKVDFE=
 			</data>
 		</dict>
 		<key>ios-arm64/PaxMposSDK.framework/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			HGzaUIe9/vwEnNSO4T5/fyRZjP8=
+			2AhE40We4YI//mT7ccCojbV5CTA=
 			</data>
 			<key>hash2</key>
 			<data>
-			5U6elohYDbq2z9XtzT9pltgicsnhyrIQz7AjghxOl+s=
+			sTbHHWEjOV5QkLtwjc4GMa55QL0hYviPI7wDXKDUfOg=
+			</data>
+		</dict>
+		<key>ios-arm64/PaxMposSDK.framework/ci_post_xcodebuild.sh</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			d09oT+rr16pdaoJRj8GAYURL6G0=
+			</data>
+			<key>hash2</key>
+			<data>
+			HGoJkLY1wT1VvjWmy1uwWkxaMKC4VNei1rP0pQmbRiI=
 			</data>
 		</dict>
 		<key>ios-arm64/PaxMposSDK.framework/clss_param.clss</key>
@@ -724,22 +759,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			IclgrH4O7PzpyzlluccszH1jAqY=
+			c/psSWGQGQphpCfjVgi5c4VVVD4=
 			</data>
 			<key>hash2</key>
 			<data>
-			c2Z8ASBAUaI17WVxFyEz+GsV8QU1fVl8qQH8PRvx4wc=
+			alkuuk5f+XKgU4HGwhI8yfWHMBuG+XaBYRGWZYaFdpQ=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/PaxMposSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/PaxMposSDK.yml</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			Hje7jlHHWb7icOBq9bjo7R+3sJc=
+			08xQKRz+H7mUwCTAtUqGH2vS2NI=
 			</data>
 			<key>hash2</key>
 			<data>
-			NlNyUp+s+49VJqIMSQc9ARPGNhgh9n6dHLNLyYEaMog=
+			Ind5LHhtszrur04X5zdKAQuL8B9c7hvZi5sXMV5NHu4=
 			</data>
 		</dict>
 	</dict>
