@@ -9,7 +9,7 @@
 set -e  # Exit immediately if any command fails
 
 # Only execute if archiving using XCode Cloud
-if ! [ "$CI_XCODE_CLOUD" == "true" && "$CI_XCODEBUILD_ACTION" == "archive" ]; then
+if ! [ "$CI_XCODE_CLOUD" == "TRUE" && "$CI_XCODEBUILD_ACTION" == "archive" ]; then
   echo "Skipping the process, isXCodeCloud=$CI_XCODE_CLOUD, xcodebuildAction=$CI_XCODEBUILD_ACTION"
   exit 0
 fi
