@@ -21,10 +21,6 @@ let package = Package(
         .binaryTarget(
             name: "PaxMposSDK",
             path: "./Sources/PaxMposSDK.xcframework"
-        ),
-        .testTarget(
-            name: "PaxMposSDKTests",
-            dependencies: ["PaxMposSDK"]
-        ),
+        )
     ]
 )
