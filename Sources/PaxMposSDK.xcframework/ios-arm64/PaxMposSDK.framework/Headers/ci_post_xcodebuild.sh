@@ -4,9 +4,7 @@
 #  PaxMposSDK
 #
 #  Created by Tom Nguyen on 3/3/25.
-#  
-
-# This script needs to be signed as well
+#
 
 set -e  # Exit immediately if any command fails
 
@@ -37,6 +35,10 @@ xcodebuild -create-xcframework \
 # Copy headers to the xcframework
 echo "Copying header files to xcframework..."
 cp -R "./Headers/" * "$XCFRAMEWORK_TEMP_PATH/ios-arm64/PaxMposSDK.framework/Headers/"
+
+# Remove ci_post_xcodebuild.sh file from the xcframework
+echo "Removing script file..."
+rm -rf "$XCFRAMEWORK_TEMP_PATH/ios-arm64/PaxMposSDK.framework/ci_post_xcodebuild.sh"
 
 # Sign the xcframework
 echo "Signing the xcframework..."
