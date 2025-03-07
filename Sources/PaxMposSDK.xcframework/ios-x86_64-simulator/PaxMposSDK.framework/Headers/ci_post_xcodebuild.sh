@@ -9,7 +9,7 @@
 set -e  # Exit immediately if any command fails
 
 # Only execute if archiving using XCode Cloud
-if ! [ "$CI_XCODE_CLOUD" == "TRUE" && "$CI_XCODEBUILD_ACTION" == "archive" ]; then
+if ! [[ "$CI_XCODE_CLOUD" == "TRUE" && "$CI_XCODEBUILD_ACTION" == "archive" ]]; then
   echo "Skipping the process, isXCodeCloud=$CI_XCODE_CLOUD, xcodebuildAction=$CI_XCODEBUILD_ACTION"
   exit 0
 fi
@@ -17,7 +17,7 @@ fi
 echo "Starting post-xcodebuild process for SDK..."
 
 # Check if the archives were successful
-if ! [ -d "$CI_ARCHIVE_PATH" && -d "$SIMULATOR_ARCHIVE_PATH" ]; then
+if ! [[ -d "$CI_ARCHIVE_PATH" && -d "$SIMULATOR_ARCHIVE_PATH" ]]; then
   echo "Archive not found, CI_ARCHIVE_PATH=$CI_ARCHIVE_PATH, SIMULATOR_ARCHIVE_PATH=$SIMULATOR_ARCHIVE_PATH"
   exit 1
 fi
