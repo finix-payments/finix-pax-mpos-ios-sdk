@@ -6,6 +6,8 @@
 #  Created by Tom Nguyen on 3/3/25.
 #  
 
+# This script needs to be signed as well
+
 set -e  # Exit immediately if any command fails
 
 # Only execute if archiving
