@@ -42,7 +42,11 @@
 		</data>
 		<key>ci_post_xcodebuild.sh</key>
 		<data>
-		Fq5wycjFQHfL7Y4xZRWvQVesOcI=
+		5UN1ulTHT/ev17OTRjVf16sBNj8=
+		</data>
+		<key>ci_pre_xcodebuild.sh</key>
+		<data>
+		+euGIq1yEecXWuwhUgzGgJAPlow=
 		</data>
 		<key>clss_param.clss</key>
 		<data>
@@ -115,7 +119,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			yyBS15Z/uCAF8rkj6NdBfAUpp53xwpDHyc82ppFBagM=
+			Fu8pY8U6ma2XTqamp/RJOUFRZzANpEAkQeN2sgjtZ0I=
+			</data>
+		</dict>
+		<key>ci_pre_xcodebuild.sh</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			LBgRfogA5BLRb6hIUAWlReNblpz6i6qSx+jEK3Yo/0w=
 			</data>
 		</dict>
 		<key>clss_param.clss</key>
