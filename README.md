@@ -1,7 +1,7 @@
-# PaxMposSDK
+# finix-pax-mpos-ios-sdk
 
 ## Overview
-This guide helps iOS developers integrate **FINIX PaxMposSDK** into their applications for communicating with mPOS devices.
+This guide helps iOS developers integrate **finix-pax-mpos-ios-sdk** into their applications for communicating with mPOS devices.
 
 ## Table of Contents
 - [Installation](#installation)
@@ -12,7 +12,7 @@ This guide helps iOS developers integrate **FINIX PaxMposSDK** into their applic
 ## Installation
 Add the SDK to your project via Swift Package Manager using:
 ```
-https://github.com/finix-payments/PaxMposSDK
+https://github.com/finix-payments/finix-pax-mpos-ios-sdk
 ```
 
 ## Pre-requisites
@@ -84,4 +84,4 @@ Device status:
 - Light turns off + beeping: Card detected
 
 ## Sample App
-[PaxMposSDKDemo](https://github.com/finix-payments/PaxMposSDKDemo)
+[finix-pax-mpos-ios-sdk-demo-app](https://github.com/finix-payments/finix-pax-mpos-ios-sdk-demo-app)
