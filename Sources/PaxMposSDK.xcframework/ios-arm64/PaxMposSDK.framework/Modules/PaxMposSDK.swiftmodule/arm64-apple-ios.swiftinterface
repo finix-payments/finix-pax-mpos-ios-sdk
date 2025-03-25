@@ -122,6 +122,10 @@ public enum Finix {
     case Production
     case Sandbox
     case QA
+    public init?(from string: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
     public static func == (a: PaxMposSDK.Finix.Environment, b: PaxMposSDK.Finix.Environment) -> Swift.Bool
     public func hash(into hasher: inout Swift.Hasher)
     public var hashValue: Swift.Int {

@@ -2336,6 +2336,81 @@
                 ]
               },
               {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "PaxMposSDK.Finix.Environment?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Environment",
+                        "printedName": "PaxMposSDK.Finix.Environment",
+                        "usr": "s:10PaxMposSDK5FinixO11EnvironmentO"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10PaxMposSDK5FinixO11EnvironmentO4fromAESgSS_tcfc",
+                "mangledName": "$s10PaxMposSDK5FinixO11EnvironmentO4fromAESgSS_tcfc",
+                "moduleName": "PaxMposSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Var",
+                "name": "stringValue",
+                "printedName": "stringValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10PaxMposSDK5FinixO11EnvironmentO11stringValueSSvp",
+                "mangledName": "$s10PaxMposSDK5FinixO11EnvironmentO11stringValueSSvp",
+                "moduleName": "PaxMposSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10PaxMposSDK5FinixO11EnvironmentO11stringValueSSvg",
+                    "mangledName": "$s10PaxMposSDK5FinixO11EnvironmentO11stringValueSSvg",
+                    "moduleName": "PaxMposSDK",
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
                 "kind": "Function",
                 "name": "==",
                 "printedName": "==(_:_:)",
@@ -8942,14 +9017,14 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5244,
+      "offset": 5864,
       "length": 10,
       "value": "\"DUMMY_V1\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixConfig.swift",
       "kind": "StringLiteral",
-      "offset": 5275,
+      "offset": 5895,
       "length": 10,
       "value": "\"FINIX_V1\""
     },
