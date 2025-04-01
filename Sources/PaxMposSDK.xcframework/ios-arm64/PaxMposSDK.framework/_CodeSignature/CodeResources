@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vmO4I9SZPdLUzPluslAu95hedH8=
+		lE7GdAugmO2kTGJeWGS1lb3wAJ8=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		on8tI8QVd5/2hOCRLlTFePEbyR4=
+		JDMMcK0jPKHFRIDQ6iWphN+vUiA=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		4Kr8NmQ1VUBNbjMiDunbArARdiQ=
+		iLgLNmDc/1pOmJHebB67aXD43Qk=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		J14rxly/8gSkLdRvcYplOW/j/6s=
+		iSeq8vAhEfR0dixToYfiRgxGjLI=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		4Kr8NmQ1VUBNbjMiDunbArARdiQ=
+		iLgLNmDc/1pOmJHebB67aXD43Qk=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		76I5StVrUvKaiFF82Nx2zISfNAA=
+		rXRyz4A4iLgNuUAVsjI9OT3scuk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,35 +77,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qebrLt3g0Ji8NjE4ocadDxlCu5IAS8E0RW+SHCbB5ts=
+			xCpZmcJM3Ge0bFEIxj0Iu4HtlfUi2jurSkjlpRj2imo=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tKocxstdXeASYrxDTOJzvvCizv08QC2192L1ABuOe1Q=
+			wq3c5gEmmh/YrOnPNYLZGwNSRQKOHqSoyG/WTwqBipg=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			3NGVbuUxZAwuHGnO5TbtI+BRgza2GRJnYY6QmM+SoCg=
+			bAs+x6DTHsUDvi1ouCiarDuU3MGusJ1gkGVmTKOrjFI=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			tKocxstdXeASYrxDTOJzvvCizv08QC2192L1ABuOe1Q=
+			wq3c5gEmmh/YrOnPNYLZGwNSRQKOHqSoyG/WTwqBipg=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H1vZlDHyjcSFpzbUtiyCTm4fRRDqIp0Y59STDHWSHPo=
+			5kv87rVWx38qgMAGt42/a2DYk+8ABXj6lF1cQygAbvo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
