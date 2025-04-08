@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YcQm8hHedPOq8ZwGemip1dx5GpY=
+		vMpOAqaJcTmRZ1069uavYmmO/D8=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		B7vSK3nwobcA43dFqlosJdTGklY=
+		NFPsyCiYJcf/JQhCzNo2QtQlbdc=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		lBIIReJjyUWtv7tNeXGDZu6pqVE=
+		WgabnZ557pcTUUTGS63ifGNGZV8=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		JJqaegirBUBIz++kv4Q8JZWq4MY=
+		JJlGPquu9XREYjAcA/5nNmNWZTg=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		lBIIReJjyUWtv7tNeXGDZu6pqVE=
+		WgabnZ557pcTUUTGS63ifGNGZV8=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		uLzwFJpLgDsnHZATEK3qhpkrqQ0=
+		Fq4QtD6KBzlIkaqb3oaFudtx0CY=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,35 +77,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HjBPoowL5fe49y4GvGGYJ4CJjOjXvsAS/w7+bLxxUG8=
+			4WCUli4hG9vpTlKrsHzTbIsSEQWlG83SvQlHCLelc2w=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			itiRVT14rR+7c4fM3s4q0/1jcVBnktvAcpMyIv2f+Rk=
+			K6KCXCyt6sSXIaAAyIR4LtpR/k0p9NxIKMZZUQ/Syr8=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ulF3xjBi1p3KJemVmqJkZKlnghwb145EqpTay1M3j24=
+			XCcyrUixgNhoFYsGlOscedBSYaDaV1xXEsftgpbPbj0=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			itiRVT14rR+7c4fM3s4q0/1jcVBnktvAcpMyIv2f+Rk=
+			K6KCXCyt6sSXIaAAyIR4LtpR/k0p9NxIKMZZUQ/Syr8=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			NXzUVL4J1nENQQH03Bf2plON1UTgz0ELz5EFJ1inno4=
+			to2Zs4hPPw8gdYc2xE3CuVrscHnAbA7lUAJJt37GbWU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
