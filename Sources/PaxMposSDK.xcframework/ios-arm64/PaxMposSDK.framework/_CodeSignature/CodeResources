@@ -14,27 +14,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		5B2H0YgTY/Dn7LAIsxzS/0lOoF8=
+		6z3A1iuEJZlky5euRHbSYbm/z58=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		/B6vzsg50NH3Gh5Lo4a772JC/Vo=
+		p8esI9e6K+uCW+Ng/prIZPwzDwg=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		EmZTaKszaMrwSXG+7jEPHA4/vkE=
+		VoRk0RFSBdIygQmoHR+1zhB4kUQ=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		RHgyDq6HKps3/XgyMWlXBNKtyoQ=
+		hC52JL2s3xmyXoCBRaLI2gq70NE=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		EmZTaKszaMrwSXG+7jEPHA4/vkE=
+		VoRk0RFSBdIygQmoHR+1zhB4kUQ=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		9WWyA6SMekZxUFyEPXCMG5kYfS4=
+		mY6q961EJbQXMIPXoBhhGV8ImHQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,35 +77,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			VzyP7LTjRdhpchatlI755dlr3HH9jgQnKBvXiBeHdg4=
+			7nkAt8JYRS4HxtlcSorL2WKvs1pRPizNtKeIarTaBmY=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BR0RMMjhs+gnPhVr09jaoBXj5iucG1u/gLCJpU/rmIo=
+			557tStVdN9ftpusz9JjIcjb0hsr5H95a6DRQvWg4TZ8=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			po7dkyMAwlmLDqfqPL+bPyMujo/I4SWTtettKT9nO3s=
+			0Ct41Xf194/pe5IQIv/rV12EY175ffZqxad6pMcVPmA=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			BR0RMMjhs+gnPhVr09jaoBXj5iucG1u/gLCJpU/rmIo=
+			557tStVdN9ftpusz9JjIcjb0hsr5H95a6DRQvWg4TZ8=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			isVtvnOAwsmYDgH/Pf0i2I+s1RY3ZdDzwlkhK0qfBNg=
+			1eaw4/dXB8XUH6s4mw6OLQD7c0kwTofCC4vEh6ngQcU=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
