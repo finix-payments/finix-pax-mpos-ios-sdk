@@ -28,8 +28,6 @@ import PaxMposSDK
 let finixClient = FinixClient(config: FinixConfig(
             environment: TEST_ENVIRONMENT,
             credentials: Finix.APICredentials(username: TEST_USERNAME, password: TEST_PASSWORD),
-            application: TEST_APPLICATION,
-            version: TEST_VERSION,
             merchantId: TEST_MERCHANT_ID,
             mid: TEST_MERCHANT_MID,
             deviceType: .Pax,
