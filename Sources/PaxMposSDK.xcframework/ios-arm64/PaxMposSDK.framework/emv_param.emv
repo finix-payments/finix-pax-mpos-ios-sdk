@@ -288,7 +288,7 @@
          <TerminalDefaultTDOL>0F9F02065F2A029A039C0195059F3704</TerminalDefaultTDOL>
          <TerminalRiskManagementData></TerminalRiskManagementData>
          <Threshold>0</Threshold>
-      </AID>      
+      </AID>
       <AID>
          <ApplicationID>A0000006200620</ApplicationID>
          <IfUseLocalAIDName>0</IfUseLocalAIDName>
@@ -393,7 +393,7 @@
             <AID>A0000002771010</AID>
             <ICSTYPE>A0000002771010</ICSTYPE>
             <RID></RID>
-         </CARDSCHEME>         
+         </CARDSCHEME>
          <CARDSCHEME>
             <AID>A0000006200620</AID>
             <ICSTYPE>A0000006200620</ICSTYPE>
@@ -411,6 +411,42 @@
          <KeyID>07</KeyID>
          <Module>A89F25A56FA6DA258C8CA8B40427D927B4A1EB4D7EA326BBB12F97DED70AE5E4480FC9C5E8A972177110A1CC318D06D2F8F5C4844AC5FA79A4DC470BB11ED635699C17081B90F1B984F12E92C1C529276D8AF8EC7F28492097D8CD5BECEA16FE4088F6CFAB4A1B42328A1B996F9278B0B7E3311CA5EF856C2F888474B83612A82E4E00D0CD4069A6783140433D50725F</Module>
          <ModuleLength>144</ModuleLength>
+         <RID>A000000003</RID>
+         <RSAArithmeticIndex>1</RSAArithmeticIndex>
+      </CAPK>
+      <CAPK>
+         <CheckSum>D34A6A776011C7E7CE3AEC5F03AD2F8CFC5503CC</CheckSum>
+         <ExpireDate>091231</ExpireDate>
+         <Exponent>03</Exponent>
+         <ExponentLength>1</ExponentLength>
+         <HashArithmeticIndex>1</HashArithmeticIndex>
+         <KeyID>01</KeyID>
+         <Module>C696034213D7D8546984579D1D0F0EA519CFF8DEFFC429354CF3A871A6F7183F1228DA5C7470C055387100CB935A712C4E2864DF5D64BA93FE7E63E71F25B1E5F5298575EBE1C63AA617706911CDC95BCC3</Module>
+         <ModuleLength>128</ModuleLength>
+         <RID>A000000003</RID>
+         <RSAArithmeticIndex>1</RSAArithmeticIndex>
+      </CAPK>
+      <CAPK>
+         <CheckSum>20D213126955DE205ADC2FD2822BD22DE21CF9A8</CheckSum>
+         <ExpireDate>241231</ExpireDate>
+         <Exponent>03</Exponent>
+         <ExponentLength>1</ExponentLength>
+         <HashArithmeticIndex>1</HashArithmeticIndex>
+         <KeyID>08</KeyID>
+         <Module>D9FD6ED75D51D0E30664BD157023EAA1FFA871E4DA65672B863D255E81E137A51DE4F72BCC9E44ACE12127F87E263D3AF9DD9CF35CA4A7B01E907000BA85D24954C2FCA3074825DDD4C0C8136BCC3</Module>
+         <ModuleLength>176</ModuleLength>
+         <RID>A000000003</RID>
+         <RSAArithmeticIndex>1</RSAArithmeticIndex>
+      </CAPK>
+      <CAPK>
+         <CheckSum>1FF80A40173F52D7D27E0F26A146A1C8CCB29046</CheckSum>
+         <ExpireDate>291231</ExpireDate>
+         <Exponent>03</Exponent>
+         <ExponentLength>1</ExponentLength>
+         <HashArithmeticIndex>1</HashArithmeticIndex>
+         <KeyID>09</KeyID>
+         <Module>9D912248DE0A4E39C1A7DDE3F6D2588992C1A4095AFBD1824D1BA74847F2BC4926D2EFD904B4B54954CD189A54C5D1179654F8F9B0D2AB5F0357EB642FEDA95D3912C6576945FAB897E7062C1654950012FB4045D0DEBC7CB3CA19F8DACCDB79F8F9BA49D7127</Module>
+         <ModuleLength>248</ModuleLength>
          <RID>A000000003</RID>
          <RSAArithmeticIndex>1</RSAArithmeticIndex>
       </CAPK>
@@ -915,7 +951,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -930,7 +966,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -945,7 +981,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -960,7 +996,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1164,7 +1200,7 @@
          <SecurityCapability>00</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
-      </ICS>      
+      </ICS>
       <ICS>
          <AdditionalTerminalCapabilities>6000F0A001</AdditionalTerminalCapabilities>
          <BypassPINEntry>1</BypassPINEntry>
