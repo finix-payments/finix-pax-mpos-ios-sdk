@@ -150,11 +150,11 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		0FZlfrX5K4wPBeOODRiZcNPat7A=
+		XHysz5WgXCmIU5ZfI8JJoA/JjW8=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ZZprd8GjBJm5RgCXoPPE7g9PJgw=
+		zJyy6h6rQhwR2c4w7pyFsZj2oB4=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
@@ -162,11 +162,11 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ZZprd8GjBJm5RgCXoPPE7g9PJgw=
+		zJyy6h6rQhwR2c4w7pyFsZj2oB4=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		VRhNR+gR+3oJcKTSFQ1+iBuiXEc=
+		saiwm2GEaELGKPfSbdSeqrEhFO4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>ci_post_xcodebuild.sh</key>
 		<data>
-		RIQ8Lyc+cJKZWVRrwP6komJCyes=
+		ovYgpnS2emx48d3CSL+6EyqnzZk=
 		</data>
 		<key>ci_pre_xcodebuild.sh</key>
 		<data>
@@ -440,14 +440,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QQweC4WEnp3g6Ipg9xlKMw1IccsXsLvHsqLa1Phln8w=
+			GgmUnFMtsthVC5L9XN3ZrnFrr+ixJLAQyuaRYSijPQ8=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			i5C9TA0RO/tKSvUNlzJbVH8AE9MeH7F4VAOW+Qg7dEU=
+			gCXhmb6cM3+qydG5rGna34tkoHETfQymZwJ7uxh22dQ=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
@@ -461,14 +461,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i5C9TA0RO/tKSvUNlzJbVH8AE9MeH7F4VAOW+Qg7dEU=
+			gCXhmb6cM3+qydG5rGna34tkoHETfQymZwJ7uxh22dQ=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			hsWVIjd+B0R5MtmVoI7703z0PvfO/wBC9GjI9aMVWxs=
+			raHY4m2+oGs6/kjFuxSeGcXcgJNem7OMJIzyuy5lvv4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -482,7 +482,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oht8Y7nGzJLWK62CU3GxhW5HwYMR1lHIeZgzFUSMYJ8=
+			1mxokKYzZPjAhBxa24xHSr/m9uqYHTjRO8lH+UNEPNs=
 			</data>
 		</dict>
 		<key>ci_pre_xcodebuild.sh</key>

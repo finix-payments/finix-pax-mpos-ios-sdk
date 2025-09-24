@@ -150,11 +150,11 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		0FZlfrX5K4wPBeOODRiZcNPat7A=
+		XHysz5WgXCmIU5ZfI8JJoA/JjW8=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		SNZC+UN64cOMrOY9wUZWPn6w6PA=
+		6JqF/qIHF7YtX1SI8OcLmrDN15c=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -162,11 +162,11 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		SNZC+UN64cOMrOY9wUZWPn6w6PA=
+		6JqF/qIHF7YtX1SI8OcLmrDN15c=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		FNPGDerG7gMLfyohPlcxtyYcY+E=
+		TP01DYfiiK8UteVrECChMxbKjaQ=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -174,7 +174,7 @@
 		</data>
 		<key>ci_post_xcodebuild.sh</key>
 		<data>
-		RIQ8Lyc+cJKZWVRrwP6komJCyes=
+		ovYgpnS2emx48d3CSL+6EyqnzZk=
 		</data>
 		<key>ci_pre_xcodebuild.sh</key>
 		<data>
@@ -440,14 +440,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			QQweC4WEnp3g6Ipg9xlKMw1IccsXsLvHsqLa1Phln8w=
+			GgmUnFMtsthVC5L9XN3ZrnFrr+ixJLAQyuaRYSijPQ8=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			feQXwpVXiKd/bMa7Jza7Bjcn6Co5XAxVBrVrm5V4Xas=
+			bBifqOsZr/xZG6GRKEzU6NnLzLC6Ruc7OL/0Jega0Y4=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -461,14 +461,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			feQXwpVXiKd/bMa7Jza7Bjcn6Co5XAxVBrVrm5V4Xas=
+			bBifqOsZr/xZG6GRKEzU6NnLzLC6Ruc7OL/0Jega0Y4=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KD5b4VOGHSapGLpXsKNVuUFNfVfQlrIdApLcdvoqmJ4=
+			3V3m81GHTqBTGTL0mHXth28UN+RRQhYXJ1CQhxU9KRE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -482,7 +482,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Oht8Y7nGzJLWK62CU3GxhW5HwYMR1lHIeZgzFUSMYJ8=
+			1mxokKYzZPjAhBxa24xHSr/m9uqYHTjRO8lH+UNEPNs=
 			</data>
 		</dict>
 		<key>ci_pre_xcodebuild.sh</key>
