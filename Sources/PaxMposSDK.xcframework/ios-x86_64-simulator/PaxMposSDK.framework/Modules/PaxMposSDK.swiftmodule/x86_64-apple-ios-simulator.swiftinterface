@@ -195,7 +195,7 @@ public enum Finix {
     public init(username: Swift.String, password: Swift.String)
   }
 }
-public struct FinixError : Foundation.LocalizedError {
+public struct FinixError : Swift.Error {
   public let code: PaxMposSDK.FinixError.Code
   public let message: Swift.String
   public enum Code {
@@ -211,6 +211,7 @@ public struct FinixError : Foundation.LocalizedError {
     case TransactionNotPermitted
     case CommunicationError
     case Unknown
+    case SDKNotInitialized
     case CardReaderNotConnected
     case CannotEncodeParameters
     case CannotDecodeResponse

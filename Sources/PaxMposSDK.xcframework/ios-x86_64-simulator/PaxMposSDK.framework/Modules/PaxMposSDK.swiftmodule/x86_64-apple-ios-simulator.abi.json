@@ -4139,6 +4139,46 @@
               },
               {
                 "kind": "Var",
+                "name": "SDKNotInitialized",
+                "printedName": "SDKNotInitialized",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.FinixError.Code.Type) -> PaxMposSDK.FinixError.Code",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Code",
+                        "printedName": "PaxMposSDK.FinixError.Code",
+                        "usr": "s:10PaxMposSDK10FinixErrorV4CodeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PaxMposSDK.FinixError.Code.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Code",
+                            "printedName": "PaxMposSDK.FinixError.Code",
+                            "usr": "s:10PaxMposSDK10FinixErrorV4CodeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PaxMposSDK10FinixErrorV4CodeO17SDKNotInitializedyA2EmF",
+                "mangledName": "$s10PaxMposSDK10FinixErrorV4CodeO17SDKNotInitializedyA2EmF",
+                "moduleName": "PaxMposSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
                 "name": "CardReaderNotConnected",
                 "printedName": "CardReaderNotConnected",
                 "children": [
@@ -4886,13 +4926,6 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "LocalizedError",
-            "printedName": "LocalizedError",
-            "usr": "s:10Foundation14LocalizedErrorP",
-            "mangledName": "$s10Foundation14LocalizedErrorP"
           },
           {
             "kind": "Conformance",
@@ -10580,6 +10613,34 @@
       "offset": 6004,
       "length": 10,
       "value": "\"FINIX_V1\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixError.swift",
+      "kind": "StringLiteral",
+      "offset": 7393,
+      "length": 22,
+      "value": "\"SDK not initialized!\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixError.swift",
+      "kind": "StringLiteral",
+      "offset": 7426,
+      "length": 48,
+      "value": "\"Error raised when SDK has not been initialized\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixError.swift",
+      "kind": "StringLiteral",
+      "offset": 7582,
+      "length": 26,
+      "value": "\"No card reader connected\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixError.swift",
+      "kind": "StringLiteral",
+      "offset": 7619,
+      "length": 40,
+      "value": "\"Error when no card reader is connected\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",

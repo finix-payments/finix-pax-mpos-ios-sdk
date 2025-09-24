@@ -150,23 +150,23 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		yZVRPDapE6MlojF1FT0eX9HiJo4=
+		vqqwvaUa34HKh64BawjQBDIwP+M=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		UtIhN6zNY0HHWT+n70Pii0jUgQA=
+		92DbLA90OQir4L1vZjZA84KaDTs=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ZaMNHp1E2Z4tiINHcB3bYvHQvL0=
+		hqUvpsFjJoeT527ROvaoCBcL0S0=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		UtIhN6zNY0HHWT+n70Pii0jUgQA=
+		92DbLA90OQir4L1vZjZA84KaDTs=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		MeKDHyDi/VRmpXsYsOa2D2ViYk0=
+		JjZlKRNHG+uZ/VL6xWCh0krKB58=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -440,35 +440,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GNoq24MHEbBmClU6Cu4/mPMzqb7s6p+WCmLlmBZ6nnk=
+			VAdnY+V0VJybJhqknFC3BoRbQAtTnZ399cUxcGrm6aA=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZHxM86SrbOP0J6L1g/fjFiXnVBGkACXfseF9Iqlq+fk=
+			IObyVdZ6PfRKRCKYvYI5f8iHWoSZCIjIBCQMQaI2JGo=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			qqlr5k4J9eKt9r+m8DqrILfhHqw/SATpS9EC47D4ky4=
+			n0OTMWYICRgsEm3JVyVjkZCbh47PpYvmGjHLbUl9h9Y=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZHxM86SrbOP0J6L1g/fjFiXnVBGkACXfseF9Iqlq+fk=
+			IObyVdZ6PfRKRCKYvYI5f8iHWoSZCIjIBCQMQaI2JGo=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			AXFMa8EuRnij5J+pUjwucrUchykQe2q/TP57DmWqYfc=
+			LB8hB1wgyFOtRSm6uS/T64w9tp/J/Xj2rW7GZpiBWz4=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
