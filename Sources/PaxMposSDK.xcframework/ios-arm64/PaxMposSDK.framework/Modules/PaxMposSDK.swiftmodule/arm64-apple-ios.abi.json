@@ -3653,6 +3653,63 @@
             ]
           },
           {
+            "kind": "Var",
+            "name": "errorDescription",
+            "printedName": "errorDescription",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaxMposSDK10FinixErrorV16errorDescriptionSSSgvp",
+            "mangledName": "$s10PaxMposSDK10FinixErrorV16errorDescriptionSSSgvp",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaxMposSDK10FinixErrorV16errorDescriptionSSSgvg",
+                "mangledName": "$s10PaxMposSDK10FinixErrorV16errorDescriptionSSSgvg",
+                "moduleName": "PaxMposSDK",
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
             "kind": "TypeDecl",
             "name": "Code",
             "printedName": "Code",
@@ -4132,46 +4189,6 @@
                 "declKind": "EnumElement",
                 "usr": "s:10PaxMposSDK10FinixErrorV4CodeO7UnknownyA2EmF",
                 "mangledName": "$s10PaxMposSDK10FinixErrorV4CodeO7UnknownyA2EmF",
-                "moduleName": "PaxMposSDK",
-                "declAttributes": [
-                  "RawDocComment"
-                ]
-              },
-              {
-                "kind": "Var",
-                "name": "SDKNotInitialized",
-                "printedName": "SDKNotInitialized",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(PaxMposSDK.FinixError.Code.Type) -> PaxMposSDK.FinixError.Code",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Code",
-                        "printedName": "PaxMposSDK.FinixError.Code",
-                        "usr": "s:10PaxMposSDK10FinixErrorV4CodeO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "PaxMposSDK.FinixError.Code.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Code",
-                            "printedName": "PaxMposSDK.FinixError.Code",
-                            "usr": "s:10PaxMposSDK10FinixErrorV4CodeO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10PaxMposSDK10FinixErrorV4CodeO17SDKNotInitializedyA2EmF",
-                "mangledName": "$s10PaxMposSDK10FinixErrorV4CodeO17SDKNotInitializedyA2EmF",
                 "moduleName": "PaxMposSDK",
                 "declAttributes": [
                   "RawDocComment"
@@ -4929,6 +4946,13 @@
           },
           {
             "kind": "Conformance",
+            "name": "LocalizedError",
+            "printedName": "LocalizedError",
+            "usr": "s:10Foundation14LocalizedErrorP",
+            "mangledName": "$s10Foundation14LocalizedErrorP"
+          },
+          {
+            "kind": "Conformance",
             "name": "Error",
             "printedName": "Error",
             "usr": "s:s5ErrorP",
@@ -4940,13 +4964,6 @@
             "printedName": "Sendable",
             "usr": "s:s8SendableP",
             "mangledName": "$ss8SendableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           }
         ]
       },
@@ -9651,13 +9668,6 @@
           },
           {
             "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
-          },
-          {
-            "kind": "Conformance",
             "name": "DatadogExtended",
             "printedName": "DatadogExtended",
             "children": [
@@ -9872,13 +9882,6 @@
             "printedName": "CustomDebugStringConvertible",
             "usr": "s:s28CustomDebugStringConvertibleP",
             "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "SendableMetatype",
-            "printedName": "SendableMetatype",
-            "usr": "s:s16SendableMetatypeP",
-            "mangledName": "$ss16SendableMetatypeP"
           },
           {
             "kind": "Conformance",
@@ -10613,34 +10616,6 @@
       "offset": 6004,
       "length": 10,
       "value": "\"FINIX_V1\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixError.swift",
-      "kind": "StringLiteral",
-      "offset": 7393,
-      "length": 22,
-      "value": "\"SDK not initialized!\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixError.swift",
-      "kind": "StringLiteral",
-      "offset": 7426,
-      "length": 48,
-      "value": "\"Error raised when SDK has not been initialized\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixError.swift",
-      "kind": "StringLiteral",
-      "offset": 7582,
-      "length": 26,
-      "value": "\"No card reader connected\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixError.swift",
-      "kind": "StringLiteral",
-      "offset": 7619,
-      "length": 40,
-      "value": "\"Error when no card reader is connected\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
