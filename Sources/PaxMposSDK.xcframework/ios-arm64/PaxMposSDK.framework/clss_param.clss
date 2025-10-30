@@ -75,7 +75,7 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <ContactlessTransactionLimitSupported>1</ContactlessTransactionLimitSupported>
             <CVMLimitSupported>1</CVMLimitSupported>
-            <ReaderTTQ>30004000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TACDefault></TACDefault>
             <TACDenial></TACDenial>
@@ -83,7 +83,7 @@
             <TerminalFloorLimit>1</TerminalFloorLimit>
             <TerminalFloorLimitSupported>1</TerminalFloorLimitSupported>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
          <AID>
@@ -99,7 +99,7 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <ContactlessTransactionLimitSupported>1</ContactlessTransactionLimitSupported>
             <CVMLimitSupported>1</CVMLimitSupported>
-            <ReaderTTQ>30004000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TACDefault></TACDefault>
             <TACDenial></TACDenial>
@@ -107,7 +107,7 @@
             <TerminalFloorLimit>1</TerminalFloorLimit>
             <TerminalFloorLimitSupported>1</TerminalFloorLimitSupported>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
          <AID>
@@ -123,7 +123,7 @@
             <ContactlessTransactionLimit>10000</ContactlessTransactionLimit>
             <ContactlessTransactionLimitSupported>1</ContactlessTransactionLimitSupported>
             <CVMLimitSupported>1</CVMLimitSupported>
-            <ReaderTTQ>30004000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TACDefault></TACDefault>
             <TACDenial></TACDenial>
@@ -131,7 +131,7 @@
             <TerminalFloorLimit>1</TerminalFloorLimit>
             <TerminalFloorLimitSupported>1</TerminalFloorLimitSupported>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
       </AIDLIST>
@@ -156,7 +156,7 @@
             <TACOnline>DE00FC9800</TACOnline>
             <TDOL></TDOL>
             <TerminalAdditionalCapability>6000F0A001</TerminalAdditionalCapability>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <TerminalSupportOptimizationModeTransaction>01</TerminalSupportOptimizationModeTransaction>
             <TerminalTransactionCapability>DC800002</TerminalTransactionCapability>
             <TerminalType>22</TerminalType>
@@ -261,7 +261,7 @@
             <TerminalCapabilityIndicator>03</TerminalCapabilityIndicator>
             <TerminalInterchangeProfile>F30000</TerminalInterchangeProfile>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <Threshold>0</Threshold>
          </AID>
       </AIDLIST>
@@ -403,10 +403,10 @@
                </Inter_WareFloorlimitByTransactionType>
             </INTERWARELIST>
             <CryptogramVersion17Supported>1</CryptogramVersion17Supported>
-            <ReaderTTQ>32804000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TermType>22</TermType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
          <AID>
@@ -463,10 +463,10 @@
                </Inter_WareFloorlimitByTransactionType>
             </INTERWARELIST>
             <CryptogramVersion17Supported>1</CryptogramVersion17Supported>
-            <ReaderTTQ>32804000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TermType>22</TermType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
          <AID>
@@ -523,10 +523,10 @@
                </Inter_WareFloorlimitByTransactionType>
             </INTERWARELIST>
             <CryptogramVersion17Supported>1</CryptogramVersion17Supported>
-            <ReaderTTQ>32804000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TermType>22</TermType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
          <AID>
@@ -583,10 +583,10 @@
                </Inter_WareFloorlimitByTransactionType>
             </INTERWARELIST>
             <CryptogramVersion17Supported>1</CryptogramVersion17Supported>
-            <ReaderTTQ>32804000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TermType>22</TermType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
       </AIDLIST>
@@ -606,11 +606,11 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <IsSupportQPS>0</IsSupportQPS>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <TornLogMaxNum>3</TornLogMaxNum>
             <TornMaxLifeTime>300</TornMaxLifeTime>
             <TornSupport>1</TornSupport>
-            <ReaderTTQ>20000000</ReaderTTQ>
+            <ReaderTTQ>22000000</ReaderTTQ>
          </AID>
          <AID>
             <ApplicationID>A000000333010102</ApplicationID>
@@ -625,11 +625,11 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <IsSupportQPS>0</IsSupportQPS>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <TornLogMaxNum>3</TornLogMaxNum>
             <TornMaxLifeTime>300</TornMaxLifeTime>
             <TornSupport>1</TornSupport>
-            <ReaderTTQ>20004000</ReaderTTQ>
+            <ReaderTTQ>22000000</ReaderTTQ>
          </AID>
          <AID>
             <ApplicationID>A000000333010103</ApplicationID>
@@ -644,11 +644,11 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <IsSupportQPS>0</IsSupportQPS>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <TornLogMaxNum>3</TornLogMaxNum>
             <TornMaxLifeTime>300</TornMaxLifeTime>
             <TornSupport>1</TornSupport>
-            <ReaderTTQ>20000000</ReaderTTQ>
+            <ReaderTTQ>22000000</ReaderTTQ>
          </AID>
          <AID>
             <ApplicationID>A000000333010108</ApplicationID>
@@ -663,11 +663,11 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <IsSupportQPS>0</IsSupportQPS>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <TornLogMaxNum>3</TornLogMaxNum>
             <TornMaxLifeTime>300</TornMaxLifeTime>
             <TornSupport>1</TornSupport>
-            <ReaderTTQ>20000000</ReaderTTQ>
+            <ReaderTTQ>22000000</ReaderTTQ>
          </AID>
       </AIDLIST>
    </QPBOCPARAM>
@@ -686,13 +686,13 @@
             <TACDefault>FC68FCF800</TACDefault>
             <TACDenial>0010000000</TACDenial>
             <TACOnline>FC68FCF800</TACOnline>
-            <ReaderTTQ>30804000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <TerminalTransactionInformation>D08700</TerminalTransactionInformation>
             <TerminalOptStatus>E000</TerminalOptStatus>
             <ApplicationAccSelect></ApplicationAccSelect>
             <MerchantType>3</MerchantType>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <AdditionalTerminalCapability>7100F0B001</AdditionalTerminalCapability>
             <TerminalRiskManagementData></TerminalRiskManagementData>
          </AID>

@@ -957,7 +957,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000000031010</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -972,7 +972,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000000032010</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -987,7 +987,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000000033010</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1002,7 +1002,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000000980840</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1017,7 +1017,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000000041010</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1032,7 +1032,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000000043060</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1047,7 +1047,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000000042203</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1062,7 +1062,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A00000002501</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1077,7 +1077,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000001523010</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1092,7 +1092,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000003241010</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1107,7 +1107,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000001524010</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1122,7 +1122,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000000651010</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1137,7 +1137,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A000000333010101</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1152,7 +1152,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A000000333010102</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1167,7 +1167,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A000000333010103</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1182,7 +1182,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A000000333010108</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1197,7 +1197,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000002771010</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
@@ -1212,7 +1212,7 @@
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
          <Type>A0000006200620</Type>
          <IssuerReferralsSupported>1</IssuerReferralsSupported>
-         <SecurityCapability>00</SecurityCapability>
+         <SecurityCapability>C8</SecurityCapability>
          <SubsequentBypassPINEntry>1</SubsequentBypassPINEntry>
          <TerminalType>22</TerminalType>
       </ICS>
