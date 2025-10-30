@@ -9,76 +9,6 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public typealias TraceId = Swift.String
-public typealias TransferId = Swift.String
-public typealias SourceId = Swift.String
-public typealias AuthorizationId = Swift.String
-public typealias ResourceTags = [Swift.String : Swift.String]
-public struct DebitResponse : PaxMposSDK.TransferResponse {
-  public let id: PaxMposSDK.TransferId
-  public let state: PaxMposSDK.Transfer.State
-  public let traceId: PaxMposSDK.TraceId
-  public let source: PaxMposSDK.SourceId?
-  public let amount: PaxMposSDK.Currency
-  public let tags: PaxMposSDK.ResourceTags?
-}
-public struct TransferRequest {
-  public init(amount: PaxMposSDK.Currency, tags: PaxMposSDK.ResourceTags? = nil)
-}
-public enum PaymentType {
-  case Unknown
-  case Credit
-  case Debit
-  case GiftCard
-  case EBT
-  public static func == (a: PaxMposSDK.PaymentType, b: PaxMposSDK.PaymentType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum EBTType {
-  case NotSet
-  case FoodStamps
-  case CashBenefits
-  public static func == (a: PaxMposSDK.EBTType, b: PaxMposSDK.EBTType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public protocol ResponseState {
-  var state: PaxMposSDK.Transfer.State { get }
-  var success: Swift.Bool { get }
-  var pending: Swift.Bool { get }
-}
-extension PaxMposSDK.ResponseState {
-  public var success: Swift.Bool {
-    get
-  }
-  public var pending: Swift.Bool {
-    get
-  }
-}
-public protocol TransferResponse : PaxMposSDK.ResponseState {
-  var id: PaxMposSDK.TransferId { get }
-  var traceId: PaxMposSDK.TraceId { get }
-  var source: PaxMposSDK.SourceId? { get }
-}
-extension PaxMposSDK.FinixClient {
-  public struct RefundResponse : Swift.Decodable {
-    public let id: Swift.String?
-    public let amount: Swift.Int
-    public let traceId: PaxMposSDK.TraceId?
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public func startRefund(transactionID: Swift.String, amount: PaxMposSDK.Currency, completion: ((PaxMposSDK.FinixClient.RefundResponse?, (any Swift.Error)?) -> Swift.Void)?)
-}
-public protocol RKICallback : AnyObject {
-  func onRKISuccess(message: Swift.String)
-  func onRKIError(error: Swift.String)
-  func onRKIProgress(message: Swift.String)
-}
 public struct FinixError : Foundation.LocalizedError {
   public let code: PaxMposSDK.FinixError.Code
   public let message: Swift.String
@@ -151,32 +81,6 @@ public enum Finix {
     public init(username: Swift.String, password: Swift.String)
   }
 }
-public struct RKIConfig {
-  public let host: Swift.String
-  public let port: Swift.String
-  public let enabled: Swift.Bool
-  public let timeoutMs: Swift.Int
-  public let retryCount: Swift.Int
-  public let autoInject: Swift.Bool
-  public enum Environment : Swift.String, Swift.CaseIterable {
-    case production
-    case qa
-    case sandbox
-    public init?(rawValue: Swift.String)
-    public typealias AllCases = [PaxMposSDK.RKIConfig.Environment]
-    public typealias RawValue = Swift.String
-    nonisolated public static var allCases: [PaxMposSDK.RKIConfig.Environment] {
-      get
-    }
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public init(host: Swift.String, port: Swift.String, enabled: Swift.Bool = true, timeoutMs: Swift.Int = 30_000, retryCount: Swift.Int = 3, autoInject: Swift.Bool = true)
-  public init(environment: PaxMposSDK.RKIConfig.Environment, enabled: Swift.Bool = true, timeoutMs: Swift.Int = 30_000, retryCount: Swift.Int = 3, autoInject: Swift.Bool = true)
-  public init()
-  public static func getRKIEnvironmentFromFinixEnvironment(_ finixEnvironment: PaxMposSDK.Finix.Environment) -> PaxMposSDK.RKIConfig.Environment
-}
 extension PaxMposSDK.FinixClient {
   public func updateCardReaderFiles(deviceId: Swift.String, statusCallback: PaxMposSDK.DownloadStatusCallback?, completion: (() -> Swift.Void)?)
   public func resetDevice(deviceId: Swift.String, statusCallback: PaxMposSDK.DownloadStatusCallback?, completion: (() -> Swift.Void)?)
@@ -184,6 +88,9 @@ extension PaxMposSDK.FinixClient {
     case sale
     case auth
     case refund
+    public var displayName: Swift.String {
+      get
+    }
     public init?(rawValue: Swift.String)
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
@@ -318,6 +225,32 @@ extension PaxMposSDK.PaxEasyLinkController : PaxMposSDK.PaxEasyLinkControllerPro
   public func getRKICertificateList() throws -> Swift.String
   public func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
 }
+public struct RKIConfig {
+  public let host: Swift.String
+  public let port: Swift.String
+  public let enabled: Swift.Bool
+  public let timeoutMs: Swift.Int
+  public let retryCount: Swift.Int
+  public let autoInject: Swift.Bool
+  public enum Environment : Swift.String, Swift.CaseIterable {
+    case production
+    case qa
+    case sandbox
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [PaxMposSDK.RKIConfig.Environment]
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [PaxMposSDK.RKIConfig.Environment] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(host: Swift.String, port: Swift.String, enabled: Swift.Bool = true, timeoutMs: Swift.Int = 30_000, retryCount: Swift.Int = 3, autoInject: Swift.Bool = true)
+  public init(environment: PaxMposSDK.RKIConfig.Environment, enabled: Swift.Bool = true, timeoutMs: Swift.Int = 30_000, retryCount: Swift.Int = 3, autoInject: Swift.Bool = true)
+  public init()
+  public static func getRKIEnvironmentFromFinixEnvironment(_ finixEnvironment: PaxMposSDK.Finix.Environment) -> PaxMposSDK.RKIConfig.Environment
+}
 public protocol FinixDelegate : AnyObject {
   func didDiscoverDevice(_ deviceInfo: PaxMposSDK.DeviceInfo)
   func deviceConnectionStatusChanged(_ state: PaxMposSDK.DeviceConnectionState)
@@ -365,7 +298,8 @@ public class FinixClient {
   public func clearAllDevicesRKIStatus()
   @objc deinit
 }
-public enum ProcessCardStatus {
+public enum ProcessCardStatus : Swift.Equatable {
+  public static func == (lhs: PaxMposSDK.ProcessCardStatus, rhs: PaxMposSDK.ProcessCardStatus) -> Swift.Bool
   case readingCard
   case processingCard
   case success(PaxMposSDK.FinixClient.CardReaderTransferResponse)
@@ -433,17 +367,80 @@ public enum CardSearchMode : Swift.Int {
     get
   }
 }
-extension PaxMposSDK.PaymentType : Swift.Equatable {}
-extension PaxMposSDK.PaymentType : Swift.Hashable {}
-extension PaxMposSDK.EBTType : Swift.Equatable {}
-extension PaxMposSDK.EBTType : Swift.Hashable {}
+public typealias TraceId = Swift.String
+public typealias TransferId = Swift.String
+public typealias SourceId = Swift.String
+public typealias AuthorizationId = Swift.String
+public typealias ResourceTags = [Swift.String : Swift.String]
+public struct DebitResponse : PaxMposSDK.TransferResponse {
+  public let id: PaxMposSDK.TransferId
+  public let state: PaxMposSDK.Transfer.State
+  public let traceId: PaxMposSDK.TraceId
+  public let source: PaxMposSDK.SourceId?
+  public let amount: PaxMposSDK.Currency
+  public let tags: PaxMposSDK.ResourceTags?
+}
+public struct TransferRequest {
+  public init(amount: PaxMposSDK.Currency, tags: PaxMposSDK.ResourceTags? = nil)
+}
+public enum PaymentType {
+  case Unknown
+  case Credit
+  case Debit
+  case GiftCard
+  case EBT
+  public static func == (a: PaxMposSDK.PaymentType, b: PaxMposSDK.PaymentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum EBTType {
+  case NotSet
+  case FoodStamps
+  case CashBenefits
+  public static func == (a: PaxMposSDK.EBTType, b: PaxMposSDK.EBTType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ResponseState {
+  var state: PaxMposSDK.Transfer.State { get }
+  var success: Swift.Bool { get }
+  var pending: Swift.Bool { get }
+}
+extension PaxMposSDK.ResponseState {
+  public var success: Swift.Bool {
+    get
+  }
+  public var pending: Swift.Bool {
+    get
+  }
+}
+public protocol TransferResponse : PaxMposSDK.ResponseState {
+  var id: PaxMposSDK.TransferId { get }
+  var traceId: PaxMposSDK.TraceId { get }
+  var source: PaxMposSDK.SourceId? { get }
+}
+extension PaxMposSDK.FinixClient {
+  public struct RefundResponse : Swift.Decodable {
+    public let id: Swift.String?
+    public let amount: Swift.Int
+    public let traceId: PaxMposSDK.TraceId?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func startRefund(transactionID: Swift.String, amount: PaxMposSDK.Currency, completion: ((PaxMposSDK.FinixClient.RefundResponse?, (any Swift.Error)?) -> Swift.Void)?)
+}
+public protocol RKICallback : AnyObject {
+  func onRKISuccess(message: Swift.String)
+  func onRKIError(error: Swift.String)
+  func onRKIProgress(message: Swift.String)
+}
 extension PaxMposSDK.Finix.Device : Swift.Equatable {}
 extension PaxMposSDK.Finix.Device : Swift.Hashable {}
 extension PaxMposSDK.Finix.Environment : Swift.Equatable {}
 extension PaxMposSDK.Finix.Environment : Swift.Hashable {}
-extension PaxMposSDK.RKIConfig.Environment : Swift.Equatable {}
-extension PaxMposSDK.RKIConfig.Environment : Swift.Hashable {}
-extension PaxMposSDK.RKIConfig.Environment : Swift.RawRepresentable {}
 extension PaxMposSDK.FinixClient.TransactionType : Swift.Equatable {}
 extension PaxMposSDK.FinixClient.TransactionType : Swift.Hashable {}
 extension PaxMposSDK.FinixClient.TransactionType : Swift.RawRepresentable {}
@@ -458,9 +455,16 @@ extension PaxMposSDK.EncryptedCardDetails.CardHolderVerification : Swift.Hashabl
 extension PaxMposSDK.EncryptedCardDetails.CardHolderVerification : Swift.RawRepresentable {}
 extension PaxMposSDK.CurrencyCode : Swift.Equatable {}
 extension PaxMposSDK.CurrencyCode : Swift.Hashable {}
+extension PaxMposSDK.RKIConfig.Environment : Swift.Equatable {}
+extension PaxMposSDK.RKIConfig.Environment : Swift.Hashable {}
+extension PaxMposSDK.RKIConfig.Environment : Swift.RawRepresentable {}
 extension PaxMposSDK.TransactionStatus : Swift.Equatable {}
 extension PaxMposSDK.TransactionStatus : Swift.Hashable {}
 extension PaxMposSDK.TransactionStatus : Swift.RawRepresentable {}
 extension PaxMposSDK.CardSearchMode : Swift.Equatable {}
 extension PaxMposSDK.CardSearchMode : Swift.Hashable {}
 extension PaxMposSDK.CardSearchMode : Swift.RawRepresentable {}
+extension PaxMposSDK.PaymentType : Swift.Equatable {}
+extension PaxMposSDK.PaymentType : Swift.Hashable {}
+extension PaxMposSDK.EBTType : Swift.Equatable {}
+extension PaxMposSDK.EBTType : Swift.Hashable {}
