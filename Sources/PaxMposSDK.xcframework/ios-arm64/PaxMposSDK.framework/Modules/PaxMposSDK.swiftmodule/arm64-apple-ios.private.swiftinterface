@@ -9,99 +9,6 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct FinixError : Foundation.LocalizedError {
-  public let code: PaxMposSDK.FinixError.Code
-  public let message: Swift.String
-  public var errorDescription: Swift.String? {
-    get
-  }
-  public enum Code {
-    case GenericDecline
-    case ExpiredCard
-    case DuplicateTransaction
-    case PickUpCard
-    case CallIssuer
-    case InvalidTransaction
-    case InvalidAmount
-    case InvalidAccountNumber
-    case RestrictedCard
-    case TransactionNotPermitted
-    case CommunicationError
-    case Unknown
-    case CardReaderNotConnected
-    case CannotEncodeParameters
-    case CannotDecodeResponse
-    case MalformedRequest
-    case RequestFailed(_: Swift.Int?)
-    case TransactionError(PaxMposSDK.PaxEasyLinkRetCode)
-    case InitializationError
-    case FailedToParseAuthorizationResponse
-    case AuthorizationFailure(_: any Swift.Error)
-    case AuthorizationFailureMissingResponse
-    case RefundRequestFailed
-    case RefundRequestFailedWithError(_: any Swift.Error)
-    case CardInputError
-    case InvalidCurrencyCode
-    case NoCardData
-    case BadCard
-  }
-}
-public struct FinixConfig {
-  public init(environment: PaxMposSDK.Finix.Environment, credentials: PaxMposSDK.Finix.APICredentials, merchantId: Swift.String, mid: Swift.String, deviceType: PaxMposSDK.Finix.Device, deviceId: Swift.String, serialNumber: Swift.String? = nil)
-}
-public enum Finix {
-  public enum Device {
-    case Pax
-    public static func == (a: PaxMposSDK.Finix.Device, b: PaxMposSDK.Finix.Device) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public enum Environment {
-    case Production
-    case Sandbox
-    case QA
-    public init?(from string: Swift.String)
-    public var stringValue: Swift.String {
-      get
-    }
-    public static func == (a: PaxMposSDK.Finix.Environment, b: PaxMposSDK.Finix.Environment) -> Swift.Bool
-    public func hash(into hasher: inout Swift.Hasher)
-    public var hashValue: Swift.Int {
-      get
-    }
-  }
-  public struct APICredentials {
-    public init(username: Swift.String, password: Swift.String)
-  }
-}
-public struct RKIConfig {
-  public let host: Swift.String
-  public let port: Swift.String
-  public let enabled: Swift.Bool
-  public let timeoutMs: Swift.Int
-  public let retryCount: Swift.Int
-  public let autoInject: Swift.Bool
-  public enum Environment : Swift.String, Swift.CaseIterable {
-    case production
-    case qa
-    case sandbox
-    public init?(rawValue: Swift.String)
-    public typealias AllCases = [PaxMposSDK.RKIConfig.Environment]
-    public typealias RawValue = Swift.String
-    nonisolated public static var allCases: [PaxMposSDK.RKIConfig.Environment] {
-      get
-    }
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public init(host: Swift.String, port: Swift.String, enabled: Swift.Bool = true, timeoutMs: Swift.Int = 30_000, retryCount: Swift.Int = 3, autoInject: Swift.Bool = true)
-  public init(environment: PaxMposSDK.RKIConfig.Environment, enabled: Swift.Bool = true, timeoutMs: Swift.Int = 30_000, retryCount: Swift.Int = 3, autoInject: Swift.Bool = true)
-  public init()
-  public static func getRKIEnvironmentFromFinixEnvironment(_ finixEnvironment: PaxMposSDK.Finix.Environment) -> PaxMposSDK.RKIConfig.Environment
-}
 public struct EncryptedCardDetails : Swift.Encodable {
   public enum EncryptionMethod : Swift.String, Swift.Encodable {
     case ecb
@@ -437,13 +344,99 @@ public protocol RKICallback : AnyObject {
   func onRKIError(error: Swift.String)
   func onRKIProgress(message: Swift.String)
 }
-extension PaxMposSDK.Finix.Device : Swift.Equatable {}
-extension PaxMposSDK.Finix.Device : Swift.Hashable {}
-extension PaxMposSDK.Finix.Environment : Swift.Equatable {}
-extension PaxMposSDK.Finix.Environment : Swift.Hashable {}
-extension PaxMposSDK.RKIConfig.Environment : Swift.Equatable {}
-extension PaxMposSDK.RKIConfig.Environment : Swift.Hashable {}
-extension PaxMposSDK.RKIConfig.Environment : Swift.RawRepresentable {}
+public struct FinixError : Foundation.LocalizedError {
+  public let code: PaxMposSDK.FinixError.Code
+  public let message: Swift.String
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public enum Code {
+    case GenericDecline
+    case ExpiredCard
+    case DuplicateTransaction
+    case PickUpCard
+    case CallIssuer
+    case InvalidTransaction
+    case InvalidAmount
+    case InvalidAccountNumber
+    case RestrictedCard
+    case TransactionNotPermitted
+    case CommunicationError
+    case Unknown
+    case CardReaderNotConnected
+    case CannotEncodeParameters
+    case CannotDecodeResponse
+    case MalformedRequest
+    case RequestFailed(_: Swift.Int?)
+    case TransactionError(PaxMposSDK.PaxEasyLinkRetCode)
+    case InitializationError
+    case FailedToParseAuthorizationResponse
+    case AuthorizationFailure(_: any Swift.Error)
+    case AuthorizationFailureMissingResponse
+    case RefundRequestFailed
+    case RefundRequestFailedWithError(_: any Swift.Error)
+    case CardInputError
+    case InvalidCurrencyCode
+    case NoCardData
+    case BadCard
+  }
+}
+public struct FinixConfig {
+  public init(environment: PaxMposSDK.Finix.Environment, credentials: PaxMposSDK.Finix.APICredentials, merchantId: Swift.String, mid: Swift.String, deviceType: PaxMposSDK.Finix.Device, deviceId: Swift.String, serialNumber: Swift.String? = nil)
+}
+public enum Finix {
+  public enum Device {
+    case Pax
+    public static func == (a: PaxMposSDK.Finix.Device, b: PaxMposSDK.Finix.Device) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public enum Environment {
+    case Production
+    case Sandbox
+    case QA
+    public init?(from string: Swift.String)
+    public var stringValue: Swift.String {
+      get
+    }
+    public static func == (a: PaxMposSDK.Finix.Environment, b: PaxMposSDK.Finix.Environment) -> Swift.Bool
+    public func hash(into hasher: inout Swift.Hasher)
+    public var hashValue: Swift.Int {
+      get
+    }
+  }
+  public struct APICredentials {
+    public init(username: Swift.String, password: Swift.String)
+  }
+}
+public struct RKIConfig {
+  public let host: Swift.String
+  public let port: Swift.String
+  public let enabled: Swift.Bool
+  public let timeoutMs: Swift.Int
+  public let retryCount: Swift.Int
+  public let autoInject: Swift.Bool
+  public enum Environment : Swift.String, Swift.CaseIterable {
+    case production
+    case qa
+    case sandbox
+    public init?(rawValue: Swift.String)
+    public typealias AllCases = [PaxMposSDK.RKIConfig.Environment]
+    public typealias RawValue = Swift.String
+    nonisolated public static var allCases: [PaxMposSDK.RKIConfig.Environment] {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public init(host: Swift.String, port: Swift.String, enabled: Swift.Bool = true, timeoutMs: Swift.Int = 30_000, retryCount: Swift.Int = 3, autoInject: Swift.Bool = true)
+  public init(environment: PaxMposSDK.RKIConfig.Environment, enabled: Swift.Bool = true, timeoutMs: Swift.Int = 30_000, retryCount: Swift.Int = 3, autoInject: Swift.Bool = true)
+  public init()
+  public static func getRKIEnvironmentFromFinixEnvironment(_ finixEnvironment: PaxMposSDK.Finix.Environment) -> PaxMposSDK.RKIConfig.Environment
+}
 extension PaxMposSDK.EncryptedCardDetails.EncryptionMethod : Swift.Equatable {}
 extension PaxMposSDK.EncryptedCardDetails.EncryptionMethod : Swift.Hashable {}
 extension PaxMposSDK.EncryptedCardDetails.EncryptionMethod : Swift.RawRepresentable {}
@@ -468,3 +461,10 @@ extension PaxMposSDK.EBTType : Swift.Hashable {}
 extension PaxMposSDK.FinixClient.TransactionType : Swift.Equatable {}
 extension PaxMposSDK.FinixClient.TransactionType : Swift.Hashable {}
 extension PaxMposSDK.FinixClient.TransactionType : Swift.RawRepresentable {}
+extension PaxMposSDK.Finix.Device : Swift.Equatable {}
+extension PaxMposSDK.Finix.Device : Swift.Hashable {}
+extension PaxMposSDK.Finix.Environment : Swift.Equatable {}
+extension PaxMposSDK.Finix.Environment : Swift.Hashable {}
+extension PaxMposSDK.RKIConfig.Environment : Swift.Equatable {}
+extension PaxMposSDK.RKIConfig.Environment : Swift.Hashable {}
+extension PaxMposSDK.RKIConfig.Environment : Swift.RawRepresentable {}

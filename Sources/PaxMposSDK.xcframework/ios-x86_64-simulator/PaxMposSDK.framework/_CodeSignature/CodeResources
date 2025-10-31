@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		eDl1RuKOwFnsSFeMiQHxCDncAUg=
+		k1U2B3FzTmSRFof6AumUq0JETKg=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		vQWUzZVTiECRzP9JH8NahS8gbCY=
+		Tow+YQ8cxqAe+BaVpADrdBB2pyA=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		no3lVgpKj/UekEath5mNDTT2NPg=
+		5/RPTytAb/Q6E6FtAq2RDH6+pr8=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		vQWUzZVTiECRzP9JH8NahS8gbCY=
+		Tow+YQ8cxqAe+BaVpADrdBB2pyA=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		iSiH6fy9bcym7dT2D8Hz2J2s5Os=
+		isXwscwkYfIRpBB7UfAKevBunVE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>emv_param.emv</key>
 		<data>
-		7Ui3zUcckx74QBMbbsLJuPxPFyY=
+		+a5JEuTST1vGlOSuMawfHvUop+U=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -77,35 +77,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			f3IbHyCOe7qajkeQ82ui1ykQFvcc0m+Frb1HZ3FIG9A=
+			PX0KJJNiXxoXUZfxxa91FyBaDQAtCmKL7acfuOj8T7g=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g6pmKp72Y3rbTAQ4CgDG4V2I/xmwK3Z5dBLGkxHmOAE=
+			L16jtlSHFIIcsymbIJnFua0dyigLXkhXZuH3Sd9dqO4=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jq4L1eN8TJdJ0ksZZDOZcGFJL8qKzcqLAmjLhwiO/IQ=
+			SN4yGMHgiEPOldqEUUrQpj9cnuSFY88gV8KH4x2hVUM=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			g6pmKp72Y3rbTAQ4CgDG4V2I/xmwK3Z5dBLGkxHmOAE=
+			L16jtlSHFIIcsymbIJnFua0dyigLXkhXZuH3Sd9dqO4=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ujTdeC9QwBs7DvAFYBX1w4/LR+PPMOgFWA2qKsdX1YU=
+			neEGyKmUXUZn3qBXGjrh3Lg7219omTuzzVngoshqQOc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3MrSCap60RoOZKamoreq5LNn8A1SHxPgtk7dux35sjw=
+			Mb7UtEUvLIcNShuMuOofML+m4d0mnOG5kqaGfbPot/A=
 			</data>
 		</dict>
 	</dict>
