@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		3TtuTeHfD3HiNom5AIFfN3tWskc=
+		Nm81RjWryUPjWvMRGDUgPykE0/g=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		y0HWnZfmdUzo59zqKDFkZi8lA+0=
+		i7WJjy12NeIP9rTAVsSKt1Fpy04=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		PLcXHdwTMktwyrIDJ02Y/VteEtI=
+		3Rl2h4EILroo9V6HsgppuqSPYks=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		y0HWnZfmdUzo59zqKDFkZi8lA+0=
+		i7WJjy12NeIP9rTAVsSKt1Fpy04=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		wMLMA0VWokZ69yMtabcp/nnDasU=
+		HmBip8yvD2Ov4el3oMD+o77BFew=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>emv_param.emv</key>
 		<data>
-		mjr3iWiZbSWg45UeaqkUOSZswTY=
+		7Ui3zUcckx74QBMbbsLJuPxPFyY=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -77,35 +77,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			9D3BiDK+nVy6vx6uEz6Lxi6aC6Dwf76Ka1ckdMx8KdY=
+			KVbutE7zTj5X1lyFWd+2qbbrS1jrCOZefpA7VfRW7Mo=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pB8S+BuvouhVMUEaOkTv5qYUSX+hILaIbfVQl9ydnlA=
+			o6aK77P4JcO2i+hNpxDwhksuz0sM+ciJ6pm/T2NOVfk=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DBOH1uHrOU39P/H5B+TrFIYoi3hUDdi/yu7rH0x2jfA=
+			UQpVT3KCaxpZfF89PWHuo2Sxb+Ubt/rOWXUA387m28M=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pB8S+BuvouhVMUEaOkTv5qYUSX+hILaIbfVQl9ydnlA=
+			o6aK77P4JcO2i+hNpxDwhksuz0sM+ciJ6pm/T2NOVfk=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J2QuBIn0VOJXhM044urI3XLOGY3X4J9GamdWGOFJbmw=
+			JiEp9ViyqJ+QrREXya1i0bZTHJL2obE7FHgeztKIB6c=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -140,7 +140,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			sbeyGKjNPSMOLjpZjbxam0ZWJA37skj5+8m+GHBuFvk=
+			3MrSCap60RoOZKamoreq5LNn8A1SHxPgtk7dux35sjw=
 			</data>
 		</dict>
 	</dict>
