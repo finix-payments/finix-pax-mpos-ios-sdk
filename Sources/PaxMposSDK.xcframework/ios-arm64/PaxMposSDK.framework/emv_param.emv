@@ -137,40 +137,6 @@
          <Threshold>0</Threshold>
       </AID>
       <AID>
-         <ApplicationID>A000000025010402</ApplicationID>
-         <IfUseLocalAIDName>0</IfUseLocalAIDName>
-         <LocalAIDName>AMEX Credit</LocalAIDName>
-         <PartialAIDSelection>0</PartialAIDSelection>
-         <TerminalAIDVersion>0001</TerminalAIDVersion>
-         <FloorLimit>1</FloorLimit>
-         <MaxTargetPercentage>1</MaxTargetPercentage>
-         <TACDefault>DC50FC9800</TACDefault>
-         <TACDenial>0010000000</TACDenial>
-         <TACOnline>DE00FC9800</TACOnline>
-         <TargetPercentage>1</TargetPercentage>
-         <TerminalDefaultDDOL>039F3704</TerminalDefaultDDOL>
-         <TerminalDefaultTDOL>0F9F02065F2A029A039C0195059F3704</TerminalDefaultTDOL>
-         <TerminalRiskManagementData></TerminalRiskManagementData>
-         <Threshold>0</Threshold>
-      </AID>
-      <AID>
-         <ApplicationID>A000000025010701</ApplicationID>
-         <IfUseLocalAIDName>0</IfUseLocalAIDName>
-         <LocalAIDName>AMEX Debit</LocalAIDName>
-         <PartialAIDSelection>0</PartialAIDSelection>
-         <TerminalAIDVersion>0001</TerminalAIDVersion>
-         <FloorLimit>1</FloorLimit>
-         <MaxTargetPercentage>1</MaxTargetPercentage>
-         <TACDefault>DC50FC9800</TACDefault>
-         <TACDenial>0010000000</TACDenial>
-         <TACOnline>DE00FC9800</TACOnline>
-         <TargetPercentage>1</TargetPercentage>
-         <TerminalDefaultDDOL>039F3704</TerminalDefaultDDOL>
-         <TerminalDefaultTDOL>0F9F02065F2A029A039C0195059F3704</TerminalDefaultTDOL>
-         <TerminalRiskManagementData></TerminalRiskManagementData>
-         <Threshold>0</Threshold>
-      </AID>
-      <AID>
          <ApplicationID>A0000001523010</ApplicationID>
          <IfUseLocalAIDName>0</IfUseLocalAIDName>
          <LocalAIDName>Discover</LocalAIDName>
