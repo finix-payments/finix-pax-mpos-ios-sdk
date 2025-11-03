@@ -26,6 +26,26 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "DatadogCore",
         "printedName": "DatadogCore",
         "declKind": "Import",
@@ -13353,26 +13373,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "URLSessionDataTask",
         "printedName": "URLSessionDataTask",
@@ -13983,6 +13983,69 @@
     "json_format_version": 8
   },
   "ConstValues": [
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 268,
+      "length": 6,
+      "value": "\"9F06\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 6,
+      "value": "\"0301\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 342,
+      "length": 6,
+      "value": "\"0305\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 376,
+      "length": 6,
+      "value": "\"0304\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
+      "kind": "StringLiteral",
+      "offset": 422,
+      "length": 4,
+      "value": "\"57\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
+      "kind": "Array",
+      "offset": 1859,
+      "length": 252,
+      "value": "[\"9F02\", \"9F26\", \"82\", \"9F36\", \"84\", \"9F10\", \"9F33\", \"9F1A\", \"95\", \"5F2A\", \"9A\", \"9C\", \"9F37\", \"9F5B\", \"9F27\", \"5F34\", \"9F6E\", \"9F7C\", \"50\", \"9F12\", \"9F11\", \"57\", \"9F06\", \"9F1E\", \"9F35\", \"9F34\"]"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
+      "kind": "Array",
+      "offset": 2144,
+      "length": 194,
+      "value": "[\"9F02\", \"9F26\", \"82\", \"9F36\", \"9F34\", \"9F27\", \"84\", \"9F10\", \"9F33\", \"9F1A\", \"95\", \"5F2A\", \"9A\", \"9C\", \"9F37\", \"9F09\", \"5F34\", \"50\", \"9F12\", \"9F11\"]"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
+      "kind": "Array",
+      "offset": 2376,
+      "length": 204,
+      "value": "[\"9F02\", \"9F26\", \"82\", \"5F34\", \"9F36\", \"9F27\", \"9F10\", \"9F1A\", \"95\", \"5F2A\", \"9A\", \"9C\", \"9F37\", \"9F06\", \"50\", \"9F12\", \"9F11\", \"9F1E\", \"9F35\", \"9F34\", \"9F33\"]"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
+      "kind": "Array",
+      "offset": 2611,
+      "length": 260,
+      "value": "[\"9F02\", \"9F26\", \"9F06\", \"82\", \"9F36\", \"9F09\", \"9F27\", \"84\", \"9F1E\", \"9F10\", \"9F33\", \"9F1A\", \"9F35\", \"95\", \"5F2A\", \"9A\", \"9F41\", \"9C\", \"9F37\", \"DF3F\", \"9F5B\", \"57\", \"5F34\", \"9F6E\", \"50\", \"9F12\", \"9F11\"]"
+    },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
@@ -15368,69 +15431,6 @@
       "offset": 1333,
       "length": 3,
       "value": "[]"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
-      "kind": "StringLiteral",
-      "offset": 268,
-      "length": 6,
-      "value": "\"9F06\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
-      "kind": "StringLiteral",
-      "offset": 308,
-      "length": 6,
-      "value": "\"0301\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
-      "kind": "StringLiteral",
-      "offset": 342,
-      "length": 6,
-      "value": "\"0305\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
-      "kind": "StringLiteral",
-      "offset": 376,
-      "length": 6,
-      "value": "\"0304\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
-      "kind": "StringLiteral",
-      "offset": 422,
-      "length": 4,
-      "value": "\"57\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
-      "kind": "Array",
-      "offset": 1859,
-      "length": 252,
-      "value": "[\"9F02\", \"9F26\", \"82\", \"9F36\", \"84\", \"9F10\", \"9F33\", \"9F1A\", \"95\", \"5F2A\", \"9A\", \"9C\", \"9F37\", \"9F5B\", \"9F27\", \"5F34\", \"9F6E\", \"9F7C\", \"50\", \"9F12\", \"9F11\", \"57\", \"9F06\", \"9F1E\", \"9F35\", \"9F34\"]"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
-      "kind": "Array",
-      "offset": 2144,
-      "length": 194,
-      "value": "[\"9F02\", \"9F26\", \"82\", \"9F36\", \"9F34\", \"9F27\", \"84\", \"9F10\", \"9F33\", \"9F1A\", \"95\", \"5F2A\", \"9A\", \"9C\", \"9F37\", \"9F09\", \"5F34\", \"50\", \"9F12\", \"9F11\"]"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
-      "kind": "Array",
-      "offset": 2376,
-      "length": 204,
-      "value": "[\"9F02\", \"9F26\", \"82\", \"5F34\", \"9F36\", \"9F27\", \"9F10\", \"9F1A\", \"95\", \"5F2A\", \"9A\", \"9C\", \"9F37\", \"9F06\", \"50\", \"9F12\", \"9F11\", \"9F1E\", \"9F35\", \"9F34\", \"9F33\"]"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/EMVUtil.swift",
-      "kind": "Array",
-      "offset": 2611,
-      "length": 260,
-      "value": "[\"9F02\", \"9F26\", \"9F06\", \"82\", \"9F36\", \"9F09\", \"9F27\", \"84\", \"9F1E\", \"9F10\", \"9F33\", \"9F1A\", \"9F35\", \"95\", \"5F2A\", \"9A\", \"9F41\", \"9C\", \"9F37\", \"DF3F\", \"9F5B\", \"57\", \"5F34\", \"9F6E\", \"50\", \"9F12\", \"9F11\"]"
     }
   ]
 }
