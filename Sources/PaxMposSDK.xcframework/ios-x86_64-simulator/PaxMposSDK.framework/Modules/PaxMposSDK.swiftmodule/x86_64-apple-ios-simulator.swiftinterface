@@ -9,6 +9,100 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+public enum TransactionStatus : Swift.Int {
+  case unknown
+  case approved
+  case partiallyApproved
+  case approvedExceptCashback
+  case approvedByMerchant
+  case callIssuer
+  case declined
+  case needsToBeReversed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public protocol FinixDelegate : AnyObject {
+  func didDiscoverDevice(_ deviceInfo: PaxMposSDK.DeviceInfo)
+  func deviceConnectionStatusChanged(_ state: PaxMposSDK.DeviceConnectionState)
+  func startTransactionStatusChanged(_ status: PaxMposSDK.ProcessCardStatus)
+}
+extension PaxMposSDK.FinixDelegate {
+  public func onEnvironmentChangeRKICompleted(success: Swift.Bool, message: Swift.String)
+}
+public enum DeviceConnectionState {
+  case connecting
+  case initializing
+  case connected(_: PaxMposSDK.DeviceInfo)
+  case disconnected
+  case error(_: any Swift.Error)
+}
+public protocol FinixClientDeviceInteractionDelegate : AnyObject {
+  func onDisplayText(_ text: Swift.String)
+  func promptForCard(_ mode: PaxMposSDK.CardSearchMode)
+}
+public enum CardSearchMode : Swift.Int {
+  case msr
+  case icc
+  case msrIcc
+  case picc
+  case msrPicc
+  case iccPicc
+  case msrIccPicc
+  case fallback
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+public typealias DownloadStatusCallback = (_ filename: Swift.String, _ progress: Swift.Int, _ total: Swift.Int) -> Swift.Void
+public class FinixClient {
+  weak public var delegate: (any PaxMposSDK.FinixDelegate)?
+  weak public var interactionDelegate: (any PaxMposSDK.FinixClientDeviceInteractionDelegate)?
+  public init(config: PaxMposSDK.FinixConfig, logger: (any PaxMposSDK.FinixLoggerProtocol)? = nil, session: (any PaxMposSDK.URLSessionProtocol)? = nil, easyLinkController: (any PaxMposSDK.PaxEasyLinkControllerProtocol)? = nil)
+  public func isReaderConnected() -> Swift.Bool
+  public func stopCurrentOperation()
+  public func update(environment: PaxMposSDK.Finix.Environment? = nil, credentials: PaxMposSDK.Finix.APICredentials? = nil, merchantId: Swift.String? = nil, mid: Swift.String? = nil, deviceType: PaxMposSDK.Finix.Device? = nil, deviceId: Swift.String? = nil, serialNumber: Swift.String? = nil)
+  public func configureRKI(enabled: Swift.Bool = true)
+  public func configureRKI(host: Swift.String, port: Swift.String, enabled: Swift.Bool = true)
+  public func isRKIInjected() async -> Swift.Bool
+  public func performManualRKI(callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
+  public func performOfflineKeyInjection(rkiFilePath: Swift.String, callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
+  public func getCertificateList() async -> Swift.String?
+  public func unbindDevice(callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
+  public func getDeviceRKIStatus(serialNumber: Swift.String) -> Swift.Bool
+  public func getDeviceRKITimestamp(serialNumber: Swift.String) -> Foundation.TimeInterval?
+  public func getDeviceRKIEnvironment(serialNumber: Swift.String) -> PaxMposSDK.RKIConfig.Environment?
+  public func clearDeviceRKIStatus(serialNumber: Swift.String)
+  public func getAllDevicesRKIStatus() -> Swift.Set<Swift.String>
+  public func clearAllDevicesRKIStatus()
+  @objc deinit
+}
+extension PaxMposSDK.FinixClient {
+  public func getRKIStatistics() -> (injectedDeviceCount: Swift.Int, injectedSerialNumbers: Swift.Set<Swift.String>)
+  public func getRKIStatusForDevice(serialNumber: Swift.String) -> (environment: Swift.String?, timestamp: Foundation.TimeInterval?, isInjected: Swift.Bool)
+  @discardableResult
+  public func triggerRKICheckForConnectedDevice() async -> Swift.Bool
+  @discardableResult
+  public func forceRKIReinjectionForConnectedDevice() async -> Swift.Bool
+}
+extension PaxMposSDK.FinixClient {
+  public struct RefundResponse : Swift.Decodable {
+    public let id: Swift.String?
+    public let amount: Swift.Int
+    public let traceId: PaxMposSDK.TraceId?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func startRefund(transactionID: Swift.String, amount: PaxMposSDK.Currency, completion: ((PaxMposSDK.FinixClient.RefundResponse?, (any Swift.Error)?) -> Swift.Void)?)
+}
+public typealias DeviceId = Swift.String
+public struct DeviceInfo {
+  public let deviceId: PaxMposSDK.DeviceId
+  public let name: Swift.String?
+}
 extension PaxMposSDK.FinixClient {
   public func startScan()
   public func connectDevice(_ deviceId: PaxMposSDK.DeviceId)
@@ -354,89 +448,12 @@ extension PaxMposSDK.PaxEasyLinkController : PaxMposSDK.PaxEasyLinkControllerPro
   public func getRKICertificateList() throws -> Swift.String
   public func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
 }
-public enum TransactionStatus : Swift.Int {
-  case unknown
-  case approved
-  case partiallyApproved
-  case approvedExceptCashback
-  case approvedByMerchant
-  case callIssuer
-  case declined
-  case needsToBeReversed
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public protocol FinixDelegate : AnyObject {
-  func didDiscoverDevice(_ deviceInfo: PaxMposSDK.DeviceInfo)
-  func deviceConnectionStatusChanged(_ state: PaxMposSDK.DeviceConnectionState)
-  func startTransactionStatusChanged(_ status: PaxMposSDK.ProcessCardStatus)
-}
-public enum DeviceConnectionState {
-  case connecting
-  case initializing
-  case connected(_: PaxMposSDK.DeviceInfo)
-  case disconnected
-  case error(_: any Swift.Error)
-}
-public protocol FinixClientDeviceInteractionDelegate : AnyObject {
-  func onDisplayText(_ text: Swift.String)
-  func promptForCard(_ mode: PaxMposSDK.CardSearchMode)
-}
-public enum CardSearchMode : Swift.Int {
-  case msr
-  case icc
-  case msrIcc
-  case picc
-  case msrPicc
-  case iccPicc
-  case msrIccPicc
-  case fallback
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-public typealias DownloadStatusCallback = (_ filename: Swift.String, _ progress: Swift.Int, _ total: Swift.Int) -> Swift.Void
-public class FinixClient {
-  weak public var delegate: (any PaxMposSDK.FinixDelegate)?
-  weak public var interactionDelegate: (any PaxMposSDK.FinixClientDeviceInteractionDelegate)?
-  public init(config: PaxMposSDK.FinixConfig, logger: (any PaxMposSDK.FinixLoggerProtocol)? = nil, session: (any PaxMposSDK.URLSessionProtocol)? = nil, easyLinkController: (any PaxMposSDK.PaxEasyLinkControllerProtocol)? = nil)
-  public func isReaderConnected() -> Swift.Bool
-  public func stopCurrentOperation()
-  public func update(environment: PaxMposSDK.Finix.Environment? = nil, credentials: PaxMposSDK.Finix.APICredentials? = nil, merchantId: Swift.String? = nil, mid: Swift.String? = nil, deviceType: PaxMposSDK.Finix.Device? = nil, deviceId: Swift.String? = nil, serialNumber: Swift.String? = nil)
-  public func configureRKI(enabled: Swift.Bool = true)
-  public func configureRKI(host: Swift.String, port: Swift.String, enabled: Swift.Bool = true)
-  public func isRKIInjected() async -> Swift.Bool
-  public func performManualRKI(callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
-  public func performOfflineKeyInjection(rkiFilePath: Swift.String, callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
-  public func getCertificateList() async -> Swift.String?
-  public func unbindDevice(callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
-  public func getDeviceRKIStatus(serialNumber: Swift.String) -> Swift.Bool
-  public func getDeviceRKITimestamp(serialNumber: Swift.String) -> Foundation.TimeInterval?
-  public func getDeviceRKIEnvironment(serialNumber: Swift.String) -> PaxMposSDK.RKIConfig.Environment?
-  public func clearDeviceRKIStatus(serialNumber: Swift.String)
-  public func getAllDevicesRKIStatus() -> Swift.Set<Swift.String>
-  public func clearAllDevicesRKIStatus()
-  @objc deinit
-}
-extension PaxMposSDK.FinixClient {
-  public struct RefundResponse : Swift.Decodable {
-    public let id: Swift.String?
-    public let amount: Swift.Int
-    public let traceId: PaxMposSDK.TraceId?
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public func startRefund(transactionID: Swift.String, amount: PaxMposSDK.Currency, completion: ((PaxMposSDK.FinixClient.RefundResponse?, (any Swift.Error)?) -> Swift.Void)?)
-}
-public typealias DeviceId = Swift.String
-public struct DeviceInfo {
-  public let deviceId: PaxMposSDK.DeviceId
-  public let name: Swift.String?
-}
+extension PaxMposSDK.TransactionStatus : Swift.Equatable {}
+extension PaxMposSDK.TransactionStatus : Swift.Hashable {}
+extension PaxMposSDK.TransactionStatus : Swift.RawRepresentable {}
+extension PaxMposSDK.CardSearchMode : Swift.Equatable {}
+extension PaxMposSDK.CardSearchMode : Swift.Hashable {}
+extension PaxMposSDK.CardSearchMode : Swift.RawRepresentable {}
 extension PaxMposSDK.PaymentType : Swift.Equatable {}
 extension PaxMposSDK.PaymentType : Swift.Hashable {}
 extension PaxMposSDK.EBTType : Swift.Equatable {}
@@ -462,9 +479,3 @@ extension PaxMposSDK.EncryptedCardDetails.CardHolderVerification : Swift.Hashabl
 extension PaxMposSDK.EncryptedCardDetails.CardHolderVerification : Swift.RawRepresentable {}
 extension PaxMposSDK.CurrencyCode : Swift.Equatable {}
 extension PaxMposSDK.CurrencyCode : Swift.Hashable {}
-extension PaxMposSDK.TransactionStatus : Swift.Equatable {}
-extension PaxMposSDK.TransactionStatus : Swift.Hashable {}
-extension PaxMposSDK.TransactionStatus : Swift.RawRepresentable {}
-extension PaxMposSDK.CardSearchMode : Swift.Equatable {}
-extension PaxMposSDK.CardSearchMode : Swift.Hashable {}
-extension PaxMposSDK.CardSearchMode : Swift.RawRepresentable {}

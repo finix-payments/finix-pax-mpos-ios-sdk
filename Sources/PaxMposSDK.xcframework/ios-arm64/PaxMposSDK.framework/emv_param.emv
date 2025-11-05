@@ -547,6 +547,30 @@
          <RSAArithmeticIndex>1</RSAArithmeticIndex>
       </CAPK>
       <CAPK>
+         <CheckSum>EBFA0D5D06D8CE702DA3EAE890701D45E274C845</CheckSum>
+         <ExpireDate>241231</ExpireDate>
+         <Exponent>03</Exponent>
+         <ExponentLength>1</ExponentLength>
+         <HashArithmeticIndex>1</HashArithmeticIndex>
+         <KeyID>05</KeyID>
+         <Module>B8048ABC30C90D976336543E3FD7091C8FE4800DF820ED55E7E94813ED00555B573FECA3D84AF6131A651D66CFF4284FB13B635EDD0EE40176D8BF04B7FD1C7BACF9AC7327DFAA8AA72D10DB3B8E70B2DDD811CB4196525EA386ACC33C0D9D4575916469C4E4F53E8E1C912CC618CB22DDE7C3568E90022E6BBA770202E4522A2DD623D180E215BD1D1507FE3DC90CA310D27B3EFCCD8F83DE3052CAD1E48938C68D095AAC91B5F37E28BB49EC7ED597</Module>
+         <ModuleLength>176</ModuleLength>
+         <RID>A000000004</RID>
+         <RSAArithmeticIndex>1</RSAArithmeticIndex>
+      </CAPK>
+      <CAPK>
+         <CheckSum>F910A1504D5FFB793D94F3B500765E1ABCAD72D9</CheckSum>
+         <ExpireDate>291231</ExpireDate>
+         <Exponent>03</Exponent>
+         <ExponentLength>1</ExponentLength>
+         <HashArithmeticIndex>1</HashArithmeticIndex>
+         <KeyID>06</KeyID>
+         <Module>CB26FC830B43785B2BCE37C81ED334622F9622F4C89AAE641046B2353433883F307FB7C974162DA72F7A4EC75D9D657336865B8D3023D3D645667625C9A07A6B7A137CF0C64198AE38FC238006FB2603F41F4F3BB9DA1347270F2F5D8C606E420958C5F7D50A71DE30142F70DE468889B5E3A08695B938A50FC980393A9CBCE44AD2D64F630BB33AD3F5F5FD495D31F37818C1D94071342E07F1BEC2194F6035BA5DED3936500EB82DFDA6E8AFB655B1EF3D0D7EBF86B66DD9F29F6B1D324FE8B26CE38AB2013DD13F611E7A594D675C4432350EA244CC34F3873CBA06592987A1D7E852ADC22EF5A2EE28132031E48F74037E3B34AB747F</Module>
+         <ModuleLength>248</ModuleLength>
+         <RID>A000000004</RID>
+         <RSAArithmeticIndex>1</RSAArithmeticIndex>
+      </CAPK>
+      <CAPK>
          <CheckSum>21766EBB0EE122AFB65D7845B73DB46BAB65427A</CheckSum>
          <ExpireDate>151231</ExpireDate>
          <Exponent>03</Exponent>
@@ -643,6 +667,30 @@
          <RSAArithmeticIndex>1</RSAArithmeticIndex>
       </CAPK>
       <CAPK>
+        <CheckSum>A73472B3AB557493A9BC2179CC8014053B12BAB4</CheckSum>
+        <ExpireDate>241231</ExpireDate>
+        <Exponent>03</Exponent>
+        <ExponentLength>1</ExponentLength>
+        <HashArithmeticIndex>1</HashArithmeticIndex>
+        <KeyID>0F</KeyID>
+        <Module>C8D5AC27A5E1FB89978C7C6479AF993AB3800EB243996FBB2AE26B67B23AC482C4B746005A51AFA7D2D83E894F591A2357B30F85B85627FF15DA12290F70F05766552BA11AD34B7109FA49DE29DCB0109670875A17EA95549E92347B948AA1F045756DE56B707E3863E59A6CBE99C1272EF65FB66CBB4CFF070F36029DD76218B21242645B51CA752AF37E70BE1A84FF31079DC0048E928883EC4FADD497A719385C2BBBEBC5A66AA5E5655D18034EC5</Module>
+        <ModuleLength>176</ModuleLength>
+        <RID>A000000025</RID>
+        <RSAArithmeticIndex>1</RSAArithmeticIndex>
+      </CAPK>
+      <CAPK>
+        <CheckSum>C729CF2FD262394ABC4CC173506502446AA9B9FD</CheckSum>
+        <ExpireDate>271231</ExpireDate>
+        <Exponent>03</Exponent>
+        <ExponentLength>1</ExponentLength>
+        <HashArithmeticIndex>1</HashArithmeticIndex>
+        <KeyID>10</KeyID>
+        <Module>CF98DFEDB3D3727965EE7797723355E0751C81D2D3DF4D18EBAB9FB9D49F38C8C4A826B99DC9DEA3F01043D4BF22AC3550E2962A59639B1332156422F788B9C16D40135EFD1BA94147750575E636B6EBC618734C91C1D1BF3EDC2A46A43901668E0FFC136774080E888044F6A1E65DC9AAA8928DACBEB0DB55EA3514686C6A732CEF55EE27CF877F110652694A0E3484C855D882AE191674E25C296205BBB599455176FDD7BBC549F27BA5FE35336F7E29E68D783973199436633C67EE5A680F05160ED12D1665EC83D1997F10FD05BBDBF9433E8F797AEE3E9F02A34228ACE927ABE62B8B9281AD08D3DF5C7379685045D7BA5FCDE58637</Module>
+        <ModuleLength>248</ModuleLength>
+        <RID>A000000025</RID>
+        <RSAArithmeticIndex>1</RSAArithmeticIndex>
+      </CAPK>
+      <CAPK>
          <CheckSum>DC79D6B5FC879362299BC5A637DAD2E0D99656B8</CheckSum>
          <ExpireDate>151231</ExpireDate>
          <Exponent>03</Exponent>
@@ -737,6 +785,18 @@
          <ModuleLength>144</ModuleLength>
          <RID>A000000152</RID>
          <RSAArithmeticIndex>1</RSAArithmeticIndex>
+      </CAPK>
+      <CAPK>
+        <CheckSum>12BCD407B6E627A750FDF629EE8C2C9CC7BA636A</CheckSum>
+        <ExpireDate>291231</ExpireDate>
+        <Exponent>03</Exponent>
+        <ExponentLength>1</ExponentLength>
+        <HashArithmeticIndex>1</HashArithmeticIndex>
+        <KeyID>05</KeyID>
+        <Module>E1200E9F4428EB71A526D6BB44C957F18F27B20BACE978061CCEF23532DBEBFAF654A149701C14E6A2A7C2ECAC4C92135BE3E9258331DDB0967C3D1D375B996F25B77811CCCC06A153B4CE6990A51A0258EA8437EDBEB701CB1F335993E3F48458BC1194BAD29BF683D5F3ECB984E31B7B9D2F6D947B39DEDE0279EE45B47F2F3D4EEEF93F9261F8F5A571AFBFB569C150370A78F6683D687CB677777B2E7ABEFCFC8F5F93501736997E8310EE0FD87AFAC5DA772BA277F88B44459FCA563555017CD0D66771437F8B6608AA1A665F88D846403E4C41AFEEDB9729C2B2511CFE228B50C1B152B2A60BBF61D8913E086210023A3AA499E423</Module>
+        <ModuleLength>248</ModuleLength>
+        <RID>A000000152</RID>
+        <RSAArithmeticIndex>1</RSAArithmeticIndex>
       </CAPK>
       <CAPK>
          <CheckSum>CC9585E8E637191C10FCECB32B5AE1B9D410B52D</CheckSum>
@@ -882,92 +942,68 @@
          <RID>A000000277</RID>
          <RSAArithmeticIndex>1</RSAArithmeticIndex>
       </CAPK>
-			<CAPK>
-				<RID>A000000277</RID>
-				<KeyID>03</KeyID>
-				<HashArithmeticIndex>1</HashArithmeticIndex>
-				<RSAArithmeticIndex>1</RSAArithmeticIndex>
-				<ModuleLength>176</ModuleLength>
-				<Module>E51505CCECDD0799BAFE097200DF40FFC2154836B8D67F1E99D4D415F73C04A9FAD73825D32AE5BA77FCD02597393CE4D8104B6010D5A8F28F2B47BB8298DAFD63C9C0BEF62AF937265614E31AE2AB45B60B968DB9DEE55602C169F6C16D4579BAA24765560300A3056F894BA8FFA566D9CCD79453D804B97DA14F21F9C3528ED8B8A368A9FACF05C46C13A9BA020618425EF1ACF6CB4DD5DCD050273502114B59EE90EBD833F70C2F324741E79A19A1</Module>
-				<ExponentLength>3</ExponentLength>
-				<Exponent>010001</Exponent>
-				<ExpireDate>211124</ExpireDate>
-				<CheckSum>0FB60A1BCA38095F3CC578D2DEC95F779840A343</CheckSum>
-			</CAPK>
-			<CAPK>
-				<RID>A000000277</RID>
-				<KeyID>07</KeyID>
-				<HashArithmeticIndex>1</HashArithmeticIndex>
-				<RSAArithmeticIndex>1</RSAArithmeticIndex>
-				<ModuleLength>248</ModuleLength>
-				<Module>B2CE89726B6B2D1690A0F8CA75CD0B6B1ACDFBE66D53BA00C500BE612FB421423684FF1868554A7722258012E588ED1CD206C67BB2F7598F3CE67F23A888B8ED7421C49A2EBA224DFBD866F62E59338E9F626D0DFD4C9ACC626E42EC0375EE424C93E5DB5773FC98E4AC9FCDEBD0521B15295C797DCABB4679C055AC374A81B245ABF1092A3D46E1CCE10A84F9FC2FC6ED91025121589C9AA68B56B7FBF0D86B4C8E3C9C08406DBB4609BBFC5308F325A8273CB6D36F3E0AF772507BF8A2A9F5A749B5AF98CCEAB2826C2D9C2AB9103B1BAB0DE92099C8072477EC564062AC38184C60DAD298EF352D92DFA041DDE3DB260CE5302B47A7E9</Module>
-				<ExponentLength>3</ExponentLength>
-				<Exponent>010001</Exponent>
-				<ExpireDate>211124</ExpireDate>
-				<CheckSum>44F2C13373A5068B63C9334E914DDE6AB70CE0F1</CheckSum>
-				<TestMode>Y</TestMode>
-			</CAPK>
-			<CAPK>
-				<RID>A000000277</RID>
-				<KeyID>09</KeyID>
-				<HashArithmeticIndex>1</HashArithmeticIndex>
-				<RSAArithmeticIndex>1</RSAArithmeticIndex>
-				<ModuleLength>128</ModuleLength>
-				<Module>F802C308544873AD2225A81943732A4B7CFFA4E3157D17CD5A7723F858F0B11E636D2930FA933778F27C7C49127E0CCA317021CFE8E0F773785EB3FF07587E98CE8ED4FE9E1CA1859F41A9CF2572D8A093C5465F5A29612A45B1700F4DA13814C3D4DF075EAADE8DB4BE4D7B3AE0256F7A0C12E34BD416CAC4F9250C38B7E13B</Module>
-				<ExponentLength>3</ExponentLength>
-				<Exponent>010001</Exponent>
-				<ExpireDate>211124</ExpireDate>
-				<CheckSum>A2974D6B8F302A923740E2BC6217075202037B8B</CheckSum>
-				<TestMode>Y</TestMode>
-			</CAPK>
-			<CAPK>
-				<RID>A000000277</RID>
-				<KeyID>06</KeyID>
-				<HashArithmeticIndex>1</HashArithmeticIndex>
-				<RSAArithmeticIndex>1</RSAArithmeticIndex>
-				<ModuleLength>176</ModuleLength>
-				<Module>DB43A71FF30392069A9600143DCB628A4DABDFE69E31CB6151D9A2EB18A53ABA1EF75518CD3EDA29B96D55B002870A649AAFC65CE472BD01352C2D2E77D4EE352B3A64BC2CC170E29D426D7B3317BD3C4FC32EA2151CA0F1071A2ACFECD70468D3EBC7A44440DD63EC9499F302348BB6235F964BF3CAA30B29939B9901C42B5540BF4F837DD898F5392076F9B95F0EBCB6846374FFE71895A422775D95CABA9C25510627D4F7B57A3DBD755608EDD843</Module>
-				<ExponentLength>3</ExponentLength>
-				<Exponent>010001</Exponent>
-				<ExpireDate>261231</ExpireDate>
-				<CheckSum>D18AB9F1518FBC0F6EB0EEFB00C5D07CAE8A2197</CheckSum>
-			</CAPK>
-			<CAPK>
-				<RID>A000000277</RID>
-				<KeyID>08</KeyID>
-				<HashArithmeticIndex>1</HashArithmeticIndex>
-				<RSAArithmeticIndex>1</RSAArithmeticIndex>
-				<ModuleLength>248</ModuleLength>
-				<Module>AB1B0667B2A68883477B2ED48F3068CB0F57ABBEC93E0AF40180BACD895120E36E2710784599CDE9035550D96BD6C5CEA55C4E8C88A5D0A81CE1309559BCE91930C7AA3E3D0A2D79A6036BE03C4000658A78ECA742034BE5FB0E08D530C7FF9458211E78E33E3803F8DFF24A4117EE0EDFE7A98CB3AE2ECCB2A3C3A75C32512EDD1183CF218BE1642FA78430A18A495E6FEFA7B98860C6FCEBFD27537D34F4E55B9CBDEB19DF029BDF00993E1A2E0B9E89E1B49777FCB7C1610CDA94A488C9177908B75C48DFE3F8BBD52886233B44B1A58373D5AFD0F309ABB939C39DF95D923F76B7300E83D182C2922EBB9FD018867A0E6D179EFF8C87</Module>
-				<ExponentLength>3</ExponentLength>
-				<Exponent>010001</Exponent>
-				<ExpireDate>261231</ExpireDate>
-				<CheckSum>46EAD2ED0B8645D4DCB2AE4B1D285A0632B452D4</CheckSum>
-			</CAPK>
-			<CAPK>
-				<CheckSum>A73472B3AB557493A9BC2179CC8014053B12BAB4</CheckSum>
-				<ExpireDate>241231</ExpireDate>
-				<Exponent>03</Exponent>
-				<ExponentLength>1</ExponentLength>
-				<HashArithmeticIndex>1</HashArithmeticIndex>
-				<KeyID>0F</KeyID>
-				<Module>C8D5AC27A5E1FB89978C7C6479AF993AB3800EB243996FBB2AE26B67B23AC482C4B746005A51AFA7D2D83E894F591A2357B30F85B85627FF15DA12290F70F05766552BA11AD34B7109FA49DE29DCB0109670875A17EA95549E92347B948AA1F045756DE56B707E3863E59A6CBE99C1272EF65FB66CBB4CFF070F36029DD76218B21242645B51CA752AF37E70BE1A84FF31079DC0048E928883EC4FADD497A719385C2BBBEBC5A66AA5E5655D18034EC5</Module>
-				<ModuleLength>176</ModuleLength>
-				<RID>A000000025</RID>
-				<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			</CAPK>
-			<CAPK>
-				<CheckSum>C729CF2FD262394ABC4CC173506502446AA9B9FD</CheckSum>
-				<ExpireDate>271231</ExpireDate>
-				<Exponent>03</Exponent>
-				<ExponentLength>1</ExponentLength>
-				<HashArithmeticIndex>1</HashArithmeticIndex>
-				<KeyID>10</KeyID>
-				<Module>CF98DFEDB3D3727965EE7797723355E0751C81D2D3DF4D18EBAB9FB9D49F38C8C4A826B99DC9DEA3F01043D4BF22AC3550E2962A59639B1332156422F788B9C16D40135EFD1BA94147750575E636B6EBC618734C91C1D1BF3EDC2A46A43901668E0FFC136774080E888044F6A1E65DC9AAA8928DACBEB0DB55EA3514686C6A732CEF55EE27CF877F110652694A0E3484C855D882AE191674E25C296205BBB599455176FDD7BBC549F27BA5FE35336F7E29E68D783973199436633C67EE5A680F05160ED12D1665EC83D1997F10FD05BBDBF9433E8F797AEE3E9F02A34228ACE927ABE62B8B9281AD08D3DF5C7379685045D7BA5FCDE58637</Module>
-				<ModuleLength>248</ModuleLength>
-				<RID>A000000025</RID>
-				<RSAArithmeticIndex>1</RSAArithmeticIndex>
-			</CAPK>
+      <CAPK>
+         <RID>A000000277</RID>
+         <KeyID>03</KeyID>
+         <HashArithmeticIndex>1</HashArithmeticIndex>
+         <RSAArithmeticIndex>1</RSAArithmeticIndex>
+         <ModuleLength>176</ModuleLength>
+         <Module>E51505CCECDD0799BAFE097200DF40FFC2154836B8D67F1E99D4D415F73C04A9FAD73825D32AE5BA77FCD02597393CE4D8104B6010D5A8F28F2B47BB8298DAFD63C9C0BEF62AF937265614E31AE2AB45B60B968DB9DEE55602C169F6C16D4579BAA24765560300A3056F894BA8FFA566D9CCD79453D804B97DA14F21F9C3528ED8B8A368A9FACF05C46C13A9BA020618425EF1ACF6CB4DD5DCD050273502114B59EE90EBD833F70C2F324741E79A19A1</Module>
+         <ExponentLength>3</ExponentLength>
+         <Exponent>010001</Exponent>
+         <ExpireDate>211124</ExpireDate>
+         <CheckSum>0FB60A1BCA38095F3CC578D2DEC95F779840A343</CheckSum>
+      </CAPK>
+      <CAPK>
+         <RID>A000000277</RID>
+         <KeyID>07</KeyID>
+         <HashArithmeticIndex>1</HashArithmeticIndex>
+         <RSAArithmeticIndex>1</RSAArithmeticIndex>
+         <ModuleLength>248</ModuleLength>
+         <Module>B2CE89726B6B2D1690A0F8CA75CD0B6B1ACDFBE66D53BA00C500BE612FB421423684FF1868554A7722258012E588ED1CD206C67BB2F7598F3CE67F23A888B8ED7421C49A2EBA224DFBD866F62E59338E9F626D0DFD4C9ACC626E42EC0375EE424C93E5DB5773FC98E4AC9FCDEBD0521B15295C797DCABB4679C055AC374A81B245ABF1092A3D46E1CCE10A84F9FC2FC6ED91025121589C9AA68B56B7FBF0D86B4C8E3C9C08406DBB4609BBFC5308F325A8273CB6D36F3E0AF772507BF8A2A9F5A749B5AF98CCEAB2826C2D9C2AB9103B1BAB0DE92099C8072477EC564062AC38184C60DAD298EF352D92DFA041DDE3DB260CE5302B47A7E9</Module>
+         <ExponentLength>3</ExponentLength>
+         <Exponent>010001</Exponent>
+         <ExpireDate>211124</ExpireDate>
+         <CheckSum>44F2C13373A5068B63C9334E914DDE6AB70CE0F1</CheckSum>
+         <TestMode>Y</TestMode>
+      </CAPK>
+      <CAPK>
+         <RID>A000000277</RID>
+         <KeyID>09</KeyID>
+         <HashArithmeticIndex>1</HashArithmeticIndex>
+         <RSAArithmeticIndex>1</RSAArithmeticIndex>
+         <ModuleLength>128</ModuleLength>
+         <Module>F802C308544873AD2225A81943732A4B7CFFA4E3157D17CD5A7723F858F0B11E636D2930FA933778F27C7C49127E0CCA317021CFE8E0F773785EB3FF07587E98CE8ED4FE9E1CA1859F41A9CF2572D8A093C5465F5A29612A45B1700F4DA13814C3D4DF075EAADE8DB4BE4D7B3AE0256F7A0C12E34BD416CAC4F9250C38B7E13B</Module>
+         <ExponentLength>3</ExponentLength>
+         <Exponent>010001</Exponent>
+         <ExpireDate>211124</ExpireDate>
+         <CheckSum>A2974D6B8F302A923740E2BC6217075202037B8B</CheckSum>
+         <TestMode>Y</TestMode>
+     </CAPK>
+     <CAPK>
+         <RID>A000000277</RID>
+         <KeyID>06</KeyID>
+         <HashArithmeticIndex>1</HashArithmeticIndex>
+         <RSAArithmeticIndex>1</RSAArithmeticIndex>
+         <ModuleLength>176</ModuleLength>
+         <Module>DB43A71FF30392069A9600143DCB628A4DABDFE69E31CB6151D9A2EB18A53ABA1EF75518CD3EDA29B96D55B002870A649AAFC65CE472BD01352C2D2E77D4EE352B3A64BC2CC170E29D426D7B3317BD3C4FC32EA2151CA0F1071A2ACFECD70468D3EBC7A44440DD63EC9499F302348BB6235F964BF3CAA30B29939B9901C42B5540BF4F837DD898F5392076F9B95F0EBCB6846374FFE71895A422775D95CABA9C25510627D4F7B57A3DBD755608EDD843</Module>
+         <ExponentLength>3</ExponentLength>
+         <Exponent>010001</Exponent>
+         <ExpireDate>261231</ExpireDate>
+         <CheckSum>D18AB9F1518FBC0F6EB0EEFB00C5D07CAE8A2197</CheckSum>
+     </CAPK>
+     <CAPK>
+         <RID>A000000277</RID>
+         <KeyID>08</KeyID>
+         <HashArithmeticIndex>1</HashArithmeticIndex>
+         <RSAArithmeticIndex>1</RSAArithmeticIndex>
+         <ModuleLength>248</ModuleLength>
+         <Module>AB1B0667B2A68883477B2ED48F3068CB0F57ABBEC93E0AF40180BACD895120E36E2710784599CDE9035550D96BD6C5CEA55C4E8C88A5D0A81CE1309559BCE91930C7AA3E3D0A2D79A6036BE03C4000658A78ECA742034BE5FB0E08D530C7FF9458211E78E33E3803F8DFF24A4117EE0EDFE7A98CB3AE2ECCB2A3C3A75C32512EDD1183CF218BE1642FA78430A18A495E6FEFA7B98860C6FCEBFD27537D34F4E55B9CBDEB19DF029BDF00993E1A2E0B9E89E1B49777FCB7C1610CDA94A488C9177908B75C48DFE3F8BBD52886233B44B1A58373D5AFD0F309ABB939C39DF95D923F76B7300E83D182C2922EBB9FD018867A0E6D179EFF8C87</Module>
+         <ExponentLength>3</ExponentLength>
+         <Exponent>010001</Exponent>
+         <ExpireDate>261231</ExpireDate>
+         <CheckSum>46EAD2ED0B8645D4DCB2AE4B1D285A0632B452D4</CheckSum>
+     </CAPK>
    </CAPKLIST>
    <ICSCONFIGURATION>
       <ICS>
@@ -1035,7 +1071,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1050,7 +1086,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1065,7 +1101,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1080,7 +1116,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1095,7 +1131,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1110,7 +1146,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1125,7 +1161,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1140,7 +1176,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1155,7 +1191,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1170,7 +1206,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1185,7 +1221,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1200,7 +1236,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1215,7 +1251,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1230,7 +1266,7 @@
          <BypassPINEntry>1</BypassPINEntry>
          <CardDataInputCapability>60</CardDataInputCapability>
          <ConfigurationCheckSum></ConfigurationCheckSum>
-         <CVMCapability>08</CVMCapability>
+         <CVMCapability>28</CVMCapability>
          <ExceptionFileSupported>1</ExceptionFileSupported>
          <ForcedOnlineCapability>0</ForcedOnlineCapability>
          <GetDataForPINTryCounter>1</GetDataForPINTryCounter>
@@ -1245,16 +1281,6 @@
       <REVOKEDCERTIFICATE>
          <CertificateSN>000711</CertificateSN>
          <KeyID>7</KeyID>
-         <RID>A000000003</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>8</KeyID>
-         <RID>A000000003</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>9</KeyID>
          <RID>A000000003</RID>
       </REVOKEDCERTIFICATE>
       <REVOKEDCERTIFICATE>
@@ -1299,16 +1325,6 @@
       </REVOKEDCERTIFICATE>
       <REVOKEDCERTIFICATE>
          <CertificateSN>000711</CertificateSN>
-         <KeyID>5</KeyID>
-         <RID>A000000004</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>6</KeyID>
-         <RID>A000000004</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
          <KeyID>-17</KeyID>
          <RID>A000000004</RID>
       </REVOKEDCERTIFICATE>
@@ -1345,16 +1361,6 @@
       <REVOKEDCERTIFICATE>
          <CertificateSN>000711</CertificateSN>
          <KeyID>14</KeyID>
-         <RID>A000000025</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>15</KeyID>
-         <RID>A000000025</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>16</KeyID>
          <RID>A000000025</RID>
       </REVOKEDCERTIFICATE>
       <REVOKEDCERTIFICATE>
@@ -1404,11 +1410,6 @@
       </REVOKEDCERTIFICATE>
       <REVOKEDCERTIFICATE>
          <CertificateSN>000711</CertificateSN>
-         <KeyID>5</KeyID>
-         <RID>A000000152</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
          <KeyID>90</KeyID>
          <RID>A000000152</RID>
       </REVOKEDCERTIFICATE>
@@ -1420,11 +1421,6 @@
       <REVOKEDCERTIFICATE>
          <CertificateSN>000711</CertificateSN>
          <KeyID>92</KeyID>
-         <RID>A000000152</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>93</KeyID>
          <RID>A000000152</RID>
       </REVOKEDCERTIFICATE>
       <REVOKEDCERTIFICATE>
@@ -1461,36 +1457,6 @@
          <CertificateSN>000711</CertificateSN>
          <KeyID>4</KeyID>
          <RID>A000000333</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>8</KeyID>
-         <RID>A000000333</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>9</KeyID>
-         <RID>A000000333</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>10</KeyID>
-         <RID>A000000333</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>11</KeyID>
-         <RID>A000000333</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>12</KeyID>
-         <RID>A000000333</RID>
-      </REVOKEDCERTIFICATE>
-      <REVOKEDCERTIFICATE>
-         <CertificateSN>000711</CertificateSN>
-         <KeyID>64</KeyID>
-         <RID>A000000277</RID>
       </REVOKEDCERTIFICATE>
    </REVOCATIONLIST>
    <TERMINALCONFIGURATION>
