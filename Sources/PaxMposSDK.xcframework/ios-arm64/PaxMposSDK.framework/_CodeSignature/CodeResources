@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		Gw2/hy28xKx28KkNVbLszcICvDQ=
+		Eh/UkjTKUNpkgOErn2hn6tcnbdY=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		mu+OaWT9k/UstfRGAF9Y8YDZ1qQ=
+		PaTGuhl4LyyjzQo6l6O2i+UaGuo=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		ojRb2clt55JEg7nrCZKIT+oF75o=
+		T9T3MXorSwS0bKiF/chM0rfKoz0=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		mu+OaWT9k/UstfRGAF9Y8YDZ1qQ=
+		PaTGuhl4LyyjzQo6l6O2i+UaGuo=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		iYEVahbcxuTD4ASdjNFk6b5Hbgs=
+		SL4K4iddcj7dF4yTIpj9ZR66ecE=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,35 +77,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			i10g+VWtsV6Mo/w3d71/HWtCLMfwgwUvplkrETNDECg=
+			tfxMEflexaNaRJZdHBYkHcNbSTCka29y4jv6lMIkNes=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DFLTCLlE7/zbweQBj3ukUadkTkfTBubVAGsTL7DqZBo=
+			g0x9D9c3h3traOahfwtlEOXQ6sGN2JBMAKyUUqvHMt0=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			H+2nm353+mQLmc4FCzU083kmrbj+eRfCPa7VgWwxTOw=
+			/+QGILPwPQWHV4IMYX6sTbJlVDnplhdpvqWX1eNRsEo=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			DFLTCLlE7/zbweQBj3ukUadkTkfTBubVAGsTL7DqZBo=
+			g0x9D9c3h3traOahfwtlEOXQ6sGN2JBMAKyUUqvHMt0=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			+/aZdBx8CM/KwUkhfnxpoxD+XnYWp2hXSYUz6IJniFo=
+			j69vSHWcJSakMqUh8zdHfJPdS2LUI9vygudmci8XRY0=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
