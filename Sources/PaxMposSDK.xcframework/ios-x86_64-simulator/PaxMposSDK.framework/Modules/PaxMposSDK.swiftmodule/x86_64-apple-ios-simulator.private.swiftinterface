@@ -9,12 +9,16 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public enum ProcessCardStatus : Swift.Equatable {
-  public static func == (lhs: PaxMposSDK.ProcessCardStatus, rhs: PaxMposSDK.ProcessCardStatus) -> Swift.Bool
-  case readingCard
-  case processingCard
-  case success(PaxMposSDK.FinixClient.CardReaderTransferResponse)
-  case failed(PaxMposSDK.FinixError)
+public protocol FinixLoggerProtocol {
+  func error(_ items: Any...)
+  func warn(_ items: Any...)
+  func info(_ items: Any...)
+  func debug(_ items: Any...)
+  func http(_ items: Any...)
+  func http(request: Foundation.URLRequest)
+  func http(error: any Swift.Error)
+  func http(response: Foundation.HTTPURLResponse)
+  func http(responseData data: Foundation.Data?)
 }
 public struct FinixConfig {
   public init(environment: PaxMposSDK.Finix.Environment, credentials: PaxMposSDK.Finix.APICredentials, merchantId: Swift.String, mid: Swift.String, deviceType: PaxMposSDK.Finix.Device, deviceId: Swift.String, serialNumber: Swift.String? = nil)
@@ -45,17 +49,6 @@ public enum Finix {
   public struct APICredentials {
     public init(username: Swift.String, password: Swift.String)
   }
-}
-public protocol FinixLoggerProtocol {
-  func error(_ items: Any...)
-  func warn(_ items: Any...)
-  func info(_ items: Any...)
-  func debug(_ items: Any...)
-  func http(_ items: Any...)
-  func http(request: Foundation.URLRequest)
-  func http(error: any Swift.Error)
-  func http(response: Foundation.HTTPURLResponse)
-  func http(responseData data: Foundation.Data?)
 }
 public protocol URLSessionDataTaskProtocol {
   func resume()
@@ -193,6 +186,9 @@ public class FinixClient {
   public func clearDeviceRKIStatus(serialNumber: Swift.String)
   public func getAllDevicesRKIStatus() -> Swift.Set<Swift.String>
   public func clearAllDevicesRKIStatus()
+  public func needsRKIInjection(serialNumber: Swift.String) -> Swift.Bool
+  public func getRKIStatusSummary(serialNumber: Swift.String) -> Swift.String
+  public func hasDeviceBeenInjected(serialNumber: Swift.String) -> Swift.Bool
   @objc deinit
 }
 extension PaxMposSDK.FinixClient {
@@ -203,6 +199,7 @@ extension PaxMposSDK.FinixClient {
   @discardableResult
   public func forceRKIReinjectionForConnectedDevice() async -> Swift.Bool
 }
+public typealias DownloadStatusCallback = (_ filename: Swift.String, _ progress: Swift.Int, _ total: Swift.Int) -> Swift.Void
 public struct SplitTransfer : Swift.Codable {
   public let merchantID: Swift.String
   public let amount: Swift.Int
@@ -212,7 +209,6 @@ public struct SplitTransfer : Swift.Codable {
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
-public typealias DownloadStatusCallback = (_ filename: Swift.String, _ progress: Swift.Int, _ total: Swift.Int) -> Swift.Void
 public enum Transfer {
   public enum State : Swift.Decodable, Swift.Equatable, Swift.Hashable {
     case pending
@@ -272,6 +268,11 @@ public enum DeviceConnectionState {
   case disconnected
   case error(_: any Swift.Error)
 }
+public protocol RKICallback : AnyObject {
+  func onRKISuccess(message: Swift.String)
+  func onRKIError(error: Swift.String)
+  func onRKIProgress(message: Swift.String)
+}
 public struct EncryptedCardDetails : Swift.Encodable {
   public enum EncryptionMethod : Swift.String, Swift.Encodable {
     case ecb
@@ -314,11 +315,6 @@ public struct EncryptedCardDetails : Swift.Encodable {
   public let cardholderName: Swift.String
   public init(deviceModel: Swift.String = "PAX_D135", encryptedTrack1: Swift.String?, encryptedTrack2: Swift.String?, encryptionMethod: PaxMposSDK.EncryptedCardDetails.EncryptionMethod = .ecb, encryptionMode: PaxMposSDK.EncryptedCardDetails.EncryptionMode = .dukpt, emv: Swift.String?, ksn: Swift.String, cardholderVerification: PaxMposSDK.EncryptedCardDetails.CardHolderVerification = .noCVM, cardholderName: Swift.String = "")
   public func encode(to encoder: any Swift.Encoder) throws
-}
-public protocol RKICallback : AnyObject {
-  func onRKISuccess(message: Swift.String)
-  func onRKIError(error: Swift.String)
-  func onRKIProgress(message: Swift.String)
 }
 public protocol FinixDelegate : AnyObject {
   func didDiscoverDevice(_ deviceInfo: PaxMposSDK.DeviceInfo)
@@ -450,6 +446,13 @@ public protocol TransferResponse : PaxMposSDK.ResponseState {
   var id: PaxMposSDK.TransferId { get }
   var traceId: PaxMposSDK.TraceId { get }
   var source: PaxMposSDK.SourceId? { get }
+}
+public enum ProcessCardStatus : Swift.Equatable {
+  public static func == (lhs: PaxMposSDK.ProcessCardStatus, rhs: PaxMposSDK.ProcessCardStatus) -> Swift.Bool
+  case readingCard
+  case processingCard
+  case success(PaxMposSDK.FinixClient.CardReaderTransferResponse)
+  case failed(PaxMposSDK.FinixError)
 }
 extension PaxMposSDK.Finix.Device : Swift.Equatable {}
 extension PaxMposSDK.Finix.Device : Swift.Hashable {}
