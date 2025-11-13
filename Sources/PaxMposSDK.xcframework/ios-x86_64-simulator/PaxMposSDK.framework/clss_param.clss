@@ -75,7 +75,7 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <ContactlessTransactionLimitSupported>1</ContactlessTransactionLimitSupported>
             <CVMLimitSupported>1</CVMLimitSupported>
-            <ReaderTTQ>30004000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TACDefault></TACDefault>
             <TACDenial></TACDenial>
@@ -83,7 +83,7 @@
             <TerminalFloorLimit>1</TerminalFloorLimit>
             <TerminalFloorLimitSupported>1</TerminalFloorLimitSupported>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
          <AID>
@@ -99,7 +99,7 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <ContactlessTransactionLimitSupported>1</ContactlessTransactionLimitSupported>
             <CVMLimitSupported>1</CVMLimitSupported>
-            <ReaderTTQ>30004000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TACDefault></TACDefault>
             <TACDenial></TACDenial>
@@ -107,7 +107,7 @@
             <TerminalFloorLimit>1</TerminalFloorLimit>
             <TerminalFloorLimitSupported>1</TerminalFloorLimitSupported>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
          <AID>
@@ -123,7 +123,7 @@
             <ContactlessTransactionLimit>10000</ContactlessTransactionLimit>
             <ContactlessTransactionLimitSupported>1</ContactlessTransactionLimitSupported>
             <CVMLimitSupported>1</CVMLimitSupported>
-            <ReaderTTQ>30004000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TACDefault></TACDefault>
             <TACDenial></TACDenial>
@@ -131,7 +131,7 @@
             <TerminalFloorLimit>1</TerminalFloorLimit>
             <TerminalFloorLimitSupported>1</TerminalFloorLimitSupported>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
       </AIDLIST>
@@ -156,7 +156,7 @@
             <TACOnline>DE00FC9800</TACOnline>
             <TDOL></TDOL>
             <TerminalAdditionalCapability>6000F0A001</TerminalAdditionalCapability>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <TerminalSupportOptimizationModeTransaction>01</TerminalSupportOptimizationModeTransaction>
             <TerminalTransactionCapability>DC800002</TerminalTransactionCapability>
             <TerminalType>22</TerminalType>
@@ -261,7 +261,7 @@
             <TerminalCapabilityIndicator>03</TerminalCapabilityIndicator>
             <TerminalInterchangeProfile>F30000</TerminalInterchangeProfile>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <Threshold>0</Threshold>
          </AID>
       </AIDLIST>
@@ -280,72 +280,98 @@
       <TerminalID></TerminalID>
    </OTHERCONFIGURATION>
    <PAYPASSPARAM>
-   		<AIDLIST>
-   				<AID>
-   					<PartialAIDSelection>0</PartialAIDSelection>
-   					<ApplicationID>A0000000041010</ApplicationID>
-   					<IfUseLocalAIDName>0</IfUseLocalAIDName>
-   					<LocalAIDName>MCHIP</LocalAIDName>
-   					<TerminalAIDVersion>0002</TerminalAIDVersion>
-   					<MagneticApplicationVersionNumber>0002</MagneticApplicationVersionNumber>
-   					<TACDenial>0010000000</TACDenial>
-   					<TACOnline>FEF8F8F800</TACOnline>
-   					<TACDefault>584000A800</TACDefault>
-   					<TerminalRisk>2C00800000000000</TerminalRisk>
-   					<ContactlessCVMLimit>3000</ContactlessCVMLimit>
-   					<ContactlessTransactionLimit_NoOnDevice>999999999</ContactlessTransactionLimit_NoOnDevice>
-   					<ContactlessTransactionLimit_OnDevice>999999999</ContactlessTransactionLimit_OnDevice>
-   					<ContactlessFloorLimit>5000</ContactlessFloorLimit>
-   				</AID>
-   				<AID>
-   					<PartialAIDSelection>0</PartialAIDSelection>
-   					<ApplicationID>A0000000043060</ApplicationID>
-   					<IfUseLocalAIDName>0</IfUseLocalAIDName>
-   					<LocalAIDName>MAESTRO</LocalAIDName>
-   					<TerminalAIDVersion>0002</TerminalAIDVersion>
-   					<MagneticApplicationVersionNumber>0002</MagneticApplicationVersionNumber>
-   					<TACDenial>0000800000</TACDenial>
-   					<TACOnline>F850ACF800</TACOnline>
-   					<TACDefault>FC50ACA000</TACDefault>
-   					<TerminalRisk>66F8800000000000</TerminalRisk>
-   					<ContactlessCVMLimit>3000</ContactlessCVMLimit>
-   					<ContactlessTransactionLimit_NoOnDevice>999999999</ContactlessTransactionLimit_NoOnDevice>
-   					<ContactlessTransactionLimit_OnDevice>999999999</ContactlessTransactionLimit_OnDevice>
-   					<ContactlessFloorLimit>5000</ContactlessFloorLimit>
-   				</AID>
-   				<AID>
-   					<PartialAIDSelection>0</PartialAIDSelection>
-   					<ApplicationID>A0000000046000</ApplicationID>
-   					<MagneticApplicationVersionNumber>0002</MagneticApplicationVersionNumber>
-   					<IfUseLocalAIDName>0</IfUseLocalAIDName>
-   					<LocalAIDName>CIRRUS</LocalAIDName>
-   					<TerminalAIDVersion>0002</TerminalAIDVersion>
-   					<TACDenial>0400000000</TACDenial>
-   					<TACOnline>F850ACF800</TACOnline>
-   					<TACDefault>FC50ACA000</TACDefault>
-   					<TerminalRisk>66F8000000000000</TerminalRisk>
-   					<ContactlessCVMLimit>3000</ContactlessCVMLimit>
-   					<ContactlessTransactionLimit_NoOnDevice>999999999</ContactlessTransactionLimit_NoOnDevice>
-   					<ContactlessTransactionLimit_OnDevice>999999999</ContactlessTransactionLimit_OnDevice>
-   					<ContactlessFloorLimit>5000</ContactlessFloorLimit>
-   				</AID>
-   		</AIDLIST>
-   		<PAYPASSCONFIGURATION>
-   			<KernelConfiguration>80</KernelConfiguration>
-   			<TornLeftTime>06</TornLeftTime>
-   			<MaximumTornNumber>2</MaximumTornNumber>
-   			<MagneticCVM>48</MagneticCVM>
-   			<MageticNoCVM>40</MageticNoCVM>
-   			<MobileSupport>01</MobileSupport>
-   			<CardDataInput>E0</CardDataInput>
-   			<CVMCapability_CVMRequired>28</CVMCapability_CVMRequired>
-   			<CVMCapability_NoCVMRequired>28</CVMCapability_NoCVMRequired>
-   			<TerminalType>22</TerminalType>
-   			<AccoutType>00</AccoutType>
-   			<AdditionalTerminalCapability>E000F0A001</AdditionalTerminalCapability>
-   			<KernelID>02</KernelID>
-   			<SecurityCapability>08</SecurityCapability>
-   		</PAYPASSCONFIGURATION>
+      <AIDLIST>
+         <AID>
+            <ApplicationID>A0000000041010</ApplicationID>
+            <IfUseLocalAIDName>0</IfUseLocalAIDName>
+            <LocalAIDName>MasterCard Credit</LocalAIDName>
+            <PartialAIDSelection>0</PartialAIDSelection>
+            <TerminalAIDVersion>0002</TerminalAIDVersion>
+            <AccoutType>00</AccoutType>
+            <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
+            <CardDataInput>E0</CardDataInput>
+            <ContactlessCVMLimit>10000</ContactlessCVMLimit>
+            <ContactlessFloorLimit>1</ContactlessFloorLimit>
+            <ContactlessTransactionLimit_NoOnDevice>100000</ContactlessTransactionLimit_NoOnDevice>
+            <ContactlessTransactionLimit_OnDevice>100000</ContactlessTransactionLimit_OnDevice>
+            <CVMCapability_CVMRequired>60</CVMCapability_CVMRequired>
+            <CVMCapability_NoCVMRequired>08</CVMCapability_NoCVMRequired>
+            <KernelConfiguration>20</KernelConfiguration>
+            <KernelID>02</KernelID>
+            <MagneticApplicationVersionNumber>0002</MagneticApplicationVersionNumber>
+            <MagneticCVM>60</MagneticCVM>
+            <MageticNoCVM>08</MageticNoCVM>
+            <MaximumTornNumber>2</MaximumTornNumber>
+            <MobileSupport>01</MobileSupport>
+            <SecurityCapability>08</SecurityCapability>
+            <TACDefault>F45084800C</TACDefault>
+            <TACDenial>0000000000</TACDenial>
+            <TACOnline>F45084800C</TACOnline>
+            <TerminalRisk>2C28800000000000</TerminalRisk>
+            <TerminalType>22</TerminalType>
+            <TornLeftTime>06</TornLeftTime>
+         </AID>
+         <AID>
+            <ApplicationID>A0000000043060</ApplicationID>
+            <IfUseLocalAIDName>0</IfUseLocalAIDName>
+            <LocalAIDName>Maestro</LocalAIDName>
+            <PartialAIDSelection>0</PartialAIDSelection>
+            <TerminalAIDVersion>0002</TerminalAIDVersion>
+            <AccoutType>00</AccoutType>
+            <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
+            <CardDataInput>E0</CardDataInput>
+            <ContactlessCVMLimit>0</ContactlessCVMLimit>
+            <ContactlessFloorLimit>1</ContactlessFloorLimit>
+            <ContactlessTransactionLimit_NoOnDevice>100000</ContactlessTransactionLimit_NoOnDevice>
+            <ContactlessTransactionLimit_OnDevice>100000</ContactlessTransactionLimit_OnDevice>
+            <CVMCapability_CVMRequired>40</CVMCapability_CVMRequired>
+            <CVMCapability_NoCVMRequired>08</CVMCapability_NoCVMRequired>
+            <KernelConfiguration>A0</KernelConfiguration>
+            <KernelID>02</KernelID>
+            <MagneticApplicationVersionNumber>0002</MagneticApplicationVersionNumber>
+            <MagneticCVM>40</MagneticCVM>
+            <MageticNoCVM>08</MageticNoCVM>
+            <MaximumTornNumber>2</MaximumTornNumber>
+            <MobileSupport>01</MobileSupport>
+            <SecurityCapability>08</SecurityCapability>
+            <TACDefault>F45084800C</TACDefault>
+            <TACDenial>0000800000</TACDenial>
+            <TACOnline>FC50BCF800</TACOnline>
+            <TerminalRisk>447A800000000000</TerminalRisk>
+            <TerminalType>22</TerminalType>
+            <TornLeftTime>06</TornLeftTime>
+         </AID>
+         <AID>
+            <ApplicationID>A0000000042203</ApplicationID>
+            <IfUseLocalAIDName>0</IfUseLocalAIDName>
+            <LocalAIDName>US Maestro</LocalAIDName>
+            <PartialAIDSelection>0</PartialAIDSelection>
+            <TerminalAIDVersion>0002</TerminalAIDVersion>
+            <AccoutType>00</AccoutType>
+            <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
+            <CardDataInput>E0</CardDataInput>
+            <ContactlessCVMLimit>10000</ContactlessCVMLimit>
+            <ContactlessFloorLimit>1</ContactlessFloorLimit>
+            <ContactlessTransactionLimit_NoOnDevice>100000</ContactlessTransactionLimit_NoOnDevice>
+            <ContactlessTransactionLimit_OnDevice>100000</ContactlessTransactionLimit_OnDevice>
+            <CVMCapability_CVMRequired>40</CVMCapability_CVMRequired>
+            <CVMCapability_NoCVMRequired>08</CVMCapability_NoCVMRequired>
+            <KernelConfiguration>90</KernelConfiguration>
+            <KernelID>02</KernelID>
+            <MagneticApplicationVersionNumber>0002</MagneticApplicationVersionNumber>
+            <MagneticCVM>40</MagneticCVM>
+            <MageticNoCVM>08</MageticNoCVM>
+            <MaximumTornNumber>2</MaximumTornNumber>
+            <MobileSupport>01</MobileSupport>
+            <SecurityCapability>08</SecurityCapability>
+            <TACDefault>FC50BCA000</TACDefault>
+            <TACDenial>0000000000</TACDenial>
+            <TACOnline>FC50BCF800</TACOnline>
+            <TerminalRisk>407A800000000000</TerminalRisk>
+            <TerminalType>22</TerminalType>
+            <TornLeftTime>06</TornLeftTime>
+         </AID>
+      </AIDLIST>
    </PAYPASSPARAM>
    <PAYWAVEPARAM>
       <AIDLIST>
@@ -403,10 +429,10 @@
                </Inter_WareFloorlimitByTransactionType>
             </INTERWARELIST>
             <CryptogramVersion17Supported>1</CryptogramVersion17Supported>
-            <ReaderTTQ>30804000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TermType>22</TermType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
          <AID>
@@ -463,10 +489,10 @@
                </Inter_WareFloorlimitByTransactionType>
             </INTERWARELIST>
             <CryptogramVersion17Supported>1</CryptogramVersion17Supported>
-            <ReaderTTQ>30804000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TermType>22</TermType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
          <AID>
@@ -478,7 +504,7 @@
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
             <INTERWARELIST class="java.util.ArrayList">
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>0</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -489,7 +515,7 @@
                   <TransactionType>00</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>0</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -500,7 +526,7 @@
                   <TransactionType>01</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>0</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -511,7 +537,7 @@
                   <TransactionType>09</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>0</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -523,10 +549,10 @@
                </Inter_WareFloorlimitByTransactionType>
             </INTERWARELIST>
             <CryptogramVersion17Supported>1</CryptogramVersion17Supported>
-            <ReaderTTQ>30804000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TermType>22</TermType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
          <AID>
@@ -538,7 +564,7 @@
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
             <INTERWARELIST class="java.util.ArrayList">
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>0</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -549,7 +575,7 @@
                   <TransactionType>00</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>0</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -560,7 +586,7 @@
                   <TransactionType>01</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>0</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -571,7 +597,7 @@
                   <TransactionType>09</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>0</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -583,10 +609,10 @@
                </Inter_WareFloorlimitByTransactionType>
             </INTERWARELIST>
             <CryptogramVersion17Supported>1</CryptogramVersion17Supported>
-            <ReaderTTQ>30804000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <StatusCheckSupported>0</StatusCheckSupported>
             <TermType>22</TermType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <ZeroAmountNoAllowed>0</ZeroAmountNoAllowed>
          </AID>
       </AIDLIST>
@@ -606,11 +632,11 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <IsSupportQPS>0</IsSupportQPS>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <TornLogMaxNum>3</TornLogMaxNum>
             <TornMaxLifeTime>300</TornMaxLifeTime>
             <TornSupport>1</TornSupport>
-            <ReaderTTQ>20000000</ReaderTTQ>
+            <ReaderTTQ>22000000</ReaderTTQ>
          </AID>
          <AID>
             <ApplicationID>A000000333010102</ApplicationID>
@@ -625,11 +651,11 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <IsSupportQPS>0</IsSupportQPS>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <TornLogMaxNum>3</TornLogMaxNum>
             <TornMaxLifeTime>300</TornMaxLifeTime>
             <TornSupport>1</TornSupport>
-            <ReaderTTQ>20004000</ReaderTTQ>
+            <ReaderTTQ>22000000</ReaderTTQ>
          </AID>
          <AID>
             <ApplicationID>A000000333010103</ApplicationID>
@@ -644,11 +670,11 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <IsSupportQPS>0</IsSupportQPS>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <TornLogMaxNum>3</TornLogMaxNum>
             <TornMaxLifeTime>300</TornMaxLifeTime>
             <TornSupport>1</TornSupport>
-            <ReaderTTQ>20000000</ReaderTTQ>
+            <ReaderTTQ>22000000</ReaderTTQ>
          </AID>
          <AID>
             <ApplicationID>A000000333010108</ApplicationID>
@@ -663,11 +689,11 @@
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <IsSupportQPS>0</IsSupportQPS>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <TornLogMaxNum>3</TornLogMaxNum>
             <TornMaxLifeTime>300</TornMaxLifeTime>
             <TornSupport>1</TornSupport>
-            <ReaderTTQ>20000000</ReaderTTQ>
+            <ReaderTTQ>22000000</ReaderTTQ>
          </AID>
       </AIDLIST>
    </QPBOCPARAM>
@@ -686,13 +712,13 @@
             <TACDefault>FC68FCF800</TACDefault>
             <TACDenial>0010000000</TACDenial>
             <TACOnline>FC68FCF800</TACOnline>
-            <ReaderTTQ>30804000</ReaderTTQ>
+            <ReaderTTQ>32004000</ReaderTTQ>
             <TerminalTransactionInformation>D08700</TerminalTransactionInformation>
             <TerminalOptStatus>E000</TerminalOptStatus>
             <ApplicationAccSelect></ApplicationAccSelect>
             <MerchantType>3</MerchantType>
             <TerminalType>22</TerminalType>
-            <TerminalCapability>600800</TerminalCapability>
+            <TerminalCapability>6028C8</TerminalCapability>
             <AdditionalTerminalCapability>7100F0B001</AdditionalTerminalCapability>
             <TerminalRiskManagementData></TerminalRiskManagementData>
          </AID>

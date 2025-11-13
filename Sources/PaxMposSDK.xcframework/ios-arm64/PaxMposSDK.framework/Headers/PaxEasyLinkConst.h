@@ -11,7 +11,6 @@
 /*!
   @abstract BluetoothInfo
  */
-
 @interface BluetoothInfo : NSObject
 
 /*!
@@ -108,8 +107,14 @@ typedef enum{
 typedef enum
 {
     TRANSACTION_DATA = 1,     //standard emv tlv tag data
-    CONFIGURATION_DATA,       //config data
+    CONFIGURATION_DATA = 2,       //config data
 } DataType;
+
+typedef enum {
+    TYPE_EA  = 1 << 0,
+    TYPE_BLE = 1 << 1
+} BluetoothType;
+
 
 #pragma mark 回调函数========================================
 /*!
@@ -118,7 +123,14 @@ typedef enum
  */
 typedef void (^onSearchOneDeviceCB)(BluetoothInfo *deviceInfo);
 
-typedef void (^didFinishedBlock)();
+typedef void (^didFinishBlock)(BluetoothType type);
+
+/*!
+ @abstract disconnected callback prototype (currently used for Bluetooth)
+ @param addr    address
+ @param name    name
+ */
+typedef void (^didDisconnectedBlock)(NSString *addr, NSString *name);
 
 /*!
  @abstract	processing block
@@ -139,30 +151,7 @@ typedef void (^onStatusMessageCB)(NSString *message);
  @return   YES:will stop downloading process NO:download
  */
 typedef BOOL (^onStopCB)(void);
-#pragma mark --设置日志等级========================================
-/*!
- @abstract pax log level
- @constant PAX_LOG_LEVEL_NONE   no log
- @constant PAX_LOG_LEVEL_ERR    error log
- @constant PAX_LOG_LEVEL_WRN    warning log
- @constant PAX_LOG_LEVEL_DBG    debug log
- @constant PAX_LOG_LEVEL_INFO   all log
- */
-typedef enum {
-    
-    PAX_LOG_LEVEL_NONE    = 0,
-    PAX_LOG_LEVEL_ERR     = 1,
-    PAX_LOG_LEVEL_WRN     = 2,
-    PAX_LOG_LEVEL_DBG     = 3,
-    PAX_LOG_LEVEL_INFO    = 4
-    
-} PaxLogLevel;
-/*!
- @abstractset log level
- @param level log level
- @return	void
- */
-void PaxSetLogLevel(PaxLogLevel level);
+
 
 typedef NS_ENUM(Byte, EM1KeyType) {
     TYPE_A = 0X41,

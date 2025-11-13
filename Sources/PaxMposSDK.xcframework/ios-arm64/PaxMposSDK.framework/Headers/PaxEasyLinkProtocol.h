@@ -28,12 +28,7 @@
   @protocol PaxBluetoothDelegate
  */
 
-/*!
- @abstract disconnected callback prototype (currently used for Bluetooth)
- @param addr    address
- @param name    name
- */
-typedef void (^didDisconnectedBlock)(NSString *addr, NSString *name);
+
 
 @protocol PaxBluetoothDelegate <NSObject>
 
@@ -43,6 +38,19 @@ typedef void (^didDisconnectedBlock)(NSString *addr, NSString *name);
  @return NSString
  */
 -(NSString *)getVersionName;
+
+
+/*!
+ @abstract  set debug mode
+ @param isDebug true: enable debug log false:disable debug log
+ */
+-(void)setDebugMode:(BOOL)isDebug;
+
+/*!
+ @abstract  set debug mode
+ @return  true: enable debug log false:disable debug log
+ */
+-(BOOL)getDebugMode;
 
 /*!
  @abstract  Search devices
@@ -63,7 +71,7 @@ typedef void (^didDisconnectedBlock)(NSString *addr, NSString *name);
 
 
 - (void)startSearchDev:(NSInteger)timeout
-  searchOneDeviceBlock:(onSearchOneDeviceCB)searchOneDeviceCB didFinished:(didFinishedBlock)didFinished;
+  searchOneDeviceBlock:(onSearchOneDeviceCB)searchOneDeviceCB didFinished:(didFinishBlock)didFinished;
 
 /*!
  @abstract  Build connection with BT
