@@ -16,7 +16,7 @@ https://github.com/finix-payments/finix-pax-mpos-ios-sdk
 ```
 
 ## Pre-requisites
-- iOS 17.6 or later
+- iOS 15.6 or later
 - Real iOS device (ARM64 simulator support coming soon)
 - Add Bluetooth permission in Info.plist using key `Privacy - Bluetooth Always Usage Description`
 
