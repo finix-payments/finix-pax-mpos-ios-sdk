@@ -27,6 +27,14 @@ public protocol FinixLoggerProtocol {
   func http(response: Foundation.HTTPURLResponse, attributes: [Swift.String : any Swift.Encodable]?)
   func http(responseData data: Foundation.Data?, attributes: [Swift.String : any Swift.Encodable]?)
 }
+public protocol FinixDelegate : AnyObject {
+  func didDiscoverDevice(_ deviceInfo: PaxMposSDK.DeviceInfo)
+  func deviceConnectionStatusChanged(_ state: PaxMposSDK.DeviceConnectionState)
+  func startTransactionStatusChanged(_ status: PaxMposSDK.ProcessCardStatus)
+}
+extension PaxMposSDK.FinixDelegate {
+  public func onEnvironmentChangeRKICompleted(success: Swift.Bool, message: Swift.String)
+}
 public struct FinixConfig {
   public init(environment: PaxMposSDK.Finix.Environment, credentials: PaxMposSDK.Finix.APICredentials, merchantId: Swift.String, mid: Swift.String, deviceType: PaxMposSDK.Finix.Device, deviceId: Swift.String, serialNumber: Swift.String? = nil)
 }
@@ -101,18 +109,16 @@ public enum CurrencyCode {
     get
   }
 }
-public protocol FinixDelegate : AnyObject {
-  func didDiscoverDevice(_ deviceInfo: PaxMposSDK.DeviceInfo)
-  func deviceConnectionStatusChanged(_ state: PaxMposSDK.DeviceConnectionState)
-  func startTransactionStatusChanged(_ status: PaxMposSDK.ProcessCardStatus)
+public protocol URLSessionDataTaskProtocol {
+  func resume()
 }
-extension PaxMposSDK.FinixDelegate {
-  public func onEnvironmentChangeRKICompleted(success: Swift.Bool, message: Swift.String)
+extension Foundation.URLSessionDataTask : PaxMposSDK.URLSessionDataTaskProtocol {
 }
-public typealias DeviceId = Swift.String
-public struct DeviceInfo {
-  public let deviceId: PaxMposSDK.DeviceId
-  public let name: Swift.String?
+public protocol URLSessionProtocol {
+  func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> any PaxMposSDK.URLSessionDataTaskProtocol
+}
+extension Foundation.URLSession : PaxMposSDK.URLSessionProtocol {
+  public func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> any PaxMposSDK.URLSessionDataTaskProtocol
 }
 public enum TransactionStatus : Swift.Int {
   case unknown
@@ -137,17 +143,6 @@ extension PaxMposSDK.FinixClient {
     public init(from decoder: any Swift.Decoder) throws
   }
   public func startRefund(transactionID: Swift.String, amount: PaxMposSDK.Currency, completion: ((PaxMposSDK.FinixClient.RefundResponse?, (any Swift.Error)?) -> Swift.Void)?)
-}
-public protocol URLSessionDataTaskProtocol {
-  func resume()
-}
-extension Foundation.URLSessionDataTask : PaxMposSDK.URLSessionDataTaskProtocol {
-}
-public protocol URLSessionProtocol {
-  func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> any PaxMposSDK.URLSessionDataTaskProtocol
-}
-extension Foundation.URLSession : PaxMposSDK.URLSessionProtocol {
-  public func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> any PaxMposSDK.URLSessionDataTaskProtocol
 }
 public protocol FinixClientDeviceInteractionDelegate : AnyObject {
   func onDisplayText(_ text: Swift.String)
@@ -177,6 +172,38 @@ public enum Transfer {
       get
     }
   }
+}
+public protocol RKIStatusDelegate : AnyObject {
+  func onDisplayStatus(displayMessage: Swift.String)
+  func isNetworkEnabled() -> Swift.Bool
+}
+public protocol PaxEasyLinkControllerProtocol {
+  func getData(_ dataType: Swift.UInt, tagList: Foundation.Data!, tlvArray: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSArray?>!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func getData(_ dataType: Swift.Int, tagList: Foundation.Data!, dataList: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func setData(_ dataType: Swift.Int, dataList: Foundation.Data!, tagList: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func startTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
+  func completeTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
+  func clearTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
+  func sendCancel() -> PaxMposSDK.PaxEasyLinkRetCode
+  func fileDownLoad(_ fileName: Swift.String!, filePath: Swift.String!, processBlock: PaxMposSDK.onProcessCB!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func isConnected() -> Swift.Bool
+  func startSearchDev(_ timeout: Swift.Int, searchOneDeviceBlock: PaxMposSDK.onSearchOneDeviceCB!)
+  func connectDevice(_ deviceId: Swift.String!, didDisconnectedBlock: PaxMposSDK.didDisconnectedBlock!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func closeDevice() -> PaxMposSDK.PaxEasyLinkRetCode
+  func getKeyInfo(_ keyInfoParam: PaxMposSDK.KeyInfoParam!, keyInfo: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func getVersionName() -> Swift.String!
+  func checkForExistingKeys() -> Swift.Bool
+  func performRKIRemoteKeyDownload(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
+  func performRKIOfflineKeyInjection(filePath: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
+  func getRKICertificateList() throws -> Swift.String
+  func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
+}
+extension PaxMposSDK.PaxEasyLinkController : PaxMposSDK.PaxEasyLinkControllerProtocol {
+  public func checkForExistingKeys() -> Swift.Bool
+  public func performRKIRemoteKeyDownload(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
+  public func performRKIOfflineKeyInjection(filePath: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
+  public func getRKICertificateList() throws -> Swift.String
+  public func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
 }
 public struct FinixError : Foundation.LocalizedError {
   public let code: PaxMposSDK.FinixError.Code
@@ -227,6 +254,41 @@ public protocol RKICallback : AnyObject {
   func onRKIError(error: Swift.String)
   func onRKIProgress(message: Swift.String)
 }
+public class FinixClient {
+  weak public var delegate: (any PaxMposSDK.FinixDelegate)?
+  weak public var interactionDelegate: (any PaxMposSDK.FinixClientDeviceInteractionDelegate)?
+  public init(config: PaxMposSDK.FinixConfig, logger: (any PaxMposSDK.FinixLoggerProtocol)? = nil, session: (any PaxMposSDK.URLSessionProtocol)? = nil, easyLinkController: (any PaxMposSDK.PaxEasyLinkControllerProtocol)? = nil)
+  public func isReaderConnected() -> Swift.Bool
+  public func stopCurrentOperation()
+  public func update(environment: PaxMposSDK.Finix.Environment? = nil, credentials: PaxMposSDK.Finix.APICredentials? = nil, merchantId: Swift.String? = nil, mid: Swift.String? = nil, deviceType: PaxMposSDK.Finix.Device? = nil, deviceId: Swift.String? = nil, serialNumber: Swift.String? = nil)
+  public func configureRKI(enabled: Swift.Bool = true)
+  public func configureRKI(host: Swift.String, port: Swift.String, enabled: Swift.Bool = true)
+  public func isRKIInjected() async -> Swift.Bool
+  public func performManualRKI(callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
+  public func performOfflineKeyInjection(rkiFilePath: Swift.String, callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
+  public func getCertificateList() async -> Swift.String?
+  public func unbindDevice(callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
+  public func getDeviceRKIStatus(serialNumber: Swift.String) -> Swift.Bool
+  public func getDeviceRKITimestamp(serialNumber: Swift.String) -> Foundation.TimeInterval?
+  public func getDeviceRKIEnvironment(serialNumber: Swift.String) -> Swift.String?
+  public func clearDeviceRKIStatus(serialNumber: Swift.String)
+  public func getAllDevicesRKIStatus() -> Swift.Set<Swift.String>
+  public func clearAllDevicesRKIStatus()
+  public func needsRKIInjection(serialNumber: Swift.String) -> Swift.Bool
+  public func getRKIStatusSummary(serialNumber: Swift.String) -> Swift.String
+  public func hasDeviceBeenInjected(serialNumber: Swift.String) -> Swift.Bool
+  @objc deinit
+}
+extension PaxMposSDK.FinixClient {
+  public func getRKIStatistics() -> (injectedDeviceCount: Swift.Int, injectedSerialNumbers: Swift.Set<Swift.String>)
+  public func getRKIStatusForDevice(serialNumber: Swift.String) -> (environment: Swift.String?, timestamp: Foundation.TimeInterval?, isInjected: Swift.Bool)
+  @discardableResult
+  public func triggerRKICheckForConnectedDevice() async -> Swift.Bool
+  @discardableResult
+  public func forceRKIReinjectionForConnectedDevice() async -> Swift.Bool
+  public func getDeviceParameterVersions() -> [Swift.String : Swift.String]?
+  public func checkDeviceNeedsParameterUpdate(completion: @escaping (Swift.Bool) -> Swift.Void)
+}
 public struct EncryptedCardDetails : Swift.Encodable {
   public enum EncryptionMethod : Swift.String, Swift.Encodable {
     case ecb
@@ -270,38 +332,6 @@ public struct EncryptedCardDetails : Swift.Encodable {
   public init(deviceModel: Swift.String = "PAX_D135", encryptedTrack1: Swift.String?, encryptedTrack2: Swift.String?, encryptionMethod: PaxMposSDK.EncryptedCardDetails.EncryptionMethod = .ecb, encryptionMode: PaxMposSDK.EncryptedCardDetails.EncryptionMode = .dukpt, emv: Swift.String?, ksn: Swift.String, cardholderVerification: PaxMposSDK.EncryptedCardDetails.CardHolderVerification = .noCVM, cardholderName: Swift.String = "")
   public func encode(to encoder: any Swift.Encoder) throws
 }
-public protocol RKIStatusDelegate : AnyObject {
-  func onDisplayStatus(displayMessage: Swift.String)
-  func isNetworkEnabled() -> Swift.Bool
-}
-public protocol PaxEasyLinkControllerProtocol {
-  func getData(_ dataType: Swift.UInt, tagList: Foundation.Data!, tlvArray: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSArray?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func getData(_ dataType: Swift.Int, tagList: Foundation.Data!, dataList: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func setData(_ dataType: Swift.Int, dataList: Foundation.Data!, tagList: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func startTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
-  func completeTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
-  func clearTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
-  func sendCancel() -> PaxMposSDK.PaxEasyLinkRetCode
-  func fileDownLoad(_ fileName: Swift.String!, filePath: Swift.String!, processBlock: PaxMposSDK.onProcessCB!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func isConnected() -> Swift.Bool
-  func startSearchDev(_ timeout: Swift.Int, searchOneDeviceBlock: PaxMposSDK.onSearchOneDeviceCB!)
-  func connectDevice(_ deviceId: Swift.String!, didDisconnectedBlock: PaxMposSDK.didDisconnectedBlock!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func closeDevice() -> PaxMposSDK.PaxEasyLinkRetCode
-  func getKeyInfo(_ keyInfoParam: PaxMposSDK.KeyInfoParam!, keyInfo: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func getVersionName() -> Swift.String!
-  func checkForExistingKeys() -> Swift.Bool
-  func performRKIRemoteKeyDownload(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  func performRKIOfflineKeyInjection(filePath: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  func getRKICertificateList() throws -> Swift.String
-  func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-}
-extension PaxMposSDK.PaxEasyLinkController : PaxMposSDK.PaxEasyLinkControllerProtocol {
-  public func checkForExistingKeys() -> Swift.Bool
-  public func performRKIRemoteKeyDownload(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  public func performRKIOfflineKeyInjection(filePath: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  public func getRKICertificateList() throws -> Swift.String
-  public func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-}
 extension PaxMposSDK.FinixClient {
   public func updateCardReaderFiles(deviceId: Swift.String, statusCallback: PaxMposSDK.DownloadStatusCallback?, completion: (() -> Swift.Void)?)
   public func resetDevice(deviceId: Swift.String, statusCallback: PaxMposSDK.DownloadStatusCallback?, completion: (() -> Swift.Void)?)
@@ -338,41 +368,10 @@ extension PaxMposSDK.FinixClient {
   public typealias TransactionCompleteHandler = (PaxMposSDK.FinixClient.CardReaderTransferResponse?, (any Swift.Error)?) -> Swift.Void
   public func startTransaction(amount: PaxMposSDK.Currency, type transactionType: PaxMposSDK.FinixClient.TransactionType, splitTransfers: [PaxMposSDK.SplitTransfer]? = nil, tags: PaxMposSDK.ResourceTags? = nil)
 }
-public class FinixClient {
-  weak public var delegate: (any PaxMposSDK.FinixDelegate)?
-  weak public var interactionDelegate: (any PaxMposSDK.FinixClientDeviceInteractionDelegate)?
-  public var endpoint: Foundation.URL
-  public init(config: PaxMposSDK.FinixConfig, logger: (any PaxMposSDK.FinixLoggerProtocol)? = nil, session: (any PaxMposSDK.URLSessionProtocol)? = nil, easyLinkController: (any PaxMposSDK.PaxEasyLinkControllerProtocol)? = nil)
-  public func isReaderConnected() -> Swift.Bool
-  public func stopCurrentOperation()
-  public func update(environment: PaxMposSDK.Finix.Environment? = nil, credentials: PaxMposSDK.Finix.APICredentials? = nil, merchantId: Swift.String? = nil, mid: Swift.String? = nil, deviceType: PaxMposSDK.Finix.Device? = nil, deviceId: Swift.String? = nil, serialNumber: Swift.String? = nil)
-  public func configureRKI(enabled: Swift.Bool = true)
-  public func configureRKI(host: Swift.String, port: Swift.String, enabled: Swift.Bool = true)
-  public func isRKIInjected() async -> Swift.Bool
-  public func performManualRKI(callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
-  public func performOfflineKeyInjection(rkiFilePath: Swift.String, callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
-  public func getCertificateList() async -> Swift.String?
-  public func unbindDevice(callback: any PaxMposSDK.RKICallback) async -> Swift.Bool
-  public func getDeviceRKIStatus(serialNumber: Swift.String) -> Swift.Bool
-  public func getDeviceRKITimestamp(serialNumber: Swift.String) -> Foundation.TimeInterval?
-  public func getDeviceRKIEnvironment(serialNumber: Swift.String) -> Swift.String?
-  public func clearDeviceRKIStatus(serialNumber: Swift.String)
-  public func getAllDevicesRKIStatus() -> Swift.Set<Swift.String>
-  public func clearAllDevicesRKIStatus()
-  public func needsRKIInjection(serialNumber: Swift.String) -> Swift.Bool
-  public func getRKIStatusSummary(serialNumber: Swift.String) -> Swift.String
-  public func hasDeviceBeenInjected(serialNumber: Swift.String) -> Swift.Bool
-  @objc deinit
-}
-extension PaxMposSDK.FinixClient {
-  public func getRKIStatistics() -> (injectedDeviceCount: Swift.Int, injectedSerialNumbers: Swift.Set<Swift.String>)
-  public func getRKIStatusForDevice(serialNumber: Swift.String) -> (environment: Swift.String?, timestamp: Foundation.TimeInterval?, isInjected: Swift.Bool)
-  @discardableResult
-  public func triggerRKICheckForConnectedDevice() async -> Swift.Bool
-  @discardableResult
-  public func forceRKIReinjectionForConnectedDevice() async -> Swift.Bool
-  public func getDeviceParameterVersions() -> [Swift.String : Swift.String]?
-  public func checkDeviceNeedsParameterUpdate(completion: @escaping (Swift.Bool) -> Swift.Void)
+public typealias DeviceId = Swift.String
+public struct DeviceInfo {
+  public let deviceId: PaxMposSDK.DeviceId
+  public let name: Swift.String?
 }
 public typealias TraceId = Swift.String
 public typealias TransferId = Swift.String
