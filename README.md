@@ -10,10 +10,12 @@ This guide helps iOS developers integrate **finix-pax-mpos-ios-sdk** into their 
 - [Sample App](#sample-app)
 
 ## Installation
-Add the SDK to your project via Swift Package Manager using:
+1. Add the SDK to your project via Swift Package Manager using:
 ```
 https://github.com/finix-payments/finix-pax-mpos-ios-sdk
 ```
+
+2. Unizp `rkiCert.bundle.zip` and add the `rkiCert.bundle` to your project. These certs are needed to properly initialize the device. 
 
 ## Pre-requisites
 - iOS 15.6 or later
