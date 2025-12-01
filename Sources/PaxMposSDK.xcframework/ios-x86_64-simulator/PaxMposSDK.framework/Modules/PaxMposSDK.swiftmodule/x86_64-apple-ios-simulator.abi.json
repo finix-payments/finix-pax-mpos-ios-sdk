@@ -15,476 +15,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "TransactionStatus",
-        "printedName": "TransactionStatus",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "unknown",
-            "printedName": "unknown",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TransactionStatus",
-                    "printedName": "PaxMposSDK.TransactionStatus",
-                    "usr": "s:10PaxMposSDK17TransactionStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.TransactionStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransactionStatus",
-                        "printedName": "PaxMposSDK.TransactionStatus",
-                        "usr": "s:10PaxMposSDK17TransactionStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17TransactionStatusO7unknownyA2CmF",
-            "mangledName": "$s10PaxMposSDK17TransactionStatusO7unknownyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "approved",
-            "printedName": "approved",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TransactionStatus",
-                    "printedName": "PaxMposSDK.TransactionStatus",
-                    "usr": "s:10PaxMposSDK17TransactionStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.TransactionStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransactionStatus",
-                        "printedName": "PaxMposSDK.TransactionStatus",
-                        "usr": "s:10PaxMposSDK17TransactionStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17TransactionStatusO8approvedyA2CmF",
-            "mangledName": "$s10PaxMposSDK17TransactionStatusO8approvedyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "partiallyApproved",
-            "printedName": "partiallyApproved",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TransactionStatus",
-                    "printedName": "PaxMposSDK.TransactionStatus",
-                    "usr": "s:10PaxMposSDK17TransactionStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.TransactionStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransactionStatus",
-                        "printedName": "PaxMposSDK.TransactionStatus",
-                        "usr": "s:10PaxMposSDK17TransactionStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17TransactionStatusO17partiallyApprovedyA2CmF",
-            "mangledName": "$s10PaxMposSDK17TransactionStatusO17partiallyApprovedyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "approvedExceptCashback",
-            "printedName": "approvedExceptCashback",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TransactionStatus",
-                    "printedName": "PaxMposSDK.TransactionStatus",
-                    "usr": "s:10PaxMposSDK17TransactionStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.TransactionStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransactionStatus",
-                        "printedName": "PaxMposSDK.TransactionStatus",
-                        "usr": "s:10PaxMposSDK17TransactionStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17TransactionStatusO22approvedExceptCashbackyA2CmF",
-            "mangledName": "$s10PaxMposSDK17TransactionStatusO22approvedExceptCashbackyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "approvedByMerchant",
-            "printedName": "approvedByMerchant",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TransactionStatus",
-                    "printedName": "PaxMposSDK.TransactionStatus",
-                    "usr": "s:10PaxMposSDK17TransactionStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.TransactionStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransactionStatus",
-                        "printedName": "PaxMposSDK.TransactionStatus",
-                        "usr": "s:10PaxMposSDK17TransactionStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17TransactionStatusO18approvedByMerchantyA2CmF",
-            "mangledName": "$s10PaxMposSDK17TransactionStatusO18approvedByMerchantyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "callIssuer",
-            "printedName": "callIssuer",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TransactionStatus",
-                    "printedName": "PaxMposSDK.TransactionStatus",
-                    "usr": "s:10PaxMposSDK17TransactionStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.TransactionStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransactionStatus",
-                        "printedName": "PaxMposSDK.TransactionStatus",
-                        "usr": "s:10PaxMposSDK17TransactionStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17TransactionStatusO10callIssueryA2CmF",
-            "mangledName": "$s10PaxMposSDK17TransactionStatusO10callIssueryA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "declined",
-            "printedName": "declined",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TransactionStatus",
-                    "printedName": "PaxMposSDK.TransactionStatus",
-                    "usr": "s:10PaxMposSDK17TransactionStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.TransactionStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransactionStatus",
-                        "printedName": "PaxMposSDK.TransactionStatus",
-                        "usr": "s:10PaxMposSDK17TransactionStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17TransactionStatusO8declinedyA2CmF",
-            "mangledName": "$s10PaxMposSDK17TransactionStatusO8declinedyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "needsToBeReversed",
-            "printedName": "needsToBeReversed",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TransactionStatus",
-                    "printedName": "PaxMposSDK.TransactionStatus",
-                    "usr": "s:10PaxMposSDK17TransactionStatusO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.TransactionStatus.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "TransactionStatus",
-                        "printedName": "PaxMposSDK.TransactionStatus",
-                        "usr": "s:10PaxMposSDK17TransactionStatusO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17TransactionStatusO17needsToBeReversedyA2CmF",
-            "mangledName": "$s10PaxMposSDK17TransactionStatusO17needsToBeReversedyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "PaxMposSDK.TransactionStatus?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "TransactionStatus",
-                    "printedName": "PaxMposSDK.TransactionStatus",
-                    "usr": "s:10PaxMposSDK17TransactionStatusO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10PaxMposSDK17TransactionStatusO8rawValueACSgSi_tcfc",
-            "mangledName": "$s10PaxMposSDK17TransactionStatusO8rawValueACSgSi_tcfc",
-            "moduleName": "PaxMposSDK",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10PaxMposSDK17TransactionStatusO8rawValueSivp",
-            "mangledName": "$s10PaxMposSDK17TransactionStatusO8rawValueSivp",
-            "moduleName": "PaxMposSDK",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PaxMposSDK17TransactionStatusO8rawValueSivg",
-                "mangledName": "$s10PaxMposSDK17TransactionStatusO8rawValueSivg",
-                "moduleName": "PaxMposSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:10PaxMposSDK17TransactionStatusO",
-        "mangledName": "$s10PaxMposSDK17TransactionStatusO",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -3850,393 +3380,221 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "Transfer",
-        "printedName": "Transfer",
+        "name": "ProcessCardStatus",
+        "printedName": "ProcessCardStatus",
         "children": [
           {
-            "kind": "TypeDecl",
-            "name": "State",
-            "printedName": "State",
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
             "children": [
               {
-                "kind": "Var",
-                "name": "pending",
-                "printedName": "pending",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(PaxMposSDK.Transfer.State.Type) -> PaxMposSDK.Transfer.State",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "State",
-                        "printedName": "PaxMposSDK.Transfer.State",
-                        "usr": "s:10PaxMposSDK8TransferO5StateO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "PaxMposSDK.Transfer.State.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "State",
-                            "printedName": "PaxMposSDK.Transfer.State",
-                            "usr": "s:10PaxMposSDK8TransferO5StateO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10PaxMposSDK8TransferO5StateO7pendingyA2EmF",
-                "mangledName": "$s10PaxMposSDK8TransferO5StateO7pendingyA2EmF",
-                "moduleName": "PaxMposSDK"
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               },
               {
-                "kind": "Var",
-                "name": "failed",
-                "printedName": "failed",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(PaxMposSDK.Transfer.State.Type) -> PaxMposSDK.Transfer.State",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "State",
-                        "printedName": "PaxMposSDK.Transfer.State",
-                        "usr": "s:10PaxMposSDK8TransferO5StateO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "PaxMposSDK.Transfer.State.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "State",
-                            "printedName": "PaxMposSDK.Transfer.State",
-                            "usr": "s:10PaxMposSDK8TransferO5StateO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10PaxMposSDK8TransferO5StateO6failedyA2EmF",
-                "mangledName": "$s10PaxMposSDK8TransferO5StateO6failedyA2EmF",
-                "moduleName": "PaxMposSDK"
+                "kind": "TypeNominal",
+                "name": "ProcessCardStatus",
+                "printedName": "PaxMposSDK.ProcessCardStatus",
+                "usr": "s:10PaxMposSDK17ProcessCardStatusO"
               },
               {
-                "kind": "Var",
-                "name": "succeeded",
-                "printedName": "succeeded",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(PaxMposSDK.Transfer.State.Type) -> PaxMposSDK.Transfer.State",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "State",
-                        "printedName": "PaxMposSDK.Transfer.State",
-                        "usr": "s:10PaxMposSDK8TransferO5StateO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "PaxMposSDK.Transfer.State.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "State",
-                            "printedName": "PaxMposSDK.Transfer.State",
-                            "usr": "s:10PaxMposSDK8TransferO5StateO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10PaxMposSDK8TransferO5StateO9succeededyA2EmF",
-                "mangledName": "$s10PaxMposSDK8TransferO5StateO9succeededyA2EmF",
-                "moduleName": "PaxMposSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "canceled",
-                "printedName": "canceled",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(PaxMposSDK.Transfer.State.Type) -> PaxMposSDK.Transfer.State",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "State",
-                        "printedName": "PaxMposSDK.Transfer.State",
-                        "usr": "s:10PaxMposSDK8TransferO5StateO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "PaxMposSDK.Transfer.State.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "State",
-                            "printedName": "PaxMposSDK.Transfer.State",
-                            "usr": "s:10PaxMposSDK8TransferO5StateO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10PaxMposSDK8TransferO5StateO8canceledyA2EmF",
-                "mangledName": "$s10PaxMposSDK8TransferO5StateO8canceledyA2EmF",
-                "moduleName": "PaxMposSDK"
-              },
-              {
-                "kind": "Var",
-                "name": "unknown",
-                "printedName": "unknown",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(PaxMposSDK.Transfer.State.Type) -> (Swift.String) -> PaxMposSDK.Transfer.State",
-                    "children": [
-                      {
-                        "kind": "TypeFunc",
-                        "name": "Function",
-                        "printedName": "(Swift.String) -> PaxMposSDK.Transfer.State",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "State",
-                            "printedName": "PaxMposSDK.Transfer.State",
-                            "usr": "s:10PaxMposSDK8TransferO5StateO"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Tuple",
-                            "printedName": "(value: Swift.String)",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              }
-                            ]
-                          }
-                        ]
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Metatype",
-                        "printedName": "PaxMposSDK.Transfer.State.Type",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "State",
-                            "printedName": "PaxMposSDK.Transfer.State",
-                            "usr": "s:10PaxMposSDK8TransferO5StateO"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "declKind": "EnumElement",
-                "usr": "s:10PaxMposSDK8TransferO5StateO7unknownyAESS_tcAEmF",
-                "mangledName": "$s10PaxMposSDK8TransferO5StateO7unknownyAESS_tcAEmF",
-                "moduleName": "PaxMposSDK"
-              },
-              {
-                "kind": "Constructor",
-                "name": "init",
-                "printedName": "init(from:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "State",
-                    "printedName": "PaxMposSDK.Transfer.State",
-                    "usr": "s:10PaxMposSDK8TransferO5StateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Decoder",
-                    "printedName": "any Swift.Decoder",
-                    "usr": "s:s7DecoderP"
-                  }
-                ],
-                "declKind": "Constructor",
-                "usr": "s:10PaxMposSDK8TransferO5StateO4fromAEs7Decoder_p_tKcfc",
-                "mangledName": "$s10PaxMposSDK8TransferO5StateO4fromAEs7Decoder_p_tKcfc",
-                "moduleName": "PaxMposSDK",
-                "declAttributes": [
-                  "AccessControl"
-                ],
-                "throwing": true,
-                "init_kind": "Designated"
-              },
-              {
-                "kind": "Function",
-                "name": "==",
-                "printedName": "==(_:_:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Bool",
-                    "printedName": "Swift.Bool",
-                    "usr": "s:Sb"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "State",
-                    "printedName": "PaxMposSDK.Transfer.State",
-                    "usr": "s:10PaxMposSDK8TransferO5StateO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "State",
-                    "printedName": "PaxMposSDK.Transfer.State",
-                    "usr": "s:10PaxMposSDK8TransferO5StateO"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:10PaxMposSDK8TransferO5StateO2eeoiySbAE_AEtFZ",
-                "mangledName": "$s10PaxMposSDK8TransferO5StateO2eeoiySbAE_AEtFZ",
-                "moduleName": "PaxMposSDK",
-                "static": true,
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
-              },
-              {
-                "kind": "Var",
-                "name": "hashValue",
-                "printedName": "hashValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Var",
-                "usr": "s:10PaxMposSDK8TransferO5StateO9hashValueSivp",
-                "mangledName": "$s10PaxMposSDK8TransferO5StateO9hashValueSivp",
-                "moduleName": "PaxMposSDK",
-                "implicit": true,
-                "accessors": [
-                  {
-                    "kind": "Accessor",
-                    "name": "Get",
-                    "printedName": "Get()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Int",
-                        "printedName": "Swift.Int",
-                        "usr": "s:Si"
-                      }
-                    ],
-                    "declKind": "Accessor",
-                    "usr": "s:10PaxMposSDK8TransferO5StateO9hashValueSivg",
-                    "mangledName": "$s10PaxMposSDK8TransferO5StateO9hashValueSivg",
-                    "moduleName": "PaxMposSDK",
-                    "implicit": true,
-                    "accessorKind": "get"
-                  }
-                ]
-              },
-              {
-                "kind": "Function",
-                "name": "hash",
-                "printedName": "hash(into:)",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Void",
-                    "printedName": "()"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Hasher",
-                    "printedName": "Swift.Hasher",
-                    "paramValueOwnership": "InOut",
-                    "usr": "s:s6HasherV"
-                  }
-                ],
-                "declKind": "Func",
-                "usr": "s:10PaxMposSDK8TransferO5StateO4hash4intoys6HasherVz_tF",
-                "mangledName": "$s10PaxMposSDK8TransferO5StateO4hash4intoys6HasherVz_tF",
-                "moduleName": "PaxMposSDK",
-                "implicit": true,
-                "funcSelfKind": "NonMutating"
+                "kind": "TypeNominal",
+                "name": "ProcessCardStatus",
+                "printedName": "PaxMposSDK.ProcessCardStatus",
+                "usr": "s:10PaxMposSDK17ProcessCardStatusO"
               }
             ],
-            "declKind": "Enum",
-            "usr": "s:10PaxMposSDK8TransferO5StateO",
-            "mangledName": "$s10PaxMposSDK8TransferO5StateO",
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK17ProcessCardStatusO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10PaxMposSDK17ProcessCardStatusO2eeoiySbAC_ACtFZ",
             "moduleName": "PaxMposSDK",
+            "static": true,
             "declAttributes": [
               "AccessControl"
             ],
-            "conformances": [
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "readingCard",
+            "printedName": "readingCard",
+            "children": [
               {
-                "kind": "Conformance",
-                "name": "Copyable",
-                "printedName": "Copyable",
-                "usr": "s:s8CopyableP",
-                "mangledName": "$ss8CopyableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Escapable",
-                "printedName": "Escapable",
-                "usr": "s:s9EscapableP",
-                "mangledName": "$ss9EscapableP"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Decodable",
-                "printedName": "Decodable",
-                "usr": "s:Se",
-                "mangledName": "$sSe"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Equatable",
-                "printedName": "Equatable",
-                "usr": "s:SQ",
-                "mangledName": "$sSQ"
-              },
-              {
-                "kind": "Conformance",
-                "name": "Hashable",
-                "printedName": "Hashable",
-                "usr": "s:SH",
-                "mangledName": "$sSH"
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.ProcessCardStatus.Type) -> PaxMposSDK.ProcessCardStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProcessCardStatus",
+                    "printedName": "PaxMposSDK.ProcessCardStatus",
+                    "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.ProcessCardStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProcessCardStatus",
+                        "printedName": "PaxMposSDK.ProcessCardStatus",
+                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                      }
+                    ]
+                  }
+                ]
               }
-            ]
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK17ProcessCardStatusO07readingE0yA2CmF",
+            "mangledName": "$s10PaxMposSDK17ProcessCardStatusO07readingE0yA2CmF",
+            "moduleName": "PaxMposSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "processingCard",
+            "printedName": "processingCard",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.ProcessCardStatus.Type) -> PaxMposSDK.ProcessCardStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProcessCardStatus",
+                    "printedName": "PaxMposSDK.ProcessCardStatus",
+                    "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.ProcessCardStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProcessCardStatus",
+                        "printedName": "PaxMposSDK.ProcessCardStatus",
+                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK17ProcessCardStatusO010processingE0yA2CmF",
+            "mangledName": "$s10PaxMposSDK17ProcessCardStatusO010processingE0yA2CmF",
+            "moduleName": "PaxMposSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "success",
+            "printedName": "success",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.ProcessCardStatus.Type) -> (PaxMposSDK.FinixClient.CardReaderTransferResponse) -> PaxMposSDK.ProcessCardStatus",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.FinixClient.CardReaderTransferResponse) -> PaxMposSDK.ProcessCardStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProcessCardStatus",
+                        "printedName": "PaxMposSDK.ProcessCardStatus",
+                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardReaderTransferResponse",
+                        "printedName": "PaxMposSDK.FinixClient.CardReaderTransferResponse",
+                        "usr": "s:10PaxMposSDK11FinixClientC26CardReaderTransferResponseV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.ProcessCardStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProcessCardStatus",
+                        "printedName": "PaxMposSDK.ProcessCardStatus",
+                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK17ProcessCardStatusO7successyAcA11FinixClientC0E22ReaderTransferResponseVcACmF",
+            "mangledName": "$s10PaxMposSDK17ProcessCardStatusO7successyAcA11FinixClientC0E22ReaderTransferResponseVcACmF",
+            "moduleName": "PaxMposSDK"
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.ProcessCardStatus.Type) -> (PaxMposSDK.FinixError) -> PaxMposSDK.ProcessCardStatus",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.FinixError) -> PaxMposSDK.ProcessCardStatus",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProcessCardStatus",
+                        "printedName": "PaxMposSDK.ProcessCardStatus",
+                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "FinixError",
+                        "printedName": "PaxMposSDK.FinixError",
+                        "usr": "s:10PaxMposSDK10FinixErrorV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.ProcessCardStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProcessCardStatus",
+                        "printedName": "PaxMposSDK.ProcessCardStatus",
+                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK17ProcessCardStatusO6failedyAcA10FinixErrorVcACmF",
+            "mangledName": "$s10PaxMposSDK17ProcessCardStatusO6failedyAcA10FinixErrorVcACmF",
+            "moduleName": "PaxMposSDK"
           }
         ],
         "declKind": "Enum",
-        "usr": "s:10PaxMposSDK8TransferO",
-        "mangledName": "$s10PaxMposSDK8TransferO",
+        "usr": "s:10PaxMposSDK17ProcessCardStatusO",
+        "mangledName": "$s10PaxMposSDK17ProcessCardStatusO",
         "moduleName": "PaxMposSDK",
         "declAttributes": [
           "AccessControl",
@@ -4256,6 +3614,13 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
           }
         ]
       },
@@ -5684,35 +5049,35 @@
       },
       {
         "kind": "TypeDecl",
-        "name": "DeviceConnectionState",
-        "printedName": "DeviceConnectionState",
+        "name": "CardSearchMode",
+        "printedName": "CardSearchMode",
         "children": [
           {
             "kind": "Var",
-            "name": "connecting",
-            "printedName": "connecting",
+            "name": "msr",
+            "printedName": "msr",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PaxMposSDK.DeviceConnectionState.Type) -> PaxMposSDK.DeviceConnectionState",
+                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DeviceConnectionState",
-                    "printedName": "PaxMposSDK.DeviceConnectionState",
-                    "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                    "name": "CardSearchMode",
+                    "printedName": "PaxMposSDK.CardSearchMode",
+                    "usr": "s:10PaxMposSDK14CardSearchModeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PaxMposSDK.DeviceConnectionState.Type",
+                    "printedName": "PaxMposSDK.CardSearchMode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "DeviceConnectionState",
-                        "printedName": "PaxMposSDK.DeviceConnectionState",
-                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                        "name": "CardSearchMode",
+                        "printedName": "PaxMposSDK.CardSearchMode",
+                        "usr": "s:10PaxMposSDK14CardSearchModeO"
                       }
                     ]
                   }
@@ -5720,8 +5085,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK21DeviceConnectionStateO10connectingyA2CmF",
-            "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO10connectingyA2CmF",
+            "usr": "s:10PaxMposSDK14CardSearchModeO3msryA2CmF",
+            "mangledName": "$s10PaxMposSDK14CardSearchModeO3msryA2CmF",
             "moduleName": "PaxMposSDK",
             "declAttributes": [
               "RawDocComment"
@@ -5729,30 +5094,30 @@
           },
           {
             "kind": "Var",
-            "name": "initializing",
-            "printedName": "initializing",
+            "name": "icc",
+            "printedName": "icc",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PaxMposSDK.DeviceConnectionState.Type) -> PaxMposSDK.DeviceConnectionState",
+                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DeviceConnectionState",
-                    "printedName": "PaxMposSDK.DeviceConnectionState",
-                    "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                    "name": "CardSearchMode",
+                    "printedName": "PaxMposSDK.CardSearchMode",
+                    "usr": "s:10PaxMposSDK14CardSearchModeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PaxMposSDK.DeviceConnectionState.Type",
+                    "printedName": "PaxMposSDK.CardSearchMode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "DeviceConnectionState",
-                        "printedName": "PaxMposSDK.DeviceConnectionState",
-                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                        "name": "CardSearchMode",
+                        "printedName": "PaxMposSDK.CardSearchMode",
+                        "usr": "s:10PaxMposSDK14CardSearchModeO"
                       }
                     ]
                   }
@@ -5760,8 +5125,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK21DeviceConnectionStateO12initializingyA2CmF",
-            "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO12initializingyA2CmF",
+            "usr": "s:10PaxMposSDK14CardSearchModeO3iccyA2CmF",
+            "mangledName": "$s10PaxMposSDK14CardSearchModeO3iccyA2CmF",
             "moduleName": "PaxMposSDK",
             "declAttributes": [
               "RawDocComment"
@@ -5769,43 +5134,30 @@
           },
           {
             "kind": "Var",
-            "name": "connected",
-            "printedName": "connected",
+            "name": "msrIcc",
+            "printedName": "msrIcc",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PaxMposSDK.DeviceConnectionState.Type) -> (PaxMposSDK.DeviceInfo) -> PaxMposSDK.DeviceConnectionState",
+                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(PaxMposSDK.DeviceInfo) -> PaxMposSDK.DeviceConnectionState",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DeviceConnectionState",
-                        "printedName": "PaxMposSDK.DeviceConnectionState",
-                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DeviceInfo",
-                        "printedName": "PaxMposSDK.DeviceInfo",
-                        "usr": "s:10PaxMposSDK10DeviceInfoV"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "CardSearchMode",
+                    "printedName": "PaxMposSDK.CardSearchMode",
+                    "usr": "s:10PaxMposSDK14CardSearchModeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PaxMposSDK.DeviceConnectionState.Type",
+                    "printedName": "PaxMposSDK.CardSearchMode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "DeviceConnectionState",
-                        "printedName": "PaxMposSDK.DeviceConnectionState",
-                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                        "name": "CardSearchMode",
+                        "printedName": "PaxMposSDK.CardSearchMode",
+                        "usr": "s:10PaxMposSDK14CardSearchModeO"
                       }
                     ]
                   }
@@ -5813,8 +5165,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK21DeviceConnectionStateO9connectedyAcA0D4InfoVcACmF",
-            "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO9connectedyAcA0D4InfoVcACmF",
+            "usr": "s:10PaxMposSDK14CardSearchModeO6msrIccyA2CmF",
+            "mangledName": "$s10PaxMposSDK14CardSearchModeO6msrIccyA2CmF",
             "moduleName": "PaxMposSDK",
             "declAttributes": [
               "RawDocComment"
@@ -5822,30 +5174,30 @@
           },
           {
             "kind": "Var",
-            "name": "disconnected",
-            "printedName": "disconnected",
+            "name": "picc",
+            "printedName": "picc",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PaxMposSDK.DeviceConnectionState.Type) -> PaxMposSDK.DeviceConnectionState",
+                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "DeviceConnectionState",
-                    "printedName": "PaxMposSDK.DeviceConnectionState",
-                    "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                    "name": "CardSearchMode",
+                    "printedName": "PaxMposSDK.CardSearchMode",
+                    "usr": "s:10PaxMposSDK14CardSearchModeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PaxMposSDK.DeviceConnectionState.Type",
+                    "printedName": "PaxMposSDK.CardSearchMode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "DeviceConnectionState",
-                        "printedName": "PaxMposSDK.DeviceConnectionState",
-                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                        "name": "CardSearchMode",
+                        "printedName": "PaxMposSDK.CardSearchMode",
+                        "usr": "s:10PaxMposSDK14CardSearchModeO"
                       }
                     ]
                   }
@@ -5853,8 +5205,8 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK21DeviceConnectionStateO12disconnectedyA2CmF",
-            "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO12disconnectedyA2CmF",
+            "usr": "s:10PaxMposSDK14CardSearchModeO4piccyA2CmF",
+            "mangledName": "$s10PaxMposSDK14CardSearchModeO4piccyA2CmF",
             "moduleName": "PaxMposSDK",
             "declAttributes": [
               "RawDocComment"
@@ -5862,43 +5214,30 @@
           },
           {
             "kind": "Var",
-            "name": "error",
-            "printedName": "error",
+            "name": "msrPicc",
+            "printedName": "msrPicc",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PaxMposSDK.DeviceConnectionState.Type) -> (any Swift.Error) -> PaxMposSDK.DeviceConnectionState",
+                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(any Swift.Error) -> PaxMposSDK.DeviceConnectionState",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "DeviceConnectionState",
-                        "printedName": "PaxMposSDK.DeviceConnectionState",
-                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Error",
-                        "printedName": "any Swift.Error",
-                        "usr": "s:s5ErrorP"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "CardSearchMode",
+                    "printedName": "PaxMposSDK.CardSearchMode",
+                    "usr": "s:10PaxMposSDK14CardSearchModeO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PaxMposSDK.DeviceConnectionState.Type",
+                    "printedName": "PaxMposSDK.CardSearchMode.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "DeviceConnectionState",
-                        "printedName": "PaxMposSDK.DeviceConnectionState",
-                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                        "name": "CardSearchMode",
+                        "printedName": "PaxMposSDK.CardSearchMode",
+                        "usr": "s:10PaxMposSDK14CardSearchModeO"
                       }
                     ]
                   }
@@ -5906,22 +5245,215 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK21DeviceConnectionStateO5erroryACs5Error_pcACmF",
-            "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO5erroryACs5Error_pcACmF",
+            "usr": "s:10PaxMposSDK14CardSearchModeO7msrPiccyA2CmF",
+            "mangledName": "$s10PaxMposSDK14CardSearchModeO7msrPiccyA2CmF",
             "moduleName": "PaxMposSDK",
             "declAttributes": [
               "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "iccPicc",
+            "printedName": "iccPicc",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardSearchMode",
+                    "printedName": "PaxMposSDK.CardSearchMode",
+                    "usr": "s:10PaxMposSDK14CardSearchModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.CardSearchMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardSearchMode",
+                        "printedName": "PaxMposSDK.CardSearchMode",
+                        "usr": "s:10PaxMposSDK14CardSearchModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK14CardSearchModeO7iccPiccyA2CmF",
+            "mangledName": "$s10PaxMposSDK14CardSearchModeO7iccPiccyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "msrIccPicc",
+            "printedName": "msrIccPicc",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardSearchMode",
+                    "printedName": "PaxMposSDK.CardSearchMode",
+                    "usr": "s:10PaxMposSDK14CardSearchModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.CardSearchMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardSearchMode",
+                        "printedName": "PaxMposSDK.CardSearchMode",
+                        "usr": "s:10PaxMposSDK14CardSearchModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK14CardSearchModeO10msrIccPiccyA2CmF",
+            "mangledName": "$s10PaxMposSDK14CardSearchModeO10msrIccPiccyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "fallback",
+            "printedName": "fallback",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardSearchMode",
+                    "printedName": "PaxMposSDK.CardSearchMode",
+                    "usr": "s:10PaxMposSDK14CardSearchModeO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.CardSearchMode.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "CardSearchMode",
+                        "printedName": "PaxMposSDK.CardSearchMode",
+                        "usr": "s:10PaxMposSDK14CardSearchModeO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK14CardSearchModeO8fallbackyA2CmF",
+            "mangledName": "$s10PaxMposSDK14CardSearchModeO8fallbackyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaxMposSDK.CardSearchMode?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "CardSearchMode",
+                    "printedName": "PaxMposSDK.CardSearchMode",
+                    "usr": "s:10PaxMposSDK14CardSearchModeO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10PaxMposSDK14CardSearchModeO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10PaxMposSDK14CardSearchModeO8rawValueACSgSi_tcfc",
+            "moduleName": "PaxMposSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaxMposSDK14CardSearchModeO8rawValueSivp",
+            "mangledName": "$s10PaxMposSDK14CardSearchModeO8rawValueSivp",
+            "moduleName": "PaxMposSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaxMposSDK14CardSearchModeO8rawValueSivg",
+                "mangledName": "$s10PaxMposSDK14CardSearchModeO8rawValueSivg",
+                "moduleName": "PaxMposSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
             ]
           }
         ],
         "declKind": "Enum",
-        "usr": "s:10PaxMposSDK21DeviceConnectionStateO",
-        "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO",
+        "usr": "s:10PaxMposSDK14CardSearchModeO",
+        "mangledName": "$s10PaxMposSDK14CardSearchModeO",
         "moduleName": "PaxMposSDK",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
         ],
+        "enumRawTypeName": "Int",
         "conformances": [
           {
             "kind": "Conformance",
@@ -5936,6 +5468,42 @@
             "printedName": "Escapable",
             "usr": "s:s9EscapableP",
             "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -6617,70 +6185,86 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
-        "name": "ProcessCardStatus",
-        "printedName": "ProcessCardStatus",
+        "name": "TransactionStatus",
+        "printedName": "TransactionStatus",
         "children": [
           {
-            "kind": "Function",
-            "name": "==",
-            "printedName": "==(_:_:)",
+            "kind": "Var",
+            "name": "unknown",
+            "printedName": "unknown",
             "children": [
               {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProcessCardStatus",
-                "printedName": "PaxMposSDK.ProcessCardStatus",
-                "usr": "s:10PaxMposSDK17ProcessCardStatusO"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ProcessCardStatus",
-                "printedName": "PaxMposSDK.ProcessCardStatus",
-                "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransactionStatus",
+                    "printedName": "PaxMposSDK.TransactionStatus",
+                    "usr": "s:10PaxMposSDK17TransactionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.TransactionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactionStatus",
+                        "printedName": "PaxMposSDK.TransactionStatus",
+                        "usr": "s:10PaxMposSDK17TransactionStatusO"
+                      }
+                    ]
+                  }
+                ]
               }
             ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK17ProcessCardStatusO2eeoiySbAC_ACtFZ",
-            "mangledName": "$s10PaxMposSDK17ProcessCardStatusO2eeoiySbAC_ACtFZ",
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK17TransactionStatusO7unknownyA2CmF",
+            "mangledName": "$s10PaxMposSDK17TransactionStatusO7unknownyA2CmF",
             "moduleName": "PaxMposSDK",
-            "static": true,
             "declAttributes": [
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
-            "name": "readingCard",
-            "printedName": "readingCard",
+            "name": "approved",
+            "printedName": "approved",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PaxMposSDK.ProcessCardStatus.Type) -> PaxMposSDK.ProcessCardStatus",
+                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ProcessCardStatus",
-                    "printedName": "PaxMposSDK.ProcessCardStatus",
-                    "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                    "name": "TransactionStatus",
+                    "printedName": "PaxMposSDK.TransactionStatus",
+                    "usr": "s:10PaxMposSDK17TransactionStatusO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PaxMposSDK.ProcessCardStatus.Type",
+                    "printedName": "PaxMposSDK.TransactionStatus.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ProcessCardStatus",
-                        "printedName": "PaxMposSDK.ProcessCardStatus",
-                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                        "name": "TransactionStatus",
+                        "printedName": "PaxMposSDK.TransactionStatus",
+                        "usr": "s:10PaxMposSDK17TransactionStatusO"
                       }
                     ]
                   }
@@ -6688,36 +6272,39 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17ProcessCardStatusO07readingE0yA2CmF",
-            "mangledName": "$s10PaxMposSDK17ProcessCardStatusO07readingE0yA2CmF",
-            "moduleName": "PaxMposSDK"
+            "usr": "s:10PaxMposSDK17TransactionStatusO8approvedyA2CmF",
+            "mangledName": "$s10PaxMposSDK17TransactionStatusO8approvedyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
-            "name": "processingCard",
-            "printedName": "processingCard",
+            "name": "partiallyApproved",
+            "printedName": "partiallyApproved",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PaxMposSDK.ProcessCardStatus.Type) -> PaxMposSDK.ProcessCardStatus",
+                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
                 "children": [
                   {
                     "kind": "TypeNominal",
-                    "name": "ProcessCardStatus",
-                    "printedName": "PaxMposSDK.ProcessCardStatus",
-                    "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                    "name": "TransactionStatus",
+                    "printedName": "PaxMposSDK.TransactionStatus",
+                    "usr": "s:10PaxMposSDK17TransactionStatusO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PaxMposSDK.ProcessCardStatus.Type",
+                    "printedName": "PaxMposSDK.TransactionStatus.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ProcessCardStatus",
-                        "printedName": "PaxMposSDK.ProcessCardStatus",
-                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                        "name": "TransactionStatus",
+                        "printedName": "PaxMposSDK.TransactionStatus",
+                        "usr": "s:10PaxMposSDK17TransactionStatusO"
                       }
                     ]
                   }
@@ -6725,49 +6312,39 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17ProcessCardStatusO010processingE0yA2CmF",
-            "mangledName": "$s10PaxMposSDK17ProcessCardStatusO010processingE0yA2CmF",
-            "moduleName": "PaxMposSDK"
+            "usr": "s:10PaxMposSDK17TransactionStatusO17partiallyApprovedyA2CmF",
+            "mangledName": "$s10PaxMposSDK17TransactionStatusO17partiallyApprovedyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
-            "name": "success",
-            "printedName": "success",
+            "name": "approvedExceptCashback",
+            "printedName": "approvedExceptCashback",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PaxMposSDK.ProcessCardStatus.Type) -> (PaxMposSDK.FinixClient.CardReaderTransferResponse) -> PaxMposSDK.ProcessCardStatus",
+                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(PaxMposSDK.FinixClient.CardReaderTransferResponse) -> PaxMposSDK.ProcessCardStatus",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProcessCardStatus",
-                        "printedName": "PaxMposSDK.ProcessCardStatus",
-                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardReaderTransferResponse",
-                        "printedName": "PaxMposSDK.FinixClient.CardReaderTransferResponse",
-                        "usr": "s:10PaxMposSDK11FinixClientC26CardReaderTransferResponseV"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "TransactionStatus",
+                    "printedName": "PaxMposSDK.TransactionStatus",
+                    "usr": "s:10PaxMposSDK17TransactionStatusO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PaxMposSDK.ProcessCardStatus.Type",
+                    "printedName": "PaxMposSDK.TransactionStatus.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ProcessCardStatus",
-                        "printedName": "PaxMposSDK.ProcessCardStatus",
-                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                        "name": "TransactionStatus",
+                        "printedName": "PaxMposSDK.TransactionStatus",
+                        "usr": "s:10PaxMposSDK17TransactionStatusO"
                       }
                     ]
                   }
@@ -6775,49 +6352,39 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17ProcessCardStatusO7successyAcA11FinixClientC0E22ReaderTransferResponseVcACmF",
-            "mangledName": "$s10PaxMposSDK17ProcessCardStatusO7successyAcA11FinixClientC0E22ReaderTransferResponseVcACmF",
-            "moduleName": "PaxMposSDK"
+            "usr": "s:10PaxMposSDK17TransactionStatusO22approvedExceptCashbackyA2CmF",
+            "mangledName": "$s10PaxMposSDK17TransactionStatusO22approvedExceptCashbackyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
           },
           {
             "kind": "Var",
-            "name": "failed",
-            "printedName": "failed",
+            "name": "approvedByMerchant",
+            "printedName": "approvedByMerchant",
             "children": [
               {
                 "kind": "TypeFunc",
                 "name": "Function",
-                "printedName": "(PaxMposSDK.ProcessCardStatus.Type) -> (PaxMposSDK.FinixError) -> PaxMposSDK.ProcessCardStatus",
+                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
                 "children": [
                   {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(PaxMposSDK.FinixError) -> PaxMposSDK.ProcessCardStatus",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "ProcessCardStatus",
-                        "printedName": "PaxMposSDK.ProcessCardStatus",
-                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "FinixError",
-                        "printedName": "PaxMposSDK.FinixError",
-                        "usr": "s:10PaxMposSDK10FinixErrorV"
-                      }
-                    ]
+                    "kind": "TypeNominal",
+                    "name": "TransactionStatus",
+                    "printedName": "PaxMposSDK.TransactionStatus",
+                    "usr": "s:10PaxMposSDK17TransactionStatusO"
                   },
                   {
                     "kind": "TypeNominal",
                     "name": "Metatype",
-                    "printedName": "PaxMposSDK.ProcessCardStatus.Type",
+                    "printedName": "PaxMposSDK.TransactionStatus.Type",
                     "children": [
                       {
                         "kind": "TypeNominal",
-                        "name": "ProcessCardStatus",
-                        "printedName": "PaxMposSDK.ProcessCardStatus",
-                        "usr": "s:10PaxMposSDK17ProcessCardStatusO"
+                        "name": "TransactionStatus",
+                        "printedName": "PaxMposSDK.TransactionStatus",
+                        "usr": "s:10PaxMposSDK17TransactionStatusO"
                       }
                     ]
                   }
@@ -6825,19 +6392,215 @@
               }
             ],
             "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK17ProcessCardStatusO6failedyAcA10FinixErrorVcACmF",
-            "mangledName": "$s10PaxMposSDK17ProcessCardStatusO6failedyAcA10FinixErrorVcACmF",
-            "moduleName": "PaxMposSDK"
+            "usr": "s:10PaxMposSDK17TransactionStatusO18approvedByMerchantyA2CmF",
+            "mangledName": "$s10PaxMposSDK17TransactionStatusO18approvedByMerchantyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "callIssuer",
+            "printedName": "callIssuer",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransactionStatus",
+                    "printedName": "PaxMposSDK.TransactionStatus",
+                    "usr": "s:10PaxMposSDK17TransactionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.TransactionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactionStatus",
+                        "printedName": "PaxMposSDK.TransactionStatus",
+                        "usr": "s:10PaxMposSDK17TransactionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK17TransactionStatusO10callIssueryA2CmF",
+            "mangledName": "$s10PaxMposSDK17TransactionStatusO10callIssueryA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "declined",
+            "printedName": "declined",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransactionStatus",
+                    "printedName": "PaxMposSDK.TransactionStatus",
+                    "usr": "s:10PaxMposSDK17TransactionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.TransactionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactionStatus",
+                        "printedName": "PaxMposSDK.TransactionStatus",
+                        "usr": "s:10PaxMposSDK17TransactionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK17TransactionStatusO8declinedyA2CmF",
+            "mangledName": "$s10PaxMposSDK17TransactionStatusO8declinedyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "needsToBeReversed",
+            "printedName": "needsToBeReversed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.TransactionStatus.Type) -> PaxMposSDK.TransactionStatus",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransactionStatus",
+                    "printedName": "PaxMposSDK.TransactionStatus",
+                    "usr": "s:10PaxMposSDK17TransactionStatusO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.TransactionStatus.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "TransactionStatus",
+                        "printedName": "PaxMposSDK.TransactionStatus",
+                        "usr": "s:10PaxMposSDK17TransactionStatusO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK17TransactionStatusO17needsToBeReversedyA2CmF",
+            "mangledName": "$s10PaxMposSDK17TransactionStatusO17needsToBeReversedyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(rawValue:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaxMposSDK.TransactionStatus?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "TransactionStatus",
+                    "printedName": "PaxMposSDK.TransactionStatus",
+                    "usr": "s:10PaxMposSDK17TransactionStatusO"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10PaxMposSDK17TransactionStatusO8rawValueACSgSi_tcfc",
+            "mangledName": "$s10PaxMposSDK17TransactionStatusO8rawValueACSgSi_tcfc",
+            "moduleName": "PaxMposSDK",
+            "implicit": true,
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Var",
+            "name": "rawValue",
+            "printedName": "rawValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaxMposSDK17TransactionStatusO8rawValueSivp",
+            "mangledName": "$s10PaxMposSDK17TransactionStatusO8rawValueSivp",
+            "moduleName": "PaxMposSDK",
+            "implicit": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaxMposSDK17TransactionStatusO8rawValueSivg",
+                "mangledName": "$s10PaxMposSDK17TransactionStatusO8rawValueSivg",
+                "moduleName": "PaxMposSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
           }
         ],
         "declKind": "Enum",
-        "usr": "s:10PaxMposSDK17ProcessCardStatusO",
-        "mangledName": "$s10PaxMposSDK17ProcessCardStatusO",
+        "usr": "s:10PaxMposSDK17TransactionStatusO",
+        "mangledName": "$s10PaxMposSDK17TransactionStatusO",
         "moduleName": "PaxMposSDK",
         "declAttributes": [
           "AccessControl",
           "RawDocComment"
         ],
+        "enumRawTypeName": "Int",
         "conformances": [
           {
             "kind": "Conformance",
@@ -6859,6 +6622,35 @@
             "printedName": "Equatable",
             "usr": "s:SQ",
             "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "RawRepresentable",
+            "printedName": "RawRepresentable",
+            "children": [
+              {
+                "kind": "TypeWitness",
+                "name": "RawValue",
+                "printedName": "RawValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ]
+              }
+            ],
+            "usr": "s:SY",
+            "mangledName": "$sSY"
           }
         ]
       },
@@ -7865,466 +7657,6 @@
             "printedName": "Copyable",
             "usr": "s:s8CopyableP",
             "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "CardSearchMode",
-        "printedName": "CardSearchMode",
-        "children": [
-          {
-            "kind": "Var",
-            "name": "msr",
-            "printedName": "msr",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardSearchMode",
-                    "printedName": "PaxMposSDK.CardSearchMode",
-                    "usr": "s:10PaxMposSDK14CardSearchModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.CardSearchMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardSearchMode",
-                        "printedName": "PaxMposSDK.CardSearchMode",
-                        "usr": "s:10PaxMposSDK14CardSearchModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK14CardSearchModeO3msryA2CmF",
-            "mangledName": "$s10PaxMposSDK14CardSearchModeO3msryA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "icc",
-            "printedName": "icc",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardSearchMode",
-                    "printedName": "PaxMposSDK.CardSearchMode",
-                    "usr": "s:10PaxMposSDK14CardSearchModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.CardSearchMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardSearchMode",
-                        "printedName": "PaxMposSDK.CardSearchMode",
-                        "usr": "s:10PaxMposSDK14CardSearchModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK14CardSearchModeO3iccyA2CmF",
-            "mangledName": "$s10PaxMposSDK14CardSearchModeO3iccyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "msrIcc",
-            "printedName": "msrIcc",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardSearchMode",
-                    "printedName": "PaxMposSDK.CardSearchMode",
-                    "usr": "s:10PaxMposSDK14CardSearchModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.CardSearchMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardSearchMode",
-                        "printedName": "PaxMposSDK.CardSearchMode",
-                        "usr": "s:10PaxMposSDK14CardSearchModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK14CardSearchModeO6msrIccyA2CmF",
-            "mangledName": "$s10PaxMposSDK14CardSearchModeO6msrIccyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "picc",
-            "printedName": "picc",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardSearchMode",
-                    "printedName": "PaxMposSDK.CardSearchMode",
-                    "usr": "s:10PaxMposSDK14CardSearchModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.CardSearchMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardSearchMode",
-                        "printedName": "PaxMposSDK.CardSearchMode",
-                        "usr": "s:10PaxMposSDK14CardSearchModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK14CardSearchModeO4piccyA2CmF",
-            "mangledName": "$s10PaxMposSDK14CardSearchModeO4piccyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "msrPicc",
-            "printedName": "msrPicc",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardSearchMode",
-                    "printedName": "PaxMposSDK.CardSearchMode",
-                    "usr": "s:10PaxMposSDK14CardSearchModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.CardSearchMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardSearchMode",
-                        "printedName": "PaxMposSDK.CardSearchMode",
-                        "usr": "s:10PaxMposSDK14CardSearchModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK14CardSearchModeO7msrPiccyA2CmF",
-            "mangledName": "$s10PaxMposSDK14CardSearchModeO7msrPiccyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "iccPicc",
-            "printedName": "iccPicc",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardSearchMode",
-                    "printedName": "PaxMposSDK.CardSearchMode",
-                    "usr": "s:10PaxMposSDK14CardSearchModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.CardSearchMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardSearchMode",
-                        "printedName": "PaxMposSDK.CardSearchMode",
-                        "usr": "s:10PaxMposSDK14CardSearchModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK14CardSearchModeO7iccPiccyA2CmF",
-            "mangledName": "$s10PaxMposSDK14CardSearchModeO7iccPiccyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "msrIccPicc",
-            "printedName": "msrIccPicc",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardSearchMode",
-                    "printedName": "PaxMposSDK.CardSearchMode",
-                    "usr": "s:10PaxMposSDK14CardSearchModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.CardSearchMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardSearchMode",
-                        "printedName": "PaxMposSDK.CardSearchMode",
-                        "usr": "s:10PaxMposSDK14CardSearchModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK14CardSearchModeO10msrIccPiccyA2CmF",
-            "mangledName": "$s10PaxMposSDK14CardSearchModeO10msrIccPiccyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Var",
-            "name": "fallback",
-            "printedName": "fallback",
-            "children": [
-              {
-                "kind": "TypeFunc",
-                "name": "Function",
-                "printedName": "(PaxMposSDK.CardSearchMode.Type) -> PaxMposSDK.CardSearchMode",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardSearchMode",
-                    "printedName": "PaxMposSDK.CardSearchMode",
-                    "usr": "s:10PaxMposSDK14CardSearchModeO"
-                  },
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Metatype",
-                    "printedName": "PaxMposSDK.CardSearchMode.Type",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "CardSearchMode",
-                        "printedName": "PaxMposSDK.CardSearchMode",
-                        "usr": "s:10PaxMposSDK14CardSearchModeO"
-                      }
-                    ]
-                  }
-                ]
-              }
-            ],
-            "declKind": "EnumElement",
-            "usr": "s:10PaxMposSDK14CardSearchModeO8fallbackyA2CmF",
-            "mangledName": "$s10PaxMposSDK14CardSearchModeO8fallbackyA2CmF",
-            "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "RawDocComment"
-            ]
-          },
-          {
-            "kind": "Constructor",
-            "name": "init",
-            "printedName": "init(rawValue:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "PaxMposSDK.CardSearchMode?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "CardSearchMode",
-                    "printedName": "PaxMposSDK.CardSearchMode",
-                    "usr": "s:10PaxMposSDK14CardSearchModeO"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Constructor",
-            "usr": "s:10PaxMposSDK14CardSearchModeO8rawValueACSgSi_tcfc",
-            "mangledName": "$s10PaxMposSDK14CardSearchModeO8rawValueACSgSi_tcfc",
-            "moduleName": "PaxMposSDK",
-            "implicit": true,
-            "init_kind": "Designated"
-          },
-          {
-            "kind": "Var",
-            "name": "rawValue",
-            "printedName": "rawValue",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              }
-            ],
-            "declKind": "Var",
-            "usr": "s:10PaxMposSDK14CardSearchModeO8rawValueSivp",
-            "mangledName": "$s10PaxMposSDK14CardSearchModeO8rawValueSivp",
-            "moduleName": "PaxMposSDK",
-            "implicit": true,
-            "accessors": [
-              {
-                "kind": "Accessor",
-                "name": "Get",
-                "printedName": "Get()",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ],
-                "declKind": "Accessor",
-                "usr": "s:10PaxMposSDK14CardSearchModeO8rawValueSivg",
-                "mangledName": "$s10PaxMposSDK14CardSearchModeO8rawValueSivg",
-                "moduleName": "PaxMposSDK",
-                "implicit": true,
-                "accessorKind": "get"
-              }
-            ]
-          }
-        ],
-        "declKind": "Enum",
-        "usr": "s:10PaxMposSDK14CardSearchModeO",
-        "mangledName": "$s10PaxMposSDK14CardSearchModeO",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "enumRawTypeName": "Int",
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "RawRepresentable",
-            "printedName": "RawRepresentable",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "RawValue",
-                "printedName": "RawValue",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Int",
-                    "printedName": "Swift.Int",
-                    "usr": "s:Si"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:SY",
-            "mangledName": "$sSY"
           }
         ]
       },
@@ -11799,6 +11131,417 @@
         ]
       },
       {
+        "kind": "TypeDecl",
+        "name": "Transfer",
+        "printedName": "Transfer",
+        "children": [
+          {
+            "kind": "TypeDecl",
+            "name": "State",
+            "printedName": "State",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "pending",
+                "printedName": "pending",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.Transfer.State.Type) -> PaxMposSDK.Transfer.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "PaxMposSDK.Transfer.State",
+                        "usr": "s:10PaxMposSDK8TransferO5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PaxMposSDK.Transfer.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "PaxMposSDK.Transfer.State",
+                            "usr": "s:10PaxMposSDK8TransferO5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PaxMposSDK8TransferO5StateO7pendingyA2EmF",
+                "mangledName": "$s10PaxMposSDK8TransferO5StateO7pendingyA2EmF",
+                "moduleName": "PaxMposSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "failed",
+                "printedName": "failed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.Transfer.State.Type) -> PaxMposSDK.Transfer.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "PaxMposSDK.Transfer.State",
+                        "usr": "s:10PaxMposSDK8TransferO5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PaxMposSDK.Transfer.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "PaxMposSDK.Transfer.State",
+                            "usr": "s:10PaxMposSDK8TransferO5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PaxMposSDK8TransferO5StateO6failedyA2EmF",
+                "mangledName": "$s10PaxMposSDK8TransferO5StateO6failedyA2EmF",
+                "moduleName": "PaxMposSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "succeeded",
+                "printedName": "succeeded",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.Transfer.State.Type) -> PaxMposSDK.Transfer.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "PaxMposSDK.Transfer.State",
+                        "usr": "s:10PaxMposSDK8TransferO5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PaxMposSDK.Transfer.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "PaxMposSDK.Transfer.State",
+                            "usr": "s:10PaxMposSDK8TransferO5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PaxMposSDK8TransferO5StateO9succeededyA2EmF",
+                "mangledName": "$s10PaxMposSDK8TransferO5StateO9succeededyA2EmF",
+                "moduleName": "PaxMposSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "canceled",
+                "printedName": "canceled",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.Transfer.State.Type) -> PaxMposSDK.Transfer.State",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "State",
+                        "printedName": "PaxMposSDK.Transfer.State",
+                        "usr": "s:10PaxMposSDK8TransferO5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PaxMposSDK.Transfer.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "PaxMposSDK.Transfer.State",
+                            "usr": "s:10PaxMposSDK8TransferO5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PaxMposSDK8TransferO5StateO8canceledyA2EmF",
+                "mangledName": "$s10PaxMposSDK8TransferO5StateO8canceledyA2EmF",
+                "moduleName": "PaxMposSDK"
+              },
+              {
+                "kind": "Var",
+                "name": "unknown",
+                "printedName": "unknown",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.Transfer.State.Type) -> (Swift.String) -> PaxMposSDK.Transfer.State",
+                    "children": [
+                      {
+                        "kind": "TypeFunc",
+                        "name": "Function",
+                        "printedName": "(Swift.String) -> PaxMposSDK.Transfer.State",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "PaxMposSDK.Transfer.State",
+                            "usr": "s:10PaxMposSDK8TransferO5StateO"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Tuple",
+                            "printedName": "(value: Swift.String)",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ]
+                          }
+                        ]
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PaxMposSDK.Transfer.State.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "State",
+                            "printedName": "PaxMposSDK.Transfer.State",
+                            "usr": "s:10PaxMposSDK8TransferO5StateO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PaxMposSDK8TransferO5StateO7unknownyAESS_tcAEmF",
+                "mangledName": "$s10PaxMposSDK8TransferO5StateO7unknownyAESS_tcAEmF",
+                "moduleName": "PaxMposSDK"
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(from:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "PaxMposSDK.Transfer.State",
+                    "usr": "s:10PaxMposSDK8TransferO5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Decoder",
+                    "printedName": "any Swift.Decoder",
+                    "usr": "s:s7DecoderP"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:10PaxMposSDK8TransferO5StateO4fromAEs7Decoder_p_tKcfc",
+                "mangledName": "$s10PaxMposSDK8TransferO5StateO4fromAEs7Decoder_p_tKcfc",
+                "moduleName": "PaxMposSDK",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "throwing": true,
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "PaxMposSDK.Transfer.State",
+                    "usr": "s:10PaxMposSDK8TransferO5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "State",
+                    "printedName": "PaxMposSDK.Transfer.State",
+                    "usr": "s:10PaxMposSDK8TransferO5StateO"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10PaxMposSDK8TransferO5StateO2eeoiySbAE_AEtFZ",
+                "mangledName": "$s10PaxMposSDK8TransferO5StateO2eeoiySbAE_AEtFZ",
+                "moduleName": "PaxMposSDK",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              },
+              {
+                "kind": "Var",
+                "name": "hashValue",
+                "printedName": "hashValue",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:10PaxMposSDK8TransferO5StateO9hashValueSivp",
+                "mangledName": "$s10PaxMposSDK8TransferO5StateO9hashValueSivp",
+                "moduleName": "PaxMposSDK",
+                "implicit": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:10PaxMposSDK8TransferO5StateO9hashValueSivg",
+                    "mangledName": "$s10PaxMposSDK8TransferO5StateO9hashValueSivg",
+                    "moduleName": "PaxMposSDK",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Function",
+                "name": "hash",
+                "printedName": "hash(into:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Hasher",
+                    "printedName": "Swift.Hasher",
+                    "paramValueOwnership": "InOut",
+                    "usr": "s:s6HasherV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:10PaxMposSDK8TransferO5StateO4hash4intoys6HasherVz_tF",
+                "mangledName": "$s10PaxMposSDK8TransferO5StateO4hash4intoys6HasherVz_tF",
+                "moduleName": "PaxMposSDK",
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Enum",
+            "usr": "s:10PaxMposSDK8TransferO5StateO",
+            "mangledName": "$s10PaxMposSDK8TransferO5StateO",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Decodable",
+                "printedName": "Decodable",
+                "usr": "s:Se",
+                "mangledName": "$sSe"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Hashable",
+                "printedName": "Hashable",
+                "usr": "s:SH",
+                "mangledName": "$sSH"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10PaxMposSDK8TransferO",
+        "mangledName": "$s10PaxMposSDK8TransferO",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -13240,6 +12983,263 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "DeviceConnectionState",
+        "printedName": "DeviceConnectionState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "connecting",
+            "printedName": "connecting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.DeviceConnectionState.Type) -> PaxMposSDK.DeviceConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectionState",
+                    "printedName": "PaxMposSDK.DeviceConnectionState",
+                    "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.DeviceConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectionState",
+                        "printedName": "PaxMposSDK.DeviceConnectionState",
+                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK21DeviceConnectionStateO10connectingyA2CmF",
+            "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO10connectingyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "initializing",
+            "printedName": "initializing",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.DeviceConnectionState.Type) -> PaxMposSDK.DeviceConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectionState",
+                    "printedName": "PaxMposSDK.DeviceConnectionState",
+                    "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.DeviceConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectionState",
+                        "printedName": "PaxMposSDK.DeviceConnectionState",
+                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK21DeviceConnectionStateO12initializingyA2CmF",
+            "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO12initializingyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "connected",
+            "printedName": "connected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.DeviceConnectionState.Type) -> (PaxMposSDK.DeviceInfo) -> PaxMposSDK.DeviceConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.DeviceInfo) -> PaxMposSDK.DeviceConnectionState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectionState",
+                        "printedName": "PaxMposSDK.DeviceConnectionState",
+                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceInfo",
+                        "printedName": "PaxMposSDK.DeviceInfo",
+                        "usr": "s:10PaxMposSDK10DeviceInfoV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.DeviceConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectionState",
+                        "printedName": "PaxMposSDK.DeviceConnectionState",
+                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK21DeviceConnectionStateO9connectedyAcA0D4InfoVcACmF",
+            "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO9connectedyAcA0D4InfoVcACmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "disconnected",
+            "printedName": "disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.DeviceConnectionState.Type) -> PaxMposSDK.DeviceConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DeviceConnectionState",
+                    "printedName": "PaxMposSDK.DeviceConnectionState",
+                    "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.DeviceConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectionState",
+                        "printedName": "PaxMposSDK.DeviceConnectionState",
+                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK21DeviceConnectionStateO12disconnectedyA2CmF",
+            "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO12disconnectedyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.DeviceConnectionState.Type) -> (any Swift.Error) -> PaxMposSDK.DeviceConnectionState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(any Swift.Error) -> PaxMposSDK.DeviceConnectionState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectionState",
+                        "printedName": "PaxMposSDK.DeviceConnectionState",
+                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Error",
+                        "printedName": "any Swift.Error",
+                        "usr": "s:s5ErrorP"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.DeviceConnectionState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DeviceConnectionState",
+                        "printedName": "PaxMposSDK.DeviceConnectionState",
+                        "usr": "s:10PaxMposSDK21DeviceConnectionStateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK21DeviceConnectionStateO5erroryACs5Error_pcACmF",
+            "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO5erroryACs5Error_pcACmF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "RawDocComment"
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10PaxMposSDK21DeviceConnectionStateO",
+        "mangledName": "$s10PaxMposSDK21DeviceConnectionStateO",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "URLSessionDataTask",
         "printedName": "URLSessionDataTask",
         "declKind": "Class",
@@ -13850,62 +13850,6 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 330,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 358,
-      "length": 8,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 403,
-      "length": 17,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 463,
-      "length": 22,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 524,
-      "length": 18,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 572,
-      "length": 10,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 609,
-      "length": 8,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
-      "kind": "IntegerLiteral",
-      "offset": 656,
-      "length": 17,
-      "value": "7"
-    },
-    {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "BooleanLiteral",
       "offset": 1336,
@@ -14296,6 +14240,62 @@
       "offset": 7860,
       "length": 10,
       "value": "\"FINIX_V1\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 151,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 183,
+      "length": 1,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 228,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 258,
+      "length": 1,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 301,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 345,
+      "length": 1,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 399,
+      "length": 1,
+      "value": "7"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
+      "kind": "IntegerLiteral",
+      "offset": 452,
+      "length": 2,
+      "value": "16"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/RKI\/RKIKeychain.swift",
@@ -14767,6 +14767,62 @@
       "value": "\"split_transfers\""
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 330,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 358,
+      "length": 8,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 403,
+      "length": 17,
+      "value": "2"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 463,
+      "length": 22,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 524,
+      "length": 18,
+      "value": "4"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 572,
+      "length": 10,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 609,
+      "length": 8,
+      "value": "6"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/FinixError+TransactionStatus.swift",
+      "kind": "IntegerLiteral",
+      "offset": 656,
+      "length": 17,
+      "value": "7"
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+ReferencedRefund.swift",
       "kind": "StringLiteral",
       "offset": 452,
@@ -14870,62 +14926,6 @@
       "offset": 1687,
       "length": 19,
       "value": "\"terminal_batch_id\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 151,
-      "length": 1,
-      "value": "1"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 183,
-      "length": 1,
-      "value": "2"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 228,
-      "length": 1,
-      "value": "3"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 258,
-      "length": 1,
-      "value": "4"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 301,
-      "length": 1,
-      "value": "5"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 345,
-      "length": 1,
-      "value": "6"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 399,
-      "length": 1,
-      "value": "7"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Enum\/CardSearchMode.swift",
-      "kind": "IntegerLiteral",
-      "offset": 452,
-      "length": 2,
-      "value": "16"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReaderTransfer.swift",
