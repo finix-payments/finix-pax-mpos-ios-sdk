@@ -18,23 +18,23 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		aC1YQNDOMxNnbQ22CNnVxBKKQwo=
+		1vRJ9/GCOf9QGOuYgSuV7tmahAk=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		j7krRpvqg8hpcVkJXWm3Iq7gk38=
+		XW6kluk4MntP5vLj2Nti2DUqbeQ=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		8KAKITJDyPUITX0T/QmbLHKIfpI=
+		yJ1t+1y+LZWFah3eFEO8ZesbC0Q=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		j7krRpvqg8hpcVkJXWm3Iq7gk38=
+		XW6kluk4MntP5vLj2Nti2DUqbeQ=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tO3HrW4j/D7wIo95GjOrp1pfxRw=
+		ucA8d9QqW8jHzPTcGDvEqX5rQR8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -77,35 +77,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			KpzNt/IREuUbnzeLhyTdovAFn3YnY1mp1ySPyRF1plc=
+			5/W4f/9hMW/udjcpsGseLfBMxbRwv4eudOEZDbj733Y=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a7yT1I7CRtGPdvtquN5HJNQHzvp+dsZFgpAYCML04uo=
+			o0q9o7Mx0AzqM97iqO5iiGrdw2ZKXkLfM/t494G18/Q=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			rxqG70lVi6KEvvCCXKlE0s64eaZsOSLqkbMXyOR4ikc=
+			vHr3vzSGMvaRi3s8zxhdVFgFqDAzWfL/bzm6tbQDfYk=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			a7yT1I7CRtGPdvtquN5HJNQHzvp+dsZFgpAYCML04uo=
+			o0q9o7Mx0AzqM97iqO5iiGrdw2ZKXkLfM/t494G18/Q=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4BozbFs3whTz/jpc5PUncYnfLd4RsiNrleZoq3qzjpU=
+			7czj13KCaOZmCZc5nnMTghKvd4+kX7bQXZ4+nGr/vec=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
