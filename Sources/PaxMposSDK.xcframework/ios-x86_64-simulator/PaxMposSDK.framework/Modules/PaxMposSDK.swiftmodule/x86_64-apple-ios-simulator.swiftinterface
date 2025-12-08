@@ -9,35 +9,6 @@ import Swift
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public struct Currency {
-  public let amount: Swift.Int
-  public var decimal: Foundation.Decimal {
-    get
-  }
-  public let code: PaxMposSDK.CurrencyCode
-  public init(decimal: Foundation.Decimal, code: PaxMposSDK.CurrencyCode)
-  public init(amount: Swift.Int, code: PaxMposSDK.CurrencyCode)
-}
-extension PaxMposSDK.Currency : Swift.Equatable {
-  public static func == (a: PaxMposSDK.Currency, b: PaxMposSDK.Currency) -> Swift.Bool
-}
-extension PaxMposSDK.Currency : Swift.CustomDebugStringConvertible {
-  public var debugDescription: Swift.String {
-    get
-  }
-}
-public enum CurrencyCode {
-  case USD
-  public static func == (a: PaxMposSDK.CurrencyCode, b: PaxMposSDK.CurrencyCode) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public protocol FinixClientDeviceInteractionDelegate : AnyObject {
-  func onDisplayText(_ text: Swift.String)
-  func promptForCard(_ mode: PaxMposSDK.CardSearchMode)
-}
 public enum TransactionStatus : Swift.Int {
   case unknown
   case approved
@@ -289,7 +260,7 @@ extension PaxMposSDK.FinixClient {
     public init(from decoder: any Swift.Decoder) throws
   }
   public typealias TransactionCompleteHandler = (PaxMposSDK.FinixClient.CardReaderTransferResponse?, (any Swift.Error)?) -> Swift.Void
-  public func startTransaction(amount: PaxMposSDK.Currency, type transactionType: PaxMposSDK.FinixClient.TransactionType, splitTransfers: [PaxMposSDK.SplitTransfer]? = nil, tags: PaxMposSDK.ResourceTags? = nil)
+  public func startTransaction(amount: PaxMposSDK.Currency, type transactionType: PaxMposSDK.FinixClient.TransactionType, splitTransfers: [PaxMposSDK.SplitTransfer]? = nil, tags: PaxMposSDK.ResourceTags? = nil, buyerIdentityId: Swift.String? = nil)
 }
 public typealias DeviceId = Swift.String
 public struct DeviceInfo {
@@ -431,8 +402,35 @@ extension PaxMposSDK.FinixClient {
   public func connectDevice(_ deviceId: PaxMposSDK.DeviceId)
   public func disconnectDevice() -> Swift.Bool
 }
-extension PaxMposSDK.CurrencyCode : Swift.Equatable {}
-extension PaxMposSDK.CurrencyCode : Swift.Hashable {}
+public struct Currency {
+  public let amount: Swift.Int
+  public var decimal: Foundation.Decimal {
+    get
+  }
+  public let code: PaxMposSDK.CurrencyCode
+  public init(decimal: Foundation.Decimal, code: PaxMposSDK.CurrencyCode)
+  public init(amount: Swift.Int, code: PaxMposSDK.CurrencyCode)
+}
+extension PaxMposSDK.Currency : Swift.Equatable {
+  public static func == (a: PaxMposSDK.Currency, b: PaxMposSDK.Currency) -> Swift.Bool
+}
+extension PaxMposSDK.Currency : Swift.CustomDebugStringConvertible {
+  public var debugDescription: Swift.String {
+    get
+  }
+}
+public enum CurrencyCode {
+  case USD
+  public static func == (a: PaxMposSDK.CurrencyCode, b: PaxMposSDK.CurrencyCode) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol FinixClientDeviceInteractionDelegate : AnyObject {
+  func onDisplayText(_ text: Swift.String)
+  func promptForCard(_ mode: PaxMposSDK.CardSearchMode)
+}
 extension PaxMposSDK.TransactionStatus : Swift.Equatable {}
 extension PaxMposSDK.TransactionStatus : Swift.Hashable {}
 extension PaxMposSDK.TransactionStatus : Swift.RawRepresentable {}
@@ -460,3 +458,5 @@ extension PaxMposSDK.Finix.Environment : Swift.RawRepresentable {}
 extension PaxMposSDK.CardSearchMode : Swift.Equatable {}
 extension PaxMposSDK.CardSearchMode : Swift.Hashable {}
 extension PaxMposSDK.CardSearchMode : Swift.RawRepresentable {}
+extension PaxMposSDK.CurrencyCode : Swift.Equatable {}
+extension PaxMposSDK.CurrencyCode : Swift.Hashable {}
