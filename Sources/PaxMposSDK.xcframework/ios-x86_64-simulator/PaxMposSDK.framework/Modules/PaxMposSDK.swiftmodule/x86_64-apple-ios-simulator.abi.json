@@ -15,1029 +15,6 @@
         ]
       },
       {
-        "kind": "TypeDecl",
-        "name": "RKIStatusDelegate",
-        "printedName": "RKIStatusDelegate",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "onDisplayStatus",
-            "printedName": "onDisplayStatus(displayMessage:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK17RKIStatusDelegateP15onDisplayStatus14displayMessageySS_tF",
-            "mangledName": "$s10PaxMposSDK17RKIStatusDelegateP15onDisplayStatus14displayMessageySS_tF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.RKIStatusDelegate>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.RKIStatusDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isNetworkEnabled",
-            "printedName": "isNetworkEnabled()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK17RKIStatusDelegateP16isNetworkEnabledSbyF",
-            "mangledName": "$s10PaxMposSDK17RKIStatusDelegateP16isNetworkEnabledSbyF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.RKIStatusDelegate>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.RKIStatusDelegate>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:10PaxMposSDK17RKIStatusDelegateP",
-        "mangledName": "$s10PaxMposSDK17RKIStatusDelegateP",
-        "moduleName": "PaxMposSDK",
-        "genericSig": "<τ_0_0 : AnyObject>",
-        "sugared_genericSig": "<Self : AnyObject>",
-        "declAttributes": [
-          "AccessControl",
-          "RawDocComment"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "TypeDecl",
-        "name": "PaxEasyLinkControllerProtocol",
-        "printedName": "PaxEasyLinkControllerProtocol",
-        "children": [
-          {
-            "kind": "Function",
-            "name": "getData",
-            "printedName": "getData(_:tagList:tlvArray:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "UInt",
-                "printedName": "Swift.UInt",
-                "usr": "s:Su"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSArray?>?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AutoreleasingUnsafeMutablePointer",
-                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSArray?>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSArray?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSArray",
-                            "printedName": "Foundation.NSArray",
-                            "usr": "c:objc(cs)NSArray"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "usr": "s:SA"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP7getData_7tagList8tlvArraySo0adE7RetCodeaSu_10Foundation0I0VSgSAySo7NSArrayCSgGSgtF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP7getData_7tagList8tlvArraySo0adE7RetCodeaSu_10Foundation0I0VSgSAySo7NSArrayCSgGSgtF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getData",
-            "printedName": "getData(_:tagList:dataList:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AutoreleasingUnsafeMutablePointer",
-                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSData?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSData",
-                            "printedName": "Foundation.NSData",
-                            "usr": "c:objc(cs)NSData"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "usr": "s:SA"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP7getData_7tagList04dataK0So0adE7RetCodeaSi_10Foundation0I0VSgSAySo6NSDataCSgGSgtF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP7getData_7tagList04dataK0So0adE7RetCodeaSi_10Foundation0I0VSgSAySo6NSDataCSgGSgtF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "setData",
-            "printedName": "setData(_:dataList:tagList:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Foundation.Data?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "Data",
-                    "printedName": "Foundation.Data",
-                    "usr": "s:10Foundation4DataV"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AutoreleasingUnsafeMutablePointer",
-                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSData?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSData",
-                            "printedName": "Foundation.NSData",
-                            "usr": "c:objc(cs)NSData"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "usr": "s:SA"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP7setData_8dataList03tagK0So0adE7RetCodeaSi_10Foundation0I0VSgSAySo6NSDataCSgGSgtF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP7setData_8dataList03tagK0So0adE7RetCodeaSi_10Foundation0I0VSgSAySo6NSDataCSgGSgtF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "startTransaction",
-            "printedName": "startTransaction()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP16startTransactionSo0adE7RetCodeayF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP16startTransactionSo0adE7RetCodeayF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "completeTransaction",
-            "printedName": "completeTransaction()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP19completeTransactionSo0adE7RetCodeayF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP19completeTransactionSo0adE7RetCodeayF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "clearTransaction",
-            "printedName": "clearTransaction()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP16clearTransactionSo0adE7RetCodeayF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP16clearTransactionSo0adE7RetCodeayF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "sendCancel",
-            "printedName": "sendCancel()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP10sendCancelSo0adE7RetCodeayF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP10sendCancelSo0adE7RetCodeayF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "fileDownLoad",
-            "printedName": "fileDownLoad(_:filePath:processBlock:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "((Swift.Int, Swift.Int) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.Int, Swift.Int) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.Int, Swift.Int)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Int",
-                            "printedName": "Swift.Int",
-                            "usr": "s:Si"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP12fileDownLoad_0H4Path12processBlockSo0adE7RetCodeaSSSg_AIySi_SitcSgtF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP12fileDownLoad_0H4Path12processBlockSo0adE7RetCodeaSSSg_AIySi_SitcSgtF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "isConnected",
-            "printedName": "isConnected()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP11isConnectedSbyF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP11isConnectedSbyF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "startSearchDev",
-            "printedName": "startSearchDev(_:searchOneDeviceBlock:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Int",
-                "printedName": "Swift.Int",
-                "usr": "s:Si"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "((PaxMposSDK.BluetoothInfo?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(PaxMposSDK.BluetoothInfo?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "PaxMposSDK.BluetoothInfo?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "BluetoothInfo",
-                            "printedName": "PaxMposSDK.BluetoothInfo",
-                            "usr": "c:objc(cs)BluetoothInfo"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP14startSearchDev_20searchOneDeviceBlockySi_ySo13BluetoothInfoCSgcSgtF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP14startSearchDev_20searchOneDeviceBlockySi_ySo13BluetoothInfoCSgcSgtF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "connectDevice",
-            "printedName": "connectDevice(_:didDisconnectedBlock:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "((Swift.String?, Swift.String?) -> ())?",
-                "children": [
-                  {
-                    "kind": "TypeFunc",
-                    "name": "Function",
-                    "printedName": "(Swift.String?, Swift.String?) -> ()",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Void",
-                        "printedName": "()"
-                      },
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Tuple",
-                        "printedName": "(Swift.String?, Swift.String?)",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.String?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          },
-                          {
-                            "kind": "TypeNominal",
-                            "name": "Optional",
-                            "printedName": "Swift.String?",
-                            "children": [
-                              {
-                                "kind": "TypeNominal",
-                                "name": "String",
-                                "printedName": "Swift.String",
-                                "usr": "s:SS"
-                              }
-                            ],
-                            "usr": "s:Sq"
-                          }
-                        ]
-                      }
-                    ]
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP13connectDevice_20didDisconnectedBlockSo0adE7RetCodeaSSSg_yAH_AHtcSgtF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP13connectDevice_20didDisconnectedBlockSo0adE7RetCodeaSSSg_yAH_AHtcSgtF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "closeDevice",
-            "printedName": "closeDevice()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP11closeDeviceSo0adE7RetCodeayF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP11closeDeviceSo0adE7RetCodeayF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getKeyInfo",
-            "printedName": "getKeyInfo(_:keyInfo:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "PaxEasyLinkRetCode",
-                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
-                "usr": "c:@EA@PaxEasyLinkRetCode"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "PaxMposSDK.KeyInfoParam?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "KeyInfoParam",
-                    "printedName": "PaxMposSDK.KeyInfoParam",
-                    "usr": "c:objc(cs)KeyInfoParam"
-                  }
-                ],
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "AutoreleasingUnsafeMutablePointer",
-                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>",
-                    "children": [
-                      {
-                        "kind": "TypeNominal",
-                        "name": "Optional",
-                        "printedName": "Foundation.NSData?",
-                        "children": [
-                          {
-                            "kind": "TypeNominal",
-                            "name": "NSData",
-                            "printedName": "Foundation.NSData",
-                            "usr": "c:objc(cs)NSData"
-                          }
-                        ],
-                        "usr": "s:Sq"
-                      }
-                    ],
-                    "usr": "s:SA"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP10getKeyInfo_03keyJ0So0adE7RetCodeaSo0iJ5ParamCSg_SAySo6NSDataCSgGSgtF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP10getKeyInfo_03keyJ0So0adE7RetCodeaSo0iJ5ParamCSg_SAySo6NSDataCSgGSgtF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getVersionName",
-            "printedName": "getVersionName()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "ImplicitlyUnwrappedOptional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP14getVersionNameSSSgyF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP14getVersionNameSSSgyF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "checkForExistingKeys",
-            "printedName": "checkForExistingKeys()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP20checkForExistingKeysSbyF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP20checkForExistingKeysSbyF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "declAttributes": [
-              "RawDocComment"
-            ],
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "performRKIRemoteKeyDownload",
-            "printedName": "performRKIRemoteKeyDownload(host:port:delegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any PaxMposSDK.RKIStatusDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RKIStatusDelegate",
-                    "printedName": "any PaxMposSDK.RKIStatusDelegate",
-                    "usr": "s:10PaxMposSDK17RKIStatusDelegateP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP27performRKIRemoteKeyDownload4host4port8delegateSbSS_SSAA17RKIStatusDelegate_pSgtKF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP27performRKIRemoteKeyDownload4host4port8delegateSbSS_SSAA17RKIStatusDelegate_pSgtKF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "performRKIOfflineKeyInjection",
-            "printedName": "performRKIOfflineKeyInjection(filePath:delegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any PaxMposSDK.RKIStatusDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RKIStatusDelegate",
-                    "printedName": "any PaxMposSDK.RKIStatusDelegate",
-                    "usr": "s:10PaxMposSDK17RKIStatusDelegateP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP29performRKIOfflineKeyInjection8filePath8delegateSbSS_AA17RKIStatusDelegate_pSgtKF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP29performRKIOfflineKeyInjection8filePath8delegateSbSS_AA17RKIStatusDelegate_pSgtKF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "getRKICertificateList",
-            "printedName": "getRKICertificateList()",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP21getRKICertificateListSSyKF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP21getRKICertificateListSSyKF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "performRKIUnbindDevice",
-            "printedName": "performRKIUnbindDevice(host:port:delegate:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Bool",
-                "printedName": "Swift.Bool",
-                "usr": "s:Sb"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "(any PaxMposSDK.RKIStatusDelegate)?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "RKIStatusDelegate",
-                    "printedName": "any PaxMposSDK.RKIStatusDelegate",
-                    "usr": "s:10PaxMposSDK17RKIStatusDelegateP"
-                  }
-                ],
-                "usr": "s:Sq"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP22performRKIUnbindDevice4host4port8delegateSbSS_SSAA17RKIStatusDelegate_pSgtKF",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP22performRKIUnbindDevice4host4port8delegateSbSS_SSAA17RKIStatusDelegate_pSgtKF",
-            "moduleName": "PaxMposSDK",
-            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
-            "protocolReq": true,
-            "throwing": true,
-            "reqNewWitnessTableEntry": true,
-            "funcSelfKind": "NonMutating"
-          }
-        ],
-        "declKind": "Protocol",
-        "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP",
-        "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "AccessControl"
-        ],
-        "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Escapable",
-            "printedName": "Escapable",
-            "usr": "s:s9EscapableP",
-            "mangledName": "$ss9EscapableP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          }
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
-        "kind": "Import",
-        "name": "UIKit",
-        "printedName": "UIKit",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "Import",
         "name": "Foundation",
         "printedName": "Foundation",
@@ -14725,10 +13702,787 @@
         ]
       },
       {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
         "kind": "TypeDecl",
-        "name": "PaxEasyLinkController",
-        "printedName": "PaxEasyLinkController",
+        "name": "RKIStatusDelegate",
+        "printedName": "RKIStatusDelegate",
         "children": [
+          {
+            "kind": "Function",
+            "name": "onDisplayStatus",
+            "printedName": "onDisplayStatus(displayMessage:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK17RKIStatusDelegateP15onDisplayStatus14displayMessageySS_tF",
+            "mangledName": "$s10PaxMposSDK17RKIStatusDelegateP15onDisplayStatus14displayMessageySS_tF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.RKIStatusDelegate>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.RKIStatusDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isNetworkEnabled",
+            "printedName": "isNetworkEnabled()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK17RKIStatusDelegateP16isNetworkEnabledSbyF",
+            "mangledName": "$s10PaxMposSDK17RKIStatusDelegateP16isNetworkEnabledSbyF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.RKIStatusDelegate>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.RKIStatusDelegate>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10PaxMposSDK17RKIStatusDelegateP",
+        "mangledName": "$s10PaxMposSDK17RKIStatusDelegateP",
+        "moduleName": "PaxMposSDK",
+        "genericSig": "<τ_0_0 : AnyObject>",
+        "sugared_genericSig": "<Self : AnyObject>",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaxEasyLinkControllerProtocol",
+        "printedName": "PaxEasyLinkControllerProtocol",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "getData",
+            "printedName": "getData(_:tagList:tlvArray:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UInt",
+                "printedName": "Swift.UInt",
+                "usr": "s:Su"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSArray?>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoreleasingUnsafeMutablePointer",
+                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSArray?>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSArray?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSArray",
+                            "printedName": "Foundation.NSArray",
+                            "usr": "c:objc(cs)NSArray"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SA"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP7getData_7tagList8tlvArraySo0adE7RetCodeaSu_10Foundation0I0VSgSAySo7NSArrayCSgGSgtF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP7getData_7tagList8tlvArraySo0adE7RetCodeaSu_10Foundation0I0VSgSAySo7NSArrayCSgGSgtF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getData",
+            "printedName": "getData(_:tagList:dataList:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoreleasingUnsafeMutablePointer",
+                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSData?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSData",
+                            "printedName": "Foundation.NSData",
+                            "usr": "c:objc(cs)NSData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SA"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP7getData_7tagList04dataK0So0adE7RetCodeaSi_10Foundation0I0VSgSAySo6NSDataCSgGSgtF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP7getData_7tagList04dataK0So0adE7RetCodeaSi_10Foundation0I0VSgSAySo6NSDataCSgGSgtF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setData",
+            "printedName": "setData(_:dataList:tagList:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Foundation.Data?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Data",
+                    "printedName": "Foundation.Data",
+                    "usr": "s:10Foundation4DataV"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoreleasingUnsafeMutablePointer",
+                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSData?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSData",
+                            "printedName": "Foundation.NSData",
+                            "usr": "c:objc(cs)NSData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SA"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP7setData_8dataList03tagK0So0adE7RetCodeaSi_10Foundation0I0VSgSAySo6NSDataCSgGSgtF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP7setData_8dataList03tagK0So0adE7RetCodeaSi_10Foundation0I0VSgSAySo6NSDataCSgGSgtF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startTransaction",
+            "printedName": "startTransaction()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP16startTransactionSo0adE7RetCodeayF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP16startTransactionSo0adE7RetCodeayF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "completeTransaction",
+            "printedName": "completeTransaction()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP19completeTransactionSo0adE7RetCodeayF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP19completeTransactionSo0adE7RetCodeayF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "clearTransaction",
+            "printedName": "clearTransaction()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP16clearTransactionSo0adE7RetCodeayF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP16clearTransactionSo0adE7RetCodeayF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "sendCancel",
+            "printedName": "sendCancel()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP10sendCancelSo0adE7RetCodeayF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP10sendCancelSo0adE7RetCodeayF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fileDownLoad",
+            "printedName": "fileDownLoad(_:filePath:processBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "((Swift.Int, Swift.Int) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.Int) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.Int, Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP12fileDownLoad_0H4Path12processBlockSo0adE7RetCodeaSSSg_AIySi_SitcSgtF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP12fileDownLoad_0H4Path12processBlockSo0adE7RetCodeaSSSg_AIySi_SitcSgtF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isConnected",
+            "printedName": "isConnected()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP11isConnectedSbyF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP11isConnectedSbyF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "startSearchDev",
+            "printedName": "startSearchDev(_:searchOneDeviceBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "((PaxMposSDK.BluetoothInfo?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.BluetoothInfo?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "PaxMposSDK.BluetoothInfo?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "BluetoothInfo",
+                            "printedName": "PaxMposSDK.BluetoothInfo",
+                            "usr": "c:objc(cs)BluetoothInfo"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP14startSearchDev_20searchOneDeviceBlockySi_ySo13BluetoothInfoCSgcSgtF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP14startSearchDev_20searchOneDeviceBlockySi_ySo13BluetoothInfoCSgcSgtF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "connectDevice",
+            "printedName": "connectDevice(_:didDisconnectedBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "((Swift.String?, Swift.String?) -> ())?",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String?, Swift.String?) -> ()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Void",
+                        "printedName": "()"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(Swift.String?, Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP13connectDevice_20didDisconnectedBlockSo0adE7RetCodeaSSSg_yAH_AHtcSgtF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP13connectDevice_20didDisconnectedBlockSo0adE7RetCodeaSSSg_yAH_AHtcSgtF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "closeDevice",
+            "printedName": "closeDevice()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP11closeDeviceSo0adE7RetCodeayF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP11closeDeviceSo0adE7RetCodeayF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getKeyInfo",
+            "printedName": "getKeyInfo(_:keyInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "PaxEasyLinkRetCode",
+                "printedName": "PaxMposSDK.PaxEasyLinkRetCode",
+                "usr": "c:@EA@PaxEasyLinkRetCode"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "PaxMposSDK.KeyInfoParam?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "KeyInfoParam",
+                    "printedName": "PaxMposSDK.KeyInfoParam",
+                    "usr": "c:objc(cs)KeyInfoParam"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AutoreleasingUnsafeMutablePointer",
+                    "printedName": "Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Foundation.NSData?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "NSData",
+                            "printedName": "Foundation.NSData",
+                            "usr": "c:objc(cs)NSData"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "usr": "s:SA"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP10getKeyInfo_03keyJ0So0adE7RetCodeaSo0iJ5ParamCSg_SAySo6NSDataCSgGSgtF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP10getKeyInfo_03keyJ0So0adE7RetCodeaSo0iJ5ParamCSg_SAySo6NSDataCSgGSgtF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getVersionName",
+            "printedName": "getVersionName()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "ImplicitlyUnwrappedOptional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP14getVersionNameSSSgyF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP14getVersionNameSSSgyF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
           {
             "kind": "Function",
             "name": "checkForExistingKeys",
@@ -14742,14 +14496,16 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So21PaxEasyLinkControllerC0A7MposSDKE20checkForExistingKeysSbyF",
-            "mangledName": "$sSo21PaxEasyLinkControllerC0A7MposSDKE20checkForExistingKeysSbyF",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP20checkForExistingKeysSbyF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP20checkForExistingKeysSbyF",
             "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
             "declAttributes": [
-              "AccessControl",
               "RawDocComment"
             ],
-            "isFromExtension": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -14791,15 +14547,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So21PaxEasyLinkControllerC0A7MposSDKE27performRKIRemoteKeyDownload4host4port8delegateSbSS_SSAC17RKIStatusDelegate_pSgtKF",
-            "mangledName": "$sSo21PaxEasyLinkControllerC0A7MposSDKE27performRKIRemoteKeyDownload4host4port8delegateSbSS_SSAC17RKIStatusDelegate_pSgtKF",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP27performRKIRemoteKeyDownload4host4port8delegateSbSS_SSAA17RKIStatusDelegate_pSgtKF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP27performRKIRemoteKeyDownload4host4port8delegateSbSS_SSAA17RKIStatusDelegate_pSgtKF",
             "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
             "throwing": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -14835,15 +14590,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So21PaxEasyLinkControllerC0A7MposSDKE29performRKIOfflineKeyInjection8filePath8delegateSbSS_AC17RKIStatusDelegate_pSgtKF",
-            "mangledName": "$sSo21PaxEasyLinkControllerC0A7MposSDKE29performRKIOfflineKeyInjection8filePath8delegateSbSS_AC17RKIStatusDelegate_pSgtKF",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP29performRKIOfflineKeyInjection8filePath8delegateSbSS_AA17RKIStatusDelegate_pSgtKF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP29performRKIOfflineKeyInjection8filePath8delegateSbSS_AA17RKIStatusDelegate_pSgtKF",
             "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
             "throwing": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -14859,15 +14613,14 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So21PaxEasyLinkControllerC0A7MposSDKE21getRKICertificateListSSyKF",
-            "mangledName": "$sSo21PaxEasyLinkControllerC0A7MposSDKE21getRKICertificateListSSyKF",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP21getRKICertificateListSSyKF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP21getRKICertificateListSSyKF",
             "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
             "throwing": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           },
           {
@@ -14909,41 +14662,25 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:So21PaxEasyLinkControllerC0A7MposSDKE22performRKIUnbindDevice4host4port8delegateSbSS_SSAC17RKIStatusDelegate_pSgtKF",
-            "mangledName": "$sSo21PaxEasyLinkControllerC0A7MposSDKE22performRKIUnbindDevice4host4port8delegateSbSS_SSAC17RKIStatusDelegate_pSgtKF",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP22performRKIUnbindDevice4host4port8delegateSbSS_SSAA17RKIStatusDelegate_pSgtKF",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP22performRKIUnbindDevice4host4port8delegateSbSS_SSAA17RKIStatusDelegate_pSgtKF",
             "moduleName": "PaxMposSDK",
-            "declAttributes": [
-              "AccessControl",
-              "RawDocComment"
-            ],
-            "isFromExtension": true,
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.PaxEasyLinkControllerProtocol>",
+            "protocolReq": true,
             "throwing": true,
+            "reqNewWitnessTableEntry": true,
             "funcSelfKind": "NonMutating"
           }
         ],
-        "declKind": "Class",
-        "usr": "c:objc(cs)PaxEasyLinkController",
+        "declKind": "Protocol",
+        "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP",
+        "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP",
         "moduleName": "PaxMposSDK",
-        "isOpen": true,
-        "objc_name": "PaxEasyLinkController",
         "declAttributes": [
-          "ObjC",
-          "Dynamic"
-        ],
-        "superclassUsr": "c:objc(cs)NSObject",
-        "isExternal": true,
-        "inheritsConvenienceInitializers": true,
-        "superclassNames": [
-          "ObjectiveC.NSObject"
+          "AccessControl"
         ],
         "conformances": [
-          {
-            "kind": "Conformance",
-            "name": "Copyable",
-            "printedName": "Copyable",
-            "usr": "s:s8CopyableP",
-            "mangledName": "$ss8CopyableP"
-          },
           {
             "kind": "Conformance",
             "name": "Escapable",
@@ -14953,61 +14690,39 @@
           },
           {
             "kind": "Conformance",
-            "name": "Equatable",
-            "printedName": "Equatable",
-            "usr": "s:SQ",
-            "mangledName": "$sSQ"
-          },
-          {
-            "kind": "Conformance",
-            "name": "Hashable",
-            "printedName": "Hashable",
-            "usr": "s:SH",
-            "mangledName": "$sSH"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CVarArg",
-            "printedName": "CVarArg",
-            "usr": "s:s7CVarArgP",
-            "mangledName": "$ss7CVarArgP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObservingPublishing",
-            "printedName": "_KeyValueCodingAndObservingPublishing",
-            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
-            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "_KeyValueCodingAndObserving",
-            "printedName": "_KeyValueCodingAndObserving",
-            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
-            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomStringConvertible",
-            "printedName": "CustomStringConvertible",
-            "usr": "s:s23CustomStringConvertibleP",
-            "mangledName": "$ss23CustomStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "CustomDebugStringConvertible",
-            "printedName": "CustomDebugStringConvertible",
-            "usr": "s:s28CustomDebugStringConvertibleP",
-            "mangledName": "$ss28CustomDebugStringConvertibleP"
-          },
-          {
-            "kind": "Conformance",
-            "name": "PaxEasyLinkControllerProtocol",
-            "printedName": "PaxEasyLinkControllerProtocol",
-            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP",
-            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP"
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
           }
         ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "UIKit",
+        "printedName": "UIKit",
+        "declKind": "Import",
+        "moduleName": "PaxMposSDK"
       },
       {
         "kind": "TypeDecl",
@@ -15330,67 +15045,296 @@
             "mangledName": "$s10PaxMposSDK18URLSessionProtocolP"
           }
         ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "PaxEasyLinkController",
+        "printedName": "PaxEasyLinkController",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "checkForExistingKeys",
+            "printedName": "checkForExistingKeys()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So21PaxEasyLinkControllerC0A7MposSDKE20checkForExistingKeysSbyF",
+            "mangledName": "$sSo21PaxEasyLinkControllerC0A7MposSDKE20checkForExistingKeysSbyF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "performRKIRemoteKeyDownload",
+            "printedName": "performRKIRemoteKeyDownload(host:port:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any PaxMposSDK.RKIStatusDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RKIStatusDelegate",
+                    "printedName": "any PaxMposSDK.RKIStatusDelegate",
+                    "usr": "s:10PaxMposSDK17RKIStatusDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So21PaxEasyLinkControllerC0A7MposSDKE27performRKIRemoteKeyDownload4host4port8delegateSbSS_SSAC17RKIStatusDelegate_pSgtKF",
+            "mangledName": "$sSo21PaxEasyLinkControllerC0A7MposSDKE27performRKIRemoteKeyDownload4host4port8delegateSbSS_SSAC17RKIStatusDelegate_pSgtKF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "performRKIOfflineKeyInjection",
+            "printedName": "performRKIOfflineKeyInjection(filePath:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any PaxMposSDK.RKIStatusDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RKIStatusDelegate",
+                    "printedName": "any PaxMposSDK.RKIStatusDelegate",
+                    "usr": "s:10PaxMposSDK17RKIStatusDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So21PaxEasyLinkControllerC0A7MposSDKE29performRKIOfflineKeyInjection8filePath8delegateSbSS_AC17RKIStatusDelegate_pSgtKF",
+            "mangledName": "$sSo21PaxEasyLinkControllerC0A7MposSDKE29performRKIOfflineKeyInjection8filePath8delegateSbSS_AC17RKIStatusDelegate_pSgtKF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getRKICertificateList",
+            "printedName": "getRKICertificateList()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So21PaxEasyLinkControllerC0A7MposSDKE21getRKICertificateListSSyKF",
+            "mangledName": "$sSo21PaxEasyLinkControllerC0A7MposSDKE21getRKICertificateListSSyKF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "performRKIUnbindDevice",
+            "printedName": "performRKIUnbindDevice(host:port:delegate:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any PaxMposSDK.RKIStatusDelegate)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RKIStatusDelegate",
+                    "printedName": "any PaxMposSDK.RKIStatusDelegate",
+                    "usr": "s:10PaxMposSDK17RKIStatusDelegateP"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:So21PaxEasyLinkControllerC0A7MposSDKE22performRKIUnbindDevice4host4port8delegateSbSS_SSAC17RKIStatusDelegate_pSgtKF",
+            "mangledName": "$sSo21PaxEasyLinkControllerC0A7MposSDKE22performRKIUnbindDevice4host4port8delegateSbSS_SSAC17RKIStatusDelegate_pSgtKF",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isFromExtension": true,
+            "throwing": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:objc(cs)PaxEasyLinkController",
+        "moduleName": "PaxMposSDK",
+        "isOpen": true,
+        "objc_name": "PaxEasyLinkController",
+        "declAttributes": [
+          "ObjC",
+          "Dynamic"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "isExternal": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "PaxEasyLinkControllerProtocol",
+            "printedName": "PaxEasyLinkControllerProtocol",
+            "usr": "s:10PaxMposSDK0A26EasyLinkControllerProtocolP",
+            "mangledName": "$s10PaxMposSDK0A26EasyLinkControllerProtocolP"
+          }
+        ]
       }
     ],
     "json_format_version": 8
   },
   "ConstValues": [
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
-      "kind": "StringLiteral",
-      "offset": 278,
-      "length": 31,
-      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSZZZZZ\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
-      "kind": "IntegerLiteral",
-      "offset": 424,
-      "length": 1,
-      "value": "0"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
-      "kind": "StringLiteral",
-      "offset": 473,
-      "length": 13,
-      "value": "\"en_US_POSIX\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
-      "kind": "StringLiteral",
-      "offset": 644,
-      "length": 21,
-      "value": "\"yyyy-MM-dd HH:mm:ss\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Utilities\/Tools.swift",
-      "kind": "StringLiteral",
-      "offset": 2339,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Utilities\/Tools.swift",
-      "kind": "BooleanLiteral",
-      "offset": 2361,
-      "length": 4,
-      "value": "true"
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Utilities\/Tools.swift",
-      "kind": "StringLiteral",
-      "offset": 7132,
-      "length": 3,
-      "value": "\"$\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Utilities\/Tools.swift",
-      "kind": "BooleanLiteral",
-      "offset": 9579,
-      "length": 5,
-      "value": "false"
-    },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixAPI.swift",
       "kind": "StringLiteral",
@@ -15744,77 +15688,77 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 15959,
+      "offset": 15976,
       "length": 6,
       "value": "\"SALE\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 15986,
+      "offset": 16003,
       "length": 15,
       "value": "\"AUTHORIZATION\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 16024,
+      "offset": 16041,
       "length": 8,
       "value": "\"REFUND\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 18178,
+      "offset": 18195,
       "length": 18,
       "value": "\"amount_requested\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 18229,
+      "offset": 18246,
       "length": 15,
       "value": "\"approval_code\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 18299,
+      "offset": 18316,
       "length": 14,
       "value": "\"failure_code\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 18348,
+      "offset": 18365,
       "length": 17,
       "value": "\"failure_message\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 18405,
+      "offset": 18422,
       "length": 23,
       "value": "\"masked_account_number\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 18479,
+      "offset": 18496,
       "length": 10,
       "value": "\"trace_id\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 18521,
+      "offset": 18538,
       "length": 14,
       "value": "\"emv_response\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 18590,
+      "offset": 18607,
       "length": 17,
       "value": "\"split_transfers\""
     },
@@ -15977,7 +15921,7 @@
       "kind": "StringLiteral",
       "offset": 1938,
       "length": 11,
-      "value": "\"1.06.0030\""
+      "value": "\"1.06.0033\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
@@ -17357,6 +17301,62 @@
       "offset": 14219,
       "length": 13,
       "value": "\"identity_id\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 278,
+      "length": 31,
+      "value": "\"yyyy-MM-dd'T'HH:mm:ss.SSZZZZZ\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
+      "kind": "IntegerLiteral",
+      "offset": 424,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 473,
+      "length": 13,
+      "value": "\"en_US_POSIX\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/DateFormatter+Ext.swift",
+      "kind": "StringLiteral",
+      "offset": 644,
+      "length": 21,
+      "value": "\"yyyy-MM-dd HH:mm:ss\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Utilities\/Tools.swift",
+      "kind": "StringLiteral",
+      "offset": 2339,
+      "length": 2,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Utilities\/Tools.swift",
+      "kind": "BooleanLiteral",
+      "offset": 2361,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Utilities\/Tools.swift",
+      "kind": "StringLiteral",
+      "offset": 7132,
+      "length": 3,
+      "value": "\"$\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Utilities\/Tools.swift",
+      "kind": "BooleanLiteral",
+      "offset": 9579,
+      "length": 5,
+      "value": "false"
     }
   ]
 }

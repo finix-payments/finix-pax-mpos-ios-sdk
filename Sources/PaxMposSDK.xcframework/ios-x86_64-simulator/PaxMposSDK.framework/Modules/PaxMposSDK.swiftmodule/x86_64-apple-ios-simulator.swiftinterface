@@ -10,38 +10,6 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
-public protocol RKIStatusDelegate : AnyObject {
-  func onDisplayStatus(displayMessage: Swift.String)
-  func isNetworkEnabled() -> Swift.Bool
-}
-public protocol PaxEasyLinkControllerProtocol {
-  func getData(_ dataType: Swift.UInt, tagList: Foundation.Data!, tlvArray: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSArray?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func getData(_ dataType: Swift.Int, tagList: Foundation.Data!, dataList: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func setData(_ dataType: Swift.Int, dataList: Foundation.Data!, tagList: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func startTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
-  func completeTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
-  func clearTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
-  func sendCancel() -> PaxMposSDK.PaxEasyLinkRetCode
-  func fileDownLoad(_ fileName: Swift.String!, filePath: Swift.String!, processBlock: PaxMposSDK.onProcessCB!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func isConnected() -> Swift.Bool
-  func startSearchDev(_ timeout: Swift.Int, searchOneDeviceBlock: PaxMposSDK.onSearchOneDeviceCB!)
-  func connectDevice(_ deviceId: Swift.String!, didDisconnectedBlock: PaxMposSDK.didDisconnectedBlock!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func closeDevice() -> PaxMposSDK.PaxEasyLinkRetCode
-  func getKeyInfo(_ keyInfoParam: PaxMposSDK.KeyInfoParam!, keyInfo: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  func getVersionName() -> Swift.String!
-  func checkForExistingKeys() -> Swift.Bool
-  func performRKIRemoteKeyDownload(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  func performRKIOfflineKeyInjection(filePath: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  func getRKICertificateList() throws -> Swift.String
-  func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-}
-extension PaxMposSDK.PaxEasyLinkController : PaxMposSDK.PaxEasyLinkControllerProtocol {
-  public func checkForExistingKeys() -> Swift.Bool
-  public func performRKIRemoteKeyDownload(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  public func performRKIOfflineKeyInjection(filePath: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  public func getRKICertificateList() throws -> Swift.String
-  public func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-}
 public class FinixClient {
   weak public var delegate: (any PaxMposSDK.FinixDelegate)?
   weak public var interactionDelegate: (any PaxMposSDK.FinixClientDeviceInteractionDelegate)?
@@ -481,6 +449,38 @@ public protocol FinixLoggerProtocol {
   func http(error: any Swift.Error, attributes: [Swift.String : any Swift.Encodable]?)
   func http(response: Foundation.HTTPURLResponse, attributes: [Swift.String : any Swift.Encodable]?)
   func http(responseData data: Foundation.Data?, attributes: [Swift.String : any Swift.Encodable]?)
+}
+public protocol RKIStatusDelegate : AnyObject {
+  func onDisplayStatus(displayMessage: Swift.String)
+  func isNetworkEnabled() -> Swift.Bool
+}
+public protocol PaxEasyLinkControllerProtocol {
+  func getData(_ dataType: Swift.UInt, tagList: Foundation.Data!, tlvArray: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSArray?>!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func getData(_ dataType: Swift.Int, tagList: Foundation.Data!, dataList: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func setData(_ dataType: Swift.Int, dataList: Foundation.Data!, tagList: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func startTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
+  func completeTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
+  func clearTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
+  func sendCancel() -> PaxMposSDK.PaxEasyLinkRetCode
+  func fileDownLoad(_ fileName: Swift.String!, filePath: Swift.String!, processBlock: PaxMposSDK.onProcessCB!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func isConnected() -> Swift.Bool
+  func startSearchDev(_ timeout: Swift.Int, searchOneDeviceBlock: PaxMposSDK.onSearchOneDeviceCB!)
+  func connectDevice(_ deviceId: Swift.String!, didDisconnectedBlock: PaxMposSDK.didDisconnectedBlock!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func closeDevice() -> PaxMposSDK.PaxEasyLinkRetCode
+  func getKeyInfo(_ keyInfoParam: PaxMposSDK.KeyInfoParam!, keyInfo: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
+  func getVersionName() -> Swift.String!
+  func checkForExistingKeys() -> Swift.Bool
+  func performRKIRemoteKeyDownload(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
+  func performRKIOfflineKeyInjection(filePath: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
+  func getRKICertificateList() throws -> Swift.String
+  func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
+}
+extension PaxMposSDK.PaxEasyLinkController : PaxMposSDK.PaxEasyLinkControllerProtocol {
+  public func checkForExistingKeys() -> Swift.Bool
+  public func performRKIRemoteKeyDownload(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
+  public func performRKIOfflineKeyInjection(filePath: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
+  public func getRKICertificateList() throws -> Swift.String
+  public func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
 }
 extension PaxMposSDK.Country : Swift.Equatable {}
 extension PaxMposSDK.Country : Swift.Hashable {}
