@@ -10,6 +10,204 @@ import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+extension PaxMposSDK.FinixClient {
+  public func startScan()
+  public func connectDevice(_ deviceId: PaxMposSDK.DeviceId)
+  public func disconnectDevice() -> Swift.Bool
+}
+public struct FinixError : Foundation.LocalizedError {
+  public let code: PaxMposSDK.FinixError.Code
+  public let message: Swift.String
+  public var errorDescription: Swift.String? {
+    get
+  }
+  public enum Code : Swift.Equatable {
+    case GenericDecline
+    case ExpiredCard
+    case DuplicateTransaction
+    case PickUpCard
+    case CallIssuer
+    case InvalidTransaction
+    case InvalidAmount
+    case InvalidAccountNumber
+    case RestrictedCard
+    case TransactionNotPermitted
+    case CommunicationError
+    case Unknown
+    case CardReaderNotConnected
+    case CannotEncodeParameters
+    case CannotDecodeResponse
+    case MalformedRequest
+    case RequestFailed(_: Swift.Int?)
+    case TransactionError(PaxMposSDK.PaxEasyLinkRetCode)
+    case InitializationError
+    case FailedToParseAuthorizationResponse
+    case AuthorizationFailure(_: any Swift.Error)
+    case AuthorizationFailureMissingResponse
+    case RefundRequestFailed
+    case RefundRequestFailedWithError(_: any Swift.Error)
+    case CardInputError
+    case InvalidCurrencyCode
+    case NoCardData
+    case BadCard
+    case SplitTransferValidation
+    public static func == (lhs: PaxMposSDK.FinixError.Code, rhs: PaxMposSDK.FinixError.Code) -> Swift.Bool
+  }
+}
+public protocol FinixDelegate : AnyObject {
+  func didDiscoverDevice(_ deviceInfo: PaxMposSDK.DeviceInfo)
+  func deviceConnectionStatusChanged(_ state: PaxMposSDK.DeviceConnectionState)
+  func startTransactionStatusChanged(_ status: PaxMposSDK.ProcessCardStatus)
+}
+extension PaxMposSDK.FinixDelegate {
+  public func onEnvironmentChangeRKICompleted(success: Swift.Bool, message: Swift.String)
+}
+public struct EncryptedCardDetails : Swift.Encodable {
+  public enum EncryptionMethod : Swift.String, Swift.Encodable {
+    case ecb
+    case cbc
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum EncryptionMode : Swift.String, Swift.Encodable {
+    case dukpt
+    case tdes
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum CardHolderVerification : Swift.String, Swift.Encodable {
+    case noCVM
+    case signature
+    case offlinePlainPIN
+    case offlineEncipheredPIN
+    case onlinePIN
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public let deviceModel: Swift.String
+  public let encryptedTrack1: Swift.String?
+  public let encryptedTrack2: Swift.String?
+  public let encryptionMethod: PaxMposSDK.EncryptedCardDetails.EncryptionMethod
+  public let encryptionMode: PaxMposSDK.EncryptedCardDetails.EncryptionMode
+  public let emv: Swift.String?
+  public let ksn: Swift.String
+  public let cardholderVerification: PaxMposSDK.EncryptedCardDetails.CardHolderVerification
+  public let cardholderName: Swift.String
+  public init(deviceModel: Swift.String = "PAX_D135", encryptedTrack1: Swift.String?, encryptedTrack2: Swift.String?, encryptionMethod: PaxMposSDK.EncryptedCardDetails.EncryptionMethod = .ecb, encryptionMode: PaxMposSDK.EncryptedCardDetails.EncryptionMode = .dukpt, emv: Swift.String?, ksn: Swift.String, cardholderVerification: PaxMposSDK.EncryptedCardDetails.CardHolderVerification = .noCVM, cardholderName: Swift.String = "")
+  public func encode(to encoder: any Swift.Encoder) throws
+}
+public typealias DeviceId = Swift.String
+public struct DeviceInfo {
+  public let deviceId: PaxMposSDK.DeviceId
+  public let name: Swift.String?
+}
+public struct CAPKInfo {
+  public let aid: Swift.String
+  public let capkIndex: Swift.String
+  public let capkKeyIndex: Swift.String
+  public let cardBrand: Swift.String
+  public init(aid: Swift.String, capkIndex: Swift.String, capkKeyIndex: Swift.String, cardBrand: Swift.String)
+}
+public enum TransactionStatus : Swift.Int {
+  case unknown
+  case approved
+  case partiallyApproved
+  case approvedExceptCashback
+  case approvedByMerchant
+  case callIssuer
+  case declined
+  case needsToBeReversed
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+extension PaxMposSDK.FinixClient {
+  public struct RefundResponse : Swift.Decodable {
+    public let id: Swift.String?
+    public let amount: Swift.Int
+    public let traceId: PaxMposSDK.TraceId?
+    public init(from decoder: any Swift.Decoder) throws
+  }
+  public func startRefund(transactionID: Swift.String, amount: PaxMposSDK.Currency, completion: ((PaxMposSDK.FinixClient.RefundResponse?, (any Swift.Error)?) -> Swift.Void)?)
+}
+public typealias TraceId = Swift.String
+public typealias TransferId = Swift.String
+public typealias SourceId = Swift.String
+public typealias AuthorizationId = Swift.String
+public typealias ResourceTags = [Swift.String : Swift.String]
+public struct DebitResponse : PaxMposSDK.TransferResponse {
+  public let id: PaxMposSDK.TransferId
+  public let state: PaxMposSDK.Transfer.State
+  public let traceId: PaxMposSDK.TraceId
+  public let source: PaxMposSDK.SourceId?
+  public let amount: PaxMposSDK.Currency
+  public let tags: PaxMposSDK.ResourceTags?
+}
+public struct TransferRequest {
+  public init(amount: PaxMposSDK.Currency, tags: PaxMposSDK.ResourceTags? = nil)
+}
+public enum PaymentType {
+  case Unknown
+  case Credit
+  case Debit
+  case GiftCard
+  case EBT
+  public static func == (a: PaxMposSDK.PaymentType, b: PaxMposSDK.PaymentType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum EBTType {
+  case NotSet
+  case FoodStamps
+  case CashBenefits
+  public static func == (a: PaxMposSDK.EBTType, b: PaxMposSDK.EBTType) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public protocol ResponseState {
+  var state: PaxMposSDK.Transfer.State { get }
+  var success: Swift.Bool { get }
+  var pending: Swift.Bool { get }
+}
+extension PaxMposSDK.ResponseState {
+  public var success: Swift.Bool {
+    get
+  }
+  public var pending: Swift.Bool {
+    get
+  }
+}
+public protocol TransferResponse : PaxMposSDK.ResponseState {
+  var id: PaxMposSDK.TransferId { get }
+  var traceId: PaxMposSDK.TraceId { get }
+  var source: PaxMposSDK.SourceId? { get }
+}
+public protocol URLSessionDataTaskProtocol {
+  func resume()
+}
+extension Foundation.URLSessionDataTask : PaxMposSDK.URLSessionDataTaskProtocol {
+}
+public protocol URLSessionProtocol {
+  func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> any PaxMposSDK.URLSessionDataTaskProtocol
+}
+extension Foundation.URLSession : PaxMposSDK.URLSessionProtocol {
+  public func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> any PaxMposSDK.URLSessionDataTaskProtocol
+}
 public struct FinixConfig {
   public init(environment: PaxMposSDK.Finix.Environment, credentials: PaxMposSDK.Finix.APICredentials, merchantId: Swift.String, mid: Swift.String, deviceType: PaxMposSDK.Finix.Device, deviceId: Swift.String, serialNumber: Swift.String? = nil)
 }
@@ -284,204 +482,22 @@ public enum CardSearchMode : Swift.Int {
     get
   }
 }
-extension PaxMposSDK.FinixClient {
-  public func startScan()
-  public func connectDevice(_ deviceId: PaxMposSDK.DeviceId)
-  public func disconnectDevice() -> Swift.Bool
-}
-public struct FinixError : Foundation.LocalizedError {
-  public let code: PaxMposSDK.FinixError.Code
-  public let message: Swift.String
-  public var errorDescription: Swift.String? {
-    get
-  }
-  public enum Code : Swift.Equatable {
-    case GenericDecline
-    case ExpiredCard
-    case DuplicateTransaction
-    case PickUpCard
-    case CallIssuer
-    case InvalidTransaction
-    case InvalidAmount
-    case InvalidAccountNumber
-    case RestrictedCard
-    case TransactionNotPermitted
-    case CommunicationError
-    case Unknown
-    case CardReaderNotConnected
-    case CannotEncodeParameters
-    case CannotDecodeResponse
-    case MalformedRequest
-    case RequestFailed(_: Swift.Int?)
-    case TransactionError(PaxMposSDK.PaxEasyLinkRetCode)
-    case InitializationError
-    case FailedToParseAuthorizationResponse
-    case AuthorizationFailure(_: any Swift.Error)
-    case AuthorizationFailureMissingResponse
-    case RefundRequestFailed
-    case RefundRequestFailedWithError(_: any Swift.Error)
-    case CardInputError
-    case InvalidCurrencyCode
-    case NoCardData
-    case BadCard
-    case SplitTransferValidation
-    public static func == (lhs: PaxMposSDK.FinixError.Code, rhs: PaxMposSDK.FinixError.Code) -> Swift.Bool
-  }
-}
-public protocol FinixDelegate : AnyObject {
-  func didDiscoverDevice(_ deviceInfo: PaxMposSDK.DeviceInfo)
-  func deviceConnectionStatusChanged(_ state: PaxMposSDK.DeviceConnectionState)
-  func startTransactionStatusChanged(_ status: PaxMposSDK.ProcessCardStatus)
-}
-extension PaxMposSDK.FinixDelegate {
-  public func onEnvironmentChangeRKICompleted(success: Swift.Bool, message: Swift.String)
-}
-public struct EncryptedCardDetails : Swift.Encodable {
-  public enum EncryptionMethod : Swift.String, Swift.Encodable {
-    case ecb
-    case cbc
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public enum EncryptionMode : Swift.String, Swift.Encodable {
-    case dukpt
-    case tdes
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public enum CardHolderVerification : Swift.String, Swift.Encodable {
-    case noCVM
-    case signature
-    case offlinePlainPIN
-    case offlineEncipheredPIN
-    case onlinePIN
-    public init?(rawValue: Swift.String)
-    public typealias RawValue = Swift.String
-    public var rawValue: Swift.String {
-      get
-    }
-  }
-  public let deviceModel: Swift.String
-  public let encryptedTrack1: Swift.String?
-  public let encryptedTrack2: Swift.String?
-  public let encryptionMethod: PaxMposSDK.EncryptedCardDetails.EncryptionMethod
-  public let encryptionMode: PaxMposSDK.EncryptedCardDetails.EncryptionMode
-  public let emv: Swift.String?
-  public let ksn: Swift.String
-  public let cardholderVerification: PaxMposSDK.EncryptedCardDetails.CardHolderVerification
-  public let cardholderName: Swift.String
-  public init(deviceModel: Swift.String = "PAX_D135", encryptedTrack1: Swift.String?, encryptedTrack2: Swift.String?, encryptionMethod: PaxMposSDK.EncryptedCardDetails.EncryptionMethod = .ecb, encryptionMode: PaxMposSDK.EncryptedCardDetails.EncryptionMode = .dukpt, emv: Swift.String?, ksn: Swift.String, cardholderVerification: PaxMposSDK.EncryptedCardDetails.CardHolderVerification = .noCVM, cardholderName: Swift.String = "")
-  public func encode(to encoder: any Swift.Encoder) throws
-}
-public typealias DeviceId = Swift.String
-public struct DeviceInfo {
-  public let deviceId: PaxMposSDK.DeviceId
-  public let name: Swift.String?
-}
-public struct CAPKInfo {
-  public let aid: Swift.String
-  public let capkIndex: Swift.String
-  public let capkKeyIndex: Swift.String
-  public let cardBrand: Swift.String
-  public init(aid: Swift.String, capkIndex: Swift.String, capkKeyIndex: Swift.String, cardBrand: Swift.String)
-}
-public enum TransactionStatus : Swift.Int {
-  case unknown
-  case approved
-  case partiallyApproved
-  case approvedExceptCashback
-  case approvedByMerchant
-  case callIssuer
-  case declined
-  case needsToBeReversed
-  public init?(rawValue: Swift.Int)
-  public typealias RawValue = Swift.Int
-  public var rawValue: Swift.Int {
-    get
-  }
-}
-extension PaxMposSDK.FinixClient {
-  public struct RefundResponse : Swift.Decodable {
-    public let id: Swift.String?
-    public let amount: Swift.Int
-    public let traceId: PaxMposSDK.TraceId?
-    public init(from decoder: any Swift.Decoder) throws
-  }
-  public func startRefund(transactionID: Swift.String, amount: PaxMposSDK.Currency, completion: ((PaxMposSDK.FinixClient.RefundResponse?, (any Swift.Error)?) -> Swift.Void)?)
-}
-public typealias TraceId = Swift.String
-public typealias TransferId = Swift.String
-public typealias SourceId = Swift.String
-public typealias AuthorizationId = Swift.String
-public typealias ResourceTags = [Swift.String : Swift.String]
-public struct DebitResponse : PaxMposSDK.TransferResponse {
-  public let id: PaxMposSDK.TransferId
-  public let state: PaxMposSDK.Transfer.State
-  public let traceId: PaxMposSDK.TraceId
-  public let source: PaxMposSDK.SourceId?
-  public let amount: PaxMposSDK.Currency
-  public let tags: PaxMposSDK.ResourceTags?
-}
-public struct TransferRequest {
-  public init(amount: PaxMposSDK.Currency, tags: PaxMposSDK.ResourceTags? = nil)
-}
-public enum PaymentType {
-  case Unknown
-  case Credit
-  case Debit
-  case GiftCard
-  case EBT
-  public static func == (a: PaxMposSDK.PaymentType, b: PaxMposSDK.PaymentType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public enum EBTType {
-  case NotSet
-  case FoodStamps
-  case CashBenefits
-  public static func == (a: PaxMposSDK.EBTType, b: PaxMposSDK.EBTType) -> Swift.Bool
-  public func hash(into hasher: inout Swift.Hasher)
-  public var hashValue: Swift.Int {
-    get
-  }
-}
-public protocol ResponseState {
-  var state: PaxMposSDK.Transfer.State { get }
-  var success: Swift.Bool { get }
-  var pending: Swift.Bool { get }
-}
-extension PaxMposSDK.ResponseState {
-  public var success: Swift.Bool {
-    get
-  }
-  public var pending: Swift.Bool {
-    get
-  }
-}
-public protocol TransferResponse : PaxMposSDK.ResponseState {
-  var id: PaxMposSDK.TransferId { get }
-  var traceId: PaxMposSDK.TraceId { get }
-  var source: PaxMposSDK.SourceId? { get }
-}
-public protocol URLSessionDataTaskProtocol {
-  func resume()
-}
-extension Foundation.URLSessionDataTask : PaxMposSDK.URLSessionDataTaskProtocol {
-}
-public protocol URLSessionProtocol {
-  func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> any PaxMposSDK.URLSessionDataTaskProtocol
-}
-extension Foundation.URLSession : PaxMposSDK.URLSessionProtocol {
-  public func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> any PaxMposSDK.URLSessionDataTaskProtocol
-}
+extension PaxMposSDK.EncryptedCardDetails.EncryptionMethod : Swift.Equatable {}
+extension PaxMposSDK.EncryptedCardDetails.EncryptionMethod : Swift.Hashable {}
+extension PaxMposSDK.EncryptedCardDetails.EncryptionMethod : Swift.RawRepresentable {}
+extension PaxMposSDK.EncryptedCardDetails.EncryptionMode : Swift.Equatable {}
+extension PaxMposSDK.EncryptedCardDetails.EncryptionMode : Swift.Hashable {}
+extension PaxMposSDK.EncryptedCardDetails.EncryptionMode : Swift.RawRepresentable {}
+extension PaxMposSDK.EncryptedCardDetails.CardHolderVerification : Swift.Equatable {}
+extension PaxMposSDK.EncryptedCardDetails.CardHolderVerification : Swift.Hashable {}
+extension PaxMposSDK.EncryptedCardDetails.CardHolderVerification : Swift.RawRepresentable {}
+extension PaxMposSDK.TransactionStatus : Swift.Equatable {}
+extension PaxMposSDK.TransactionStatus : Swift.Hashable {}
+extension PaxMposSDK.TransactionStatus : Swift.RawRepresentable {}
+extension PaxMposSDK.PaymentType : Swift.Equatable {}
+extension PaxMposSDK.PaymentType : Swift.Hashable {}
+extension PaxMposSDK.EBTType : Swift.Equatable {}
+extension PaxMposSDK.EBTType : Swift.Hashable {}
 extension PaxMposSDK.Finix.Device : Swift.Equatable {}
 extension PaxMposSDK.Finix.Device : Swift.Hashable {}
 extension PaxMposSDK.Finix.Environment : Swift.Equatable {}
@@ -501,19 +517,3 @@ extension PaxMposSDK.CardBrand : Swift.RawRepresentable {}
 extension PaxMposSDK.CardSearchMode : Swift.Equatable {}
 extension PaxMposSDK.CardSearchMode : Swift.Hashable {}
 extension PaxMposSDK.CardSearchMode : Swift.RawRepresentable {}
-extension PaxMposSDK.EncryptedCardDetails.EncryptionMethod : Swift.Equatable {}
-extension PaxMposSDK.EncryptedCardDetails.EncryptionMethod : Swift.Hashable {}
-extension PaxMposSDK.EncryptedCardDetails.EncryptionMethod : Swift.RawRepresentable {}
-extension PaxMposSDK.EncryptedCardDetails.EncryptionMode : Swift.Equatable {}
-extension PaxMposSDK.EncryptedCardDetails.EncryptionMode : Swift.Hashable {}
-extension PaxMposSDK.EncryptedCardDetails.EncryptionMode : Swift.RawRepresentable {}
-extension PaxMposSDK.EncryptedCardDetails.CardHolderVerification : Swift.Equatable {}
-extension PaxMposSDK.EncryptedCardDetails.CardHolderVerification : Swift.Hashable {}
-extension PaxMposSDK.EncryptedCardDetails.CardHolderVerification : Swift.RawRepresentable {}
-extension PaxMposSDK.TransactionStatus : Swift.Equatable {}
-extension PaxMposSDK.TransactionStatus : Swift.Hashable {}
-extension PaxMposSDK.TransactionStatus : Swift.RawRepresentable {}
-extension PaxMposSDK.PaymentType : Swift.Equatable {}
-extension PaxMposSDK.PaymentType : Swift.Hashable {}
-extension PaxMposSDK.EBTType : Swift.Equatable {}
-extension PaxMposSDK.EBTType : Swift.Hashable {}
