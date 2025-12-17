@@ -26,23 +26,23 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		NEQDHQMJtk9NRaMrW/JtyEddrx8=
+		RrahqivQMjww3jHmqp6+Jg9YthU=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		9AqJmUMKFuZBVVgKyuGUC9vSJuI=
+		nTMSwwZezWOrLsM0cYEivAqxudc=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		4DIg/1jFD/NeDmIoVO7jzQ2lwKY=
+		JIBTg23siw6rRKctFeV5LD2ewvI=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		9AqJmUMKFuZBVVgKyuGUC9vSJuI=
+		nTMSwwZezWOrLsM0cYEivAqxudc=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		tlWXqFktPrLe5eUeXVtEbXOeuGo=
+		Zjl6pv5t8jYd+LN9he6j6ZYakB8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,6 +63,14 @@
 		<key>emv_param.emv</key>
 		<data>
 		I8YXWuh31RSy3mnq2vc8DxMuaCo=
+		</data>
+		<key>rkiCert.bundle/rki_cfca.pem</key>
+		<data>
+		WXfN/5p1+7lHRtEORFqsxH80v34=
+		</data>
+		<key>rkiCert.bundle/rki_paxca.pem</key>
+		<data>
+		s3vaqGYnj3Fl79N5ixjpYrsoElo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,35 +107,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GDlF1lDSim17bnZJXwaYTfsKzguNNtKhAUCA7MpFYa8=
+			jHYJ3VtmXjj0OXRVWftTZe2klTrWvs4nCNZpoPlO7CY=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z3/g+AR7uEBtX7ZuaA5skhtrGEr9Dk7WNnKVqigQ+h0=
+			kX7QJ8d8hQAXsT8QTVZEKb9rVprlZr/wdD5LM7w/JK0=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			YS1Tacnznd1TV1qn5r7xtZs3SSoRcLVrYfrKntyn6T0=
+			BVVYFxwKM5vFVNskUyW32w92LXr7Bge+v2IZvsZZrcE=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			z3/g+AR7uEBtX7ZuaA5skhtrGEr9Dk7WNnKVqigQ+h0=
+			kX7QJ8d8hQAXsT8QTVZEKb9rVprlZr/wdD5LM7w/JK0=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			7K7ohZu7XdFaUGgy1IbkfuNCKMIGJoUJbfKTvWEaBfc=
+			qOk6r57oHo+stzXAMwbdi1u5NDOq9HdT9NQ2TrUtukY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -163,6 +171,20 @@
 			<key>hash2</key>
 			<data>
 			ZyBh4hV2uGFbnIb617G8bp5dGzKrfIsFsZvfNbdxKLg=
+			</data>
+		</dict>
+		<key>rkiCert.bundle/rki_cfca.pem</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZJzZV15Y8yqOD6QZHQ+JUszAYKT9kHvgsGKwygavAx4=
+			</data>
+		</dict>
+		<key>rkiCert.bundle/rki_paxca.pem</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BxNH4yO+YQlbEbh4OC3wqHoAuk94P9iqLprK8CBqXf4=
 			</data>
 		</dict>
 	</dict>

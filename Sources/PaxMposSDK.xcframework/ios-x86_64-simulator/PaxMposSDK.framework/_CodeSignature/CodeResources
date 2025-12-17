@@ -26,23 +26,23 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		K/7Cj4fz/loiUhnS0g9+VoHKUqc=
+		cgQrHDc6BCpWw6vJH3r3JPbRT7I=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		CaPPOYjaQpCXF2VdoYzbqTwcJmI=
+		5Fg21aEkKKeeNb1wUk2U82dfSk4=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		H7Zt2GlE0uDGdGT2X+dgZwta9E8=
+		/mITzRM3GizuniNjLaMWxoBZ9X0=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		CaPPOYjaQpCXF2VdoYzbqTwcJmI=
+		5Fg21aEkKKeeNb1wUk2U82dfSk4=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tDjpy9sOU6w4wr3cS3+0EHbpzUY=
+		Xx3eGTpyYyDiFDfe+2MKlKJw4K8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -63,6 +63,14 @@
 		<key>emv_param.emv</key>
 		<data>
 		I8YXWuh31RSy3mnq2vc8DxMuaCo=
+		</data>
+		<key>rkiCert.bundle/rki_cfca.pem</key>
+		<data>
+		WXfN/5p1+7lHRtEORFqsxH80v34=
+		</data>
+		<key>rkiCert.bundle/rki_paxca.pem</key>
+		<data>
+		s3vaqGYnj3Fl79N5ixjpYrsoElo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -99,35 +107,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kphI8O60UJ6sSSsOQ/9uW0QMZOJUnE4PhyUip6un/Ww=
+			iugcf1BT1a+y8tR7GGibl8HBLSAbjpx42y+xim0dfKM=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ktufZp/Mg7G3cjm1qKFNr1g2lHYRyn9ev48JA7UxSgk=
+			j+AhbJncUIgOFLdDrs6GgWtUoNE0AbOnDuG8ueqQyck=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			inevmto3pBUS8RX+9IKBilfK8MsRKRi6wp3DjwyycK0=
+			gbY4wYrGELkd67EW6DAm40tQgBuDMbS1lUsIe0CFcQU=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ktufZp/Mg7G3cjm1qKFNr1g2lHYRyn9ev48JA7UxSgk=
+			j+AhbJncUIgOFLdDrs6GgWtUoNE0AbOnDuG8ueqQyck=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			lvGNC6o8xiFDPJE4MyikZccfokfr0/g8xjhPtmI+020=
+			bUrFFPj1zN5l1ZMrRIHlraOIHV9bI9xI8cVL0Yso9es=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -163,6 +171,20 @@
 			<key>hash2</key>
 			<data>
 			ZyBh4hV2uGFbnIb617G8bp5dGzKrfIsFsZvfNbdxKLg=
+			</data>
+		</dict>
+		<key>rkiCert.bundle/rki_cfca.pem</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			ZJzZV15Y8yqOD6QZHQ+JUszAYKT9kHvgsGKwygavAx4=
+			</data>
+		</dict>
+		<key>rkiCert.bundle/rki_paxca.pem</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			BxNH4yO+YQlbEbh4OC3wqHoAuk94P9iqLprK8CBqXf4=
 			</data>
 		</dict>
 	</dict>
