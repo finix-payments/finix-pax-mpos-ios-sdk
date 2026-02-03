@@ -26,23 +26,23 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		1HlhDdKolr08JAvsZeGf0xLJ4WE=
+		wBnUiMcFiVQIXDMwAJHM8GH6OFQ=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		ZzhcPxaXdDpghO1F4mcAJxMvW/s=
+		MscttLYlb0XedLsc+azl7bF3wfU=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		V4PEgYG0yVgfQraIuYWvaG+wzgY=
+		kOcmx3ebITl3JwqhMqa2u/KXsvc=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		ZzhcPxaXdDpghO1F4mcAJxMvW/s=
+		MscttLYlb0XedLsc+azl7bF3wfU=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sYBQr/Hvm8Ij4/rEmdcgE7fVFng=
+		IB/Qrin5YQDZGk6rACagUMu5jgk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,35 +107,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			6EuA09u3GO2NCT4SW0jjgqk0BrrgOdcAfnAGMEK9MOw=
+			u7Sq+N1BYR5unpVue5+NDmXnQ6vnhPrXHdSmoCb9KeM=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s07C+d1A7Nv8ogw7qMF0Eupd06SLfVg7XzB6xhwLZp4=
+			baLyuFhDMpEWQGpTmVAdRglMdVcLftQXNElIrrb/4cw=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			JPgQBvQFC0OXjdQvrEFr2cdkiFYBxpD6ms+7dccBGGc=
+			YBvw+qVe4wcsKNzmJjevtW9T9zkFS1bngMHlav7d7uA=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			s07C+d1A7Nv8ogw7qMF0Eupd06SLfVg7XzB6xhwLZp4=
+			baLyuFhDMpEWQGpTmVAdRglMdVcLftQXNElIrrb/4cw=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8hwHo5Z9Wfv2eDxxyGa3tiCQM0dOGW+XnBC0Lqnl45E=
+			8d+eNu7ZORlZipBohE0Zq3diO1PhMzEGW1Lw/iWSOwM=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
