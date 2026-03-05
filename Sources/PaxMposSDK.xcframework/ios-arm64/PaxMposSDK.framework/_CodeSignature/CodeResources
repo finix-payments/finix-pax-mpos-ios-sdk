@@ -22,27 +22,27 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		sHmxeRtef8U1LFWHBTV/RhXGc4Y=
+		+BBoDqkvk5QgScaB6V7RRHWJeSY=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		6PEimnsSwi4EWt2l3EsYWL3kWPs=
+		As0wpFLjZd7ax67cmduvKLSzxn8=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		nJT+3S0zxEE62YeKrwL5ip78NCw=
+		K157cuaUtKY5uLAF86GcN0VbB0E=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		rCy50hHfjEkDkBoXQ4jFrQ26dQ8=
+		JmOkdONLlp9+dHqc064E8rUqbC0=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		nJT+3S0zxEE62YeKrwL5ip78NCw=
+		K157cuaUtKY5uLAF86GcN0VbB0E=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		UCgGPB3+F0pqm1TdpeuX/oxFiUI=
+		/cE+cybzxz49Rq27vN7EB7yU7Qk=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,35 +107,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			B1R/SjHfjT0BVu77BfsfALfivynJzFnoQXj9z/WHy40=
+			y7lqXMUaXrUoGt+clV0Jic7SYMRrtdEz/kB7RrziI1E=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F8aw103Q8pubY68AbFGjg33VlnNSVoZtVfaUFdFuJJQ=
+			hItv0mDBZa0rCCZrOjxeNb5M1Y96GIFd6j0JjFqsFvU=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			c/y6wuIOBLUJAlt8KnQBHWR/zeGkDjSE67xRhYyVUYU=
+			hLxxAC31UqW7ho+2bTQmdBilcD7oBnsan0H3E1oI0ME=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F8aw103Q8pubY68AbFGjg33VlnNSVoZtVfaUFdFuJJQ=
+			hItv0mDBZa0rCCZrOjxeNb5M1Y96GIFd6j0JjFqsFvU=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			I6cfAPqiwZc1mjvxH4PqjpAvJ/9dqp/5TpQ1f69/fz4=
+			M0kWNgXxm6YAvrqOQ/VfnWOMnJwxsPMWtaBdf8QNVlY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
