@@ -218,7 +218,7 @@
 		</data>
 		<key>ios-arm64/PaxMposSDK.framework/PaxMposSDK</key>
 		<data>
-		5aApgDAkXsNqzGoTSEIaJGzSIo8=
+		7nD0CRoOW4yuHIFIfQhx0zcFsLw=
 		</data>
 		<key>ios-arm64/PaxMposSDK.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -254,7 +254,7 @@
 		</data>
 		<key>ios-arm64/dSYMs/PaxMposSDK.framework.dSYM/Contents/Resources/DWARF/PaxMposSDK</key>
 		<data>
-		8Rn4zBlunfrczTZqc4MhQ+v0QyE=
+		IoD0HI77NwLEWHCSh2vKCb62bs4=
 		</data>
 		<key>ios-arm64/dSYMs/PaxMposSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/PaxMposSDK.yml</key>
 		<data>
@@ -894,7 +894,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			G3GYk2vDCqM4Q7n2DdtwyrnKf9diU/+nAHsbeZBJ+TA=
+			qh/Ms7jRcanaYuz8lPXYrHCBXEYyFAS4WxweF5/aOYs=
 			</data>
 		</dict>
 		<key>ios-arm64/PaxMposSDK.framework/_CodeSignature/CodeResources</key>
@@ -957,7 +957,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/RmxA3dGzUMKp5ckVqoEeWfAfNjWWzLLcpCq60fBtj8=
+			+Xrjctyt59biWkYQwR1k6r7j+2nnC4cVImjzSxCo8hY=
 			</data>
 		</dict>
 		<key>ios-arm64/dSYMs/PaxMposSDK.framework.dSYM/Contents/Resources/Relocations/aarch64/PaxMposSDK.yml</key>
