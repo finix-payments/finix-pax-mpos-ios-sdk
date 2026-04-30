@@ -15628,7 +15628,7 @@
           {
             "kind": "Function",
             "name": "startTransaction",
-            "printedName": "startTransaction(amount:type:splitTransfers:tags:buyerIdentityId:surchargeAmount:tipAmount:)",
+            "printedName": "startTransaction(amount:type:splitTransfers:tags:buyerIdentityId:surchargeAmount:tipAmount:signaturePending:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -15743,11 +15743,26 @@
                 ],
                 "hasDefaultArg": true,
                 "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.Bool?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
-            "usr": "s:10PaxMposSDK11FinixClientC16startTransaction6amount4type14splitTransfers4tags15buyerIdentityId15surchargeAmount03tipQ0yAA8CurrencyV_AC0G4TypeOSayAA13SplitTransferVGSgSDyS2SGSgSSSgSiSgAWtF",
-            "mangledName": "$s10PaxMposSDK11FinixClientC16startTransaction6amount4type14splitTransfers4tags15buyerIdentityId15surchargeAmount03tipQ0yAA8CurrencyV_AC0G4TypeOSayAA13SplitTransferVGSgSDyS2SGSgSSSgSiSgAWtF",
+            "usr": "s:10PaxMposSDK11FinixClientC16startTransaction6amount4type14splitTransfers4tags15buyerIdentityId15surchargeAmount03tipQ016signaturePendingyAA8CurrencyV_AC0G4TypeOSayAA13SplitTransferVGSgSDyS2SGSgSSSgSiSgAXSbSgtF",
+            "mangledName": "$s10PaxMposSDK11FinixClientC16startTransaction6amount4type14splitTransfers4tags15buyerIdentityId15surchargeAmount03tipQ016signaturePendingyAA8CurrencyV_AC0G4TypeOSayAA13SplitTransferVGSgSDyS2SGSgSSSgSiSgAXSbSgtF",
             "moduleName": "PaxMposSDK",
             "declAttributes": [
               "AccessControl",
@@ -18623,7 +18638,7 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReaderTransfer.swift",
       "kind": "StringLiteral",
-      "offset": 9373,
+      "offset": 9460,
       "length": 12,
       "value": "\"log_ref_no\""
     },
@@ -20324,105 +20339,112 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 13460,
+      "offset": 13499,
       "length": 16,
       "value": "\"application_id\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 13509,
+      "offset": 13548,
       "length": 11,
       "value": "\"device_id\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 13555,
+      "offset": 13594,
       "length": 13,
       "value": "\"merchant_id\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 13605,
+      "offset": 13644,
       "length": 15,
       "value": "\"serial_number\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 13659,
+      "offset": 13698,
       "length": 17,
       "value": "\"failure_details\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 13789,
+      "offset": 13828,
       "length": 10,
       "value": "\"trace_id\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 13843,
+      "offset": 13882,
       "length": 23,
       "value": "\"transaction_date_time\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 13906,
+      "offset": 13945,
       "length": 18,
       "value": "\"transaction_type\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 13958,
+      "offset": 13997,
       "length": 12,
       "value": "\"tip_amount\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 14010,
+      "offset": 14049,
       "length": 18,
       "value": "\"surcharge_amount\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 14073,
+      "offset": 14112,
       "length": 24,
       "value": "\"encrypted_card_details\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 14136,
+      "offset": 14175,
       "length": 17,
       "value": "\"split_transfers\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 14219,
+      "offset": 14258,
       "length": 13,
       "value": "\"identity_id\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 14614,
-      "length": 20,
-      "value": "\"png_encoded_base64\""
+      "offset": 14312,
+      "length": 19,
+      "value": "\"signature_pending\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
       "kind": "StringLiteral",
-      "offset": 14666,
+      "offset": 14695,
+      "length": 10,
+      "value": "\"raw_data\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixOperation.swift",
+      "kind": "StringLiteral",
+      "offset": 14737,
       "length": 10,
       "value": "\"trace_id\""
     },
