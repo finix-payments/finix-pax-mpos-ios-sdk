@@ -69,7 +69,7 @@
             <PartialAIDSelection>0</PartialAIDSelection>
             <TerminalAIDVersion>0001</TerminalAIDVersion>
             <AcquirerID>000000123456</AcquirerID>
-            <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>1</ContactlessFloorLimit>
             <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -93,7 +93,7 @@
             <PartialAIDSelection>0</PartialAIDSelection>
             <TerminalAIDVersion>0001</TerminalAIDVersion>
             <AcquirerID>000000123456</AcquirerID>
-            <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>1</ContactlessFloorLimit>
             <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -117,10 +117,10 @@
             <PartialAIDSelection>0</PartialAIDSelection>
             <TerminalAIDVersion>0001</TerminalAIDVersion>
             <AcquirerID>000000123456</AcquirerID>
-            <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>1</ContactlessFloorLimit>
             <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
-            <ContactlessTransactionLimit>10000</ContactlessTransactionLimit>
+            <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <ContactlessTransactionLimitSupported>1</ContactlessTransactionLimitSupported>
             <CVMLimitSupported>1</CVMLimitSupported>
             <ReaderTTQ>32004000</ReaderTTQ>
@@ -144,7 +144,7 @@
             <LocalAIDName>AMEX</LocalAIDName>
             <PartialAIDSelection>0</PartialAIDSelection>
             <TerminalAIDVersion>0001</TerminalAIDVersion>
-            <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>1</ContactlessFloorLimit>
             <ContactlessFloorLimitCheck>1</ContactlessFloorLimitCheck>
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -249,7 +249,7 @@
             <LocalAIDName>JCB</LocalAIDName>
             <PartialAIDSelection>0</PartialAIDSelection>
             <TerminalAIDVersion>0002</TerminalAIDVersion>
-            <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>0</ContactlessFloorLimit>
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <CombinationOptions>6300</CombinationOptions>
@@ -290,7 +290,7 @@
             <AccoutType>00</AccoutType>
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
             <CardDataInput>E0</CardDataInput>
-            <ContactlessCVMLimit>10000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>1</ContactlessFloorLimit>
             <ContactlessTransactionLimit_NoOnDevice>100000</ContactlessTransactionLimit_NoOnDevice>
             <ContactlessTransactionLimit_OnDevice>100000</ContactlessTransactionLimit_OnDevice>
@@ -350,7 +350,7 @@
             <AccoutType>00</AccoutType>
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
             <CardDataInput>E0</CardDataInput>
-            <ContactlessCVMLimit>10000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>1</ContactlessFloorLimit>
             <ContactlessTransactionLimit_NoOnDevice>100000</ContactlessTransactionLimit_NoOnDevice>
             <ContactlessTransactionLimit_OnDevice>100000</ContactlessTransactionLimit_OnDevice>
@@ -384,7 +384,7 @@
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
             <INTERWARELIST class="java.util.ArrayList">
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -395,7 +395,7 @@
                   <TransactionType>00</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -406,7 +406,7 @@
                   <TransactionType>01</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -417,7 +417,7 @@
                   <TransactionType>09</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -444,7 +444,7 @@
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
             <INTERWARELIST class="java.util.ArrayList">
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -455,7 +455,7 @@
                   <TransactionType>00</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -466,7 +466,7 @@
                   <TransactionType>01</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -477,7 +477,7 @@
                   <TransactionType>09</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -504,7 +504,7 @@
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
             <INTERWARELIST class="java.util.ArrayList">
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -515,7 +515,7 @@
                   <TransactionType>00</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -526,7 +526,7 @@
                   <TransactionType>01</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -537,7 +537,7 @@
                   <TransactionType>09</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -564,7 +564,7 @@
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
             <INTERWARELIST class="java.util.ArrayList">
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -575,7 +575,7 @@
                   <TransactionType>00</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -586,7 +586,7 @@
                   <TransactionType>01</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -597,7 +597,7 @@
                   <TransactionType>09</TransactionType>
                </Inter_WareFloorlimitByTransactionType>
                <Inter_WareFloorlimitByTransactionType>
-                  <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+                  <ContactlessCVMLimit>100000</ContactlessCVMLimit>
                   <ContactlessFloorLimit>1</ContactlessFloorLimit>
                   <ContactlessFloorLimitSupported>1</ContactlessFloorLimitSupported>
                   <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -626,7 +626,7 @@
             <PartialAIDSelection>0</PartialAIDSelection>
             <TerminalAIDVersion>0001</TerminalAIDVersion>
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
-            <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>0</ContactlessFloorLimit>
             <ContactlessQPSLimit>0</ContactlessQPSLimit>
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -645,7 +645,7 @@
             <PartialAIDSelection>0</PartialAIDSelection>
             <TerminalAIDVersion>0001</TerminalAIDVersion>
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
-            <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>0</ContactlessFloorLimit>
             <ContactlessQPSLimit>0</ContactlessQPSLimit>
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -664,7 +664,7 @@
             <PartialAIDSelection>0</PartialAIDSelection>
             <TerminalAIDVersion>0001</TerminalAIDVersion>
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
-            <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>0</ContactlessFloorLimit>
             <ContactlessQPSLimit>0</ContactlessQPSLimit>
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -683,7 +683,7 @@
             <PartialAIDSelection>0</PartialAIDSelection>
             <TerminalAIDVersion>0001</TerminalAIDVersion>
             <AdditionalTerminalCapability>6000F0A001</AdditionalTerminalCapability>
-            <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>0</ContactlessFloorLimit>
             <ContactlessQPSLimit>0</ContactlessQPSLimit>
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
@@ -705,7 +705,7 @@
             <LocalAIDName>INTERAC</LocalAIDName>
             <PartialAIDSelection>0</PartialAIDSelection>
             <TerminalAIDVersion>0001</TerminalAIDVersion>
-            <ContactlessCVMLimit>5000</ContactlessCVMLimit>
+            <ContactlessCVMLimit>100000</ContactlessCVMLimit>
             <ContactlessFloorLimit>0</ContactlessFloorLimit>
             <ContactlessTransactionLimit>100000</ContactlessTransactionLimit>
             <ContactlessReceiptLimit>100000</ContactlessReceiptLimit>

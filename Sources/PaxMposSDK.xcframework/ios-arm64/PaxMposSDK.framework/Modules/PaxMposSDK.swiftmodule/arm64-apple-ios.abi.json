@@ -19171,75 +19171,75 @@
       "kind": "StringLiteral",
       "offset": 1053,
       "length": 8,
-      "value": "\"1.0.29\""
+      "value": "\"1.0.30\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1204,
+      "offset": 1198,
       "length": 8,
-      "value": "\"1.0.29\""
+      "value": "\"1.0.30\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1323,
+      "offset": 1317,
       "length": 19,
       "value": "\"EASYLINK_LITE.bin\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1410,
+      "offset": 1404,
       "length": 50,
       "value": "\"D135_Monitor_Release_20230919(V1.08)_SIG.monitor\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1527,
+      "offset": 1521,
       "length": 15,
       "value": "\"emv_param.emv\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1611,
+      "offset": 1605,
       "length": 17,
       "value": "\"clss_param.clss\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1691,
+      "offset": 1685,
       "length": 19,
       "value": "\"EASYLINK_LITE.bin\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 1863,
+      "offset": 1857,
       "length": 23,
       "value": "\"parameterFileVersions\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2005,
+      "offset": 1999,
       "length": 23,
       "value": "\"didInitialUpdateFiles\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
       "kind": "StringLiteral",
-      "offset": 2161,
+      "offset": 2155,
       "length": 11,
       "value": "\"1.06.0032\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DeviceVersionConfig.swift",
       "kind": "Dictionary",
-      "offset": 2354,
+      "offset": 2348,
       "length": 375,
       "value": "[(\"A_EMV_LIB\", \"v656.a\"), (\"A_DEVICE_LIB\", \"v612.a\"), (\"A_PUBLIC_LIB\", \"v114.a\"), (\"A_ENTRY_LIB\", \"v557.a\"), (\"A_AE_LIB\", \"v252_01.a\"), (\"A_MC_LIB\", \"v557_01.a\"), (\"A_WAVE_LIB\", \"v358.a\"), (\"A_DPAS_LIB\", \"v154_01.a\"), (\"A_JCB_LIB\", \"v152.a\"), (\"A_QPBOC_LIB\", \"v352_01.a\"), (\"A_FLASH_LIB\", \"v252_01.a\")]"
     },
