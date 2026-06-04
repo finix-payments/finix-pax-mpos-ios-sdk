@@ -18638,7 +18638,7 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReaderTransfer.swift",
       "kind": "StringLiteral",
-      "offset": 9460,
+      "offset": 8677,
       "length": 12,
       "value": "\"log_ref_no\""
     },
