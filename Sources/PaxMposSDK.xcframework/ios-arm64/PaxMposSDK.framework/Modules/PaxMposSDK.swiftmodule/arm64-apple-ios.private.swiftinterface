@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
-// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PaxMposSDK
-// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+// swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PaxMposSDK
+// swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
 import Foundation
 @_exported import PaxMposSDK
 import Security
@@ -19,9 +19,7 @@ public enum CardSearchMode : Swift.Int {
   case iccPicc
   case msrIccPicc
   case fallback
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -43,9 +41,7 @@ public enum TransactionStatus : Swift.Int {
   case callIssuer
   case declined
   case needsToBeReversed
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.Int)
-  #endif
   public typealias RawValue = Swift.Int
   public var rawValue: Swift.Int {
     get
@@ -74,15 +70,9 @@ public enum Transfer {
   }
 }
 extension PaxMposSDK.FinixClient {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func updateCardReaderFiles(deviceId: Swift.String, statusCallback: PaxMposSDK.DownloadStatusCallback?, completion: (() -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func factoryReset(deviceId: Swift.String, statusCallback: PaxMposSDK.DownloadStatusCallback?, completion: (() -> Swift.Void)?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func resetDevice(deviceId: Swift.String, statusCallback: PaxMposSDK.DownloadStatusCallback?, completion: (() -> Swift.Void)?)
-  #endif
   public func emergencyDeviceRecovery(deviceId: Swift.String, completion: @escaping (Swift.Bool) -> Swift.Void)
   public func sendDebugData()
   public func checkFirmwareVersion(deviceId: Swift.String, completion: @escaping (Swift.Bool, Swift.String, Swift.String) -> Swift.Void)
@@ -93,9 +83,7 @@ extension PaxMposSDK.FinixClient {
     public var displayName: Swift.String {
       get
     }
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -118,9 +106,7 @@ extension PaxMposSDK.FinixClient {
     public init(from decoder: any Swift.Decoder) throws
   }
   public typealias TransactionCompleteHandler = (PaxMposSDK.FinixClient.CardReaderTransferResponse?, (any Swift.Error)?) -> Swift.Void
-  #if compiler(>=5.3) && $NonescapableTypes
   public func startTransaction(amount: PaxMposSDK.Currency, type transactionType: PaxMposSDK.FinixClient.TransactionType, splitTransfers: [PaxMposSDK.SplitTransfer]? = nil, tags: PaxMposSDK.ResourceTags? = nil, buyerIdentityId: Swift.String? = nil, surchargeAmount: Swift.Int? = nil, tipAmount: Swift.Int? = nil, signaturePending: Swift.Bool? = nil)
-  #endif
 }
 extension PaxMposSDK.FinixClient {
   public func startScan()
@@ -128,20 +114,17 @@ extension PaxMposSDK.FinixClient {
   public func disconnectDevice() -> Swift.Bool
 }
 extension PaxMposSDK.FinixClient {
-  public struct RefundResponse : Swift.Decodable {
+  public struct RefundResponse : Swift.Decodable, PaxMposSDK.ResponseState {
     public let id: Swift.String?
     public let amount: Swift.Int
+    public let state: PaxMposSDK.Transfer.State
     public let traceId: PaxMposSDK.TraceId?
     public init(from decoder: any Swift.Decoder) throws
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public func startRefund(transactionID: Swift.String, amount: PaxMposSDK.Currency, completion: ((PaxMposSDK.FinixClient.RefundResponse?, (any Swift.Error)?) -> Swift.Void)?)
-  #endif
 }
 extension PaxMposSDK.FinixClient {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func uploadSignature(traceId: PaxMposSDK.TraceId, pngEncodedBase64: Swift.String, completion: @escaping (Swift.Bool, (any Swift.Error)?) -> Swift.Void)
-  #endif
 }
 public protocol RKICallback : AnyObject {
   func onRKISuccess(message: Swift.String)
@@ -151,23 +134,13 @@ public protocol RKICallback : AnyObject {
 public protocol FinixLoggerProtocol {
   func error(_ items: Any...)
   func warn(_ items: Any...)
-  #if compiler(>=5.3) && $NonescapableTypes
   func info(_ items: Any..., attributes: [Swift.String : any Swift.Encodable]?)
-  #endif
   func debug(_ items: Any...)
-  #if compiler(>=5.3) && $NonescapableTypes
   func http(_ items: Any..., attributes: [Swift.String : any Swift.Encodable]?)
-  #endif
   func http(request: Foundation.URLRequest)
-  #if compiler(>=5.3) && $NonescapableTypes
   func http(error: any Swift.Error, attributes: [Swift.String : any Swift.Encodable]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func http(response: Foundation.HTTPURLResponse, attributes: [Swift.String : any Swift.Encodable]?)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func http(responseData data: Foundation.Data?, attributes: [Swift.String : any Swift.Encodable]?)
-  #endif
   func setDeviceSerialNumber(_ serialNumber: Swift.String)
 }
 @_hasMissingDesignatedInitializers public class DeviceUpdateManager {
@@ -178,9 +151,7 @@ public protocol FinixLoggerProtocol {
     case clssParameters
     case binFiles
     case all
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias AllCases = [PaxMposSDK.DeviceUpdateManager.UpdateComponent]
     public typealias RawValue = Swift.String
     nonisolated public static var allCases: [PaxMposSDK.DeviceUpdateManager.UpdateComponent] {
@@ -210,9 +181,7 @@ public protocol FinixLoggerProtocol {
     public let requirement: PaxMposSDK.DeviceUpdateManager.UpdateRequirement
     public let description: Swift.String
     public let lastUpdated: Foundation.Date?
-    #if compiler(>=5.3) && $NonescapableTypes
     public init(component: PaxMposSDK.DeviceUpdateManager.UpdateComponent, currentVersion: Swift.String, requiredVersion: Swift.String?, availableVersion: Swift.String?, requirement: PaxMposSDK.DeviceUpdateManager.UpdateRequirement, description: Swift.String, lastUpdated: Foundation.Date?)
-    #endif
   }
   public struct UpdateCheckResult {
     public let deviceId: Swift.String
@@ -271,9 +240,7 @@ public struct EncryptedCardDetails : Swift.Encodable {
   public enum EncryptionMethod : Swift.String, Swift.Encodable {
     case ecb
     case cbc
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -282,9 +249,7 @@ public struct EncryptedCardDetails : Swift.Encodable {
   public enum EncryptionMode : Swift.String, Swift.Encodable {
     case dukpt
     case tdes
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -296,9 +261,7 @@ public struct EncryptedCardDetails : Swift.Encodable {
     case offlinePlainPIN
     case offlineEncipheredPIN
     case onlinePIN
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -313,15 +276,11 @@ public struct EncryptedCardDetails : Swift.Encodable {
   public let ksn: Swift.String
   public let cardholderVerification: PaxMposSDK.EncryptedCardDetails.CardHolderVerification
   public let cardholderName: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(deviceModel: Swift.String = "PAX_D135", encryptedTrack1: Swift.String?, encryptedTrack2: Swift.String?, encryptionMethod: PaxMposSDK.EncryptedCardDetails.EncryptionMethod = .ecb, encryptionMode: PaxMposSDK.EncryptedCardDetails.EncryptionMode = .dukpt, emv: Swift.String?, ksn: Swift.String, cardholderVerification: PaxMposSDK.EncryptedCardDetails.CardHolderVerification = .noCVM, cardholderName: Swift.String = "")
-  #endif
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct FinixConfig {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(environment: PaxMposSDK.Finix.Environment, credentials: PaxMposSDK.Finix.APICredentials, merchantId: Swift.String, mid: Swift.String, deviceType: PaxMposSDK.Finix.Device, deviceId: Swift.String, serialNumber: Swift.String? = nil, interceptor: (any PaxMposSDK.Finix.RequestInterceptor)? = nil)
-  #endif
 }
 public enum Finix {
   public enum Device {
@@ -336,15 +295,11 @@ public enum Finix {
     case Production
     case Sandbox
     case QA
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(from string: Swift.String)
-    #endif
     public var stringValue: Swift.String {
       get
     }
-    #if compiler(>=5.3) && $NonescapableTypes
     public init?(rawValue: Swift.String)
-    #endif
     public typealias RawValue = Swift.String
     public var rawValue: Swift.String {
       get
@@ -360,11 +315,9 @@ public enum Finix {
 public struct FinixError : Foundation.LocalizedError {
   public let code: PaxMposSDK.FinixError.Code
   public let message: Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public var errorDescription: Swift.String? {
     get
   }
-  #endif
   public enum Code : Swift.Equatable {
     case GenericDecline
     case ExpiredCard
@@ -413,9 +366,7 @@ public struct DebitResponse : PaxMposSDK.TransferResponse {
   public let tags: PaxMposSDK.ResourceTags?
 }
 public struct TransferRequest {
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(amount: PaxMposSDK.Currency, tags: PaxMposSDK.ResourceTags? = nil)
-  #endif
 }
 public enum PaymentType {
   case Unknown
@@ -455,18 +406,14 @@ extension PaxMposSDK.ResponseState {
 public protocol TransferResponse : PaxMposSDK.ResponseState {
   var id: PaxMposSDK.TransferId { get }
   var traceId: PaxMposSDK.TraceId { get }
-  #if compiler(>=5.3) && $NonescapableTypes
   var source: PaxMposSDK.SourceId? { get }
-  #endif
 }
 public struct SplitTransfer : Swift.Codable {
   public let merchantID: Swift.String
   public let amount: Swift.Int
   public let fee: Swift.Int?
   public let tags: [Swift.String : Swift.String]?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(merchantID: Swift.String, amount: Swift.Int, fee: Swift.Int?, tags: [Swift.String : Swift.String]?)
-  #endif
   public func encode(to encoder: any Swift.Encoder) throws
   public init(from decoder: any Swift.Decoder) throws
 }
@@ -494,12 +441,8 @@ public enum Country : Swift.String, Swift.CaseIterable {
   public var countryName: Swift.String {
     get
   }
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func from(_ value: Swift.String?) -> PaxMposSDK.Country
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias AllCases = [PaxMposSDK.Country]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [PaxMposSDK.Country] {
@@ -529,22 +472,14 @@ public enum CardBrand : Swift.String, Swift.CaseIterable {
     get
   }
   public static let additionalTags: [Swift.String]
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func fromString(_ brand: Swift.String?) -> PaxMposSDK.CardBrand
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getBrandFromAID(country: PaxMposSDK.Country, aid: Swift.String?) -> PaxMposSDK.CardBrand
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public static func getBrandFromAID(_ aid: Swift.String?) -> PaxMposSDK.CardBrand
-  #endif
   public static func getAllTags() -> [Swift.String]
   public static func getSupportedCountries() -> [PaxMposSDK.Country]
   public func requiresEMVTag(_ tag: Swift.String) -> Swift.Bool
   public func getMissingEMVTags(from availableTags: [Swift.String]) -> [Swift.String]
-  #if compiler(>=5.3) && $NonescapableTypes
   public init?(rawValue: Swift.String)
-  #endif
   public typealias AllCases = [PaxMposSDK.CardBrand]
   public typealias RawValue = Swift.String
   nonisolated public static var allCases: [PaxMposSDK.CardBrand] {
@@ -562,14 +497,10 @@ public struct DeviceInfo {
 public class FinixClient {
   weak public var delegate: (any PaxMposSDK.FinixDelegate)?
   weak public var interactionDelegate: (any PaxMposSDK.FinixClientDeviceInteractionDelegate)?
-  #if compiler(>=5.3) && $NonescapableTypes
   public init(config: PaxMposSDK.FinixConfig, logger: (any PaxMposSDK.FinixLoggerProtocol)? = nil, session: (any PaxMposSDK.URLSessionProtocol)? = nil, easyLinkController: (any PaxMposSDK.PaxEasyLinkControllerProtocol)? = nil)
-  #endif
   public func isReaderConnected() -> Swift.Bool
   public func stopCurrentOperation()
-  #if compiler(>=5.3) && $NonescapableTypes
   public func update(environment: PaxMposSDK.Finix.Environment? = nil, credentials: PaxMposSDK.Finix.APICredentials? = nil, merchantId: Swift.String? = nil, mid: Swift.String? = nil, deviceType: PaxMposSDK.Finix.Device? = nil, deviceId: Swift.String? = nil, serialNumber: Swift.String? = nil)
-  #endif
   public func configureRKI(enabled: Swift.Bool = true)
   @objc deinit
 }
@@ -591,60 +522,32 @@ public protocol RKIStatusDelegate : AnyObject {
   func isNetworkEnabled() -> Swift.Bool
 }
 public protocol PaxEasyLinkControllerProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   func getData(_ dataType: Swift.UInt, tagList: Foundation.Data!, tlvArray: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSArray?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getData(_ dataType: Swift.Int, tagList: Foundation.Data!, dataList: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func setData(_ dataType: Swift.Int, dataList: Foundation.Data!, tagList: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  #endif
   func startTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
   func completeTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
   func clearTransaction() -> PaxMposSDK.PaxEasyLinkRetCode
   func sendCancel() -> PaxMposSDK.PaxEasyLinkRetCode
-  #if compiler(>=5.3) && $NonescapableTypes
   func fileDownLoad(_ fileName: Swift.String!, filePath: Swift.String!, processBlock: PaxMposSDK.onProcessCB!) -> PaxMposSDK.PaxEasyLinkRetCode
-  #endif
   func isConnected() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   func startSearchDev(_ timeout: Swift.Int, searchOneDeviceBlock: PaxMposSDK.onSearchOneDeviceCB!)
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func connectDevice(_ deviceId: Swift.String!, didDisconnectedBlock: PaxMposSDK.didDisconnectedBlock!) -> PaxMposSDK.PaxEasyLinkRetCode
-  #endif
   func closeDevice() -> PaxMposSDK.PaxEasyLinkRetCode
-  #if compiler(>=5.3) && $NonescapableTypes
   func getKeyInfo(_ keyInfoParam: PaxMposSDK.KeyInfoParam!, keyInfo: Swift.AutoreleasingUnsafeMutablePointer<Foundation.NSData?>!) -> PaxMposSDK.PaxEasyLinkRetCode
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func getVersionName() -> Swift.String!
-  #endif
   func checkForExistingKeys() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   func performRKIRemoteKeyDownload(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   func performRKIOfflineKeyInjection(filePath: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  #endif
   func getRKICertificateList() throws -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  #endif
 }
 extension PaxMposSDK.PaxEasyLinkController : PaxMposSDK.PaxEasyLinkControllerProtocol {
   public func checkForExistingKeys() -> Swift.Bool
-  #if compiler(>=5.3) && $NonescapableTypes
   public func performRKIRemoteKeyDownload(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  #endif
-  #if compiler(>=5.3) && $NonescapableTypes
   public func performRKIOfflineKeyInjection(filePath: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  #endif
   public func getRKICertificateList() throws -> Swift.String
-  #if compiler(>=5.3) && $NonescapableTypes
   public func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
-  #endif
 }
 public protocol URLSessionDataTaskProtocol {
   func resume()
@@ -652,14 +555,10 @@ public protocol URLSessionDataTaskProtocol {
 extension Foundation.URLSessionDataTask : PaxMposSDK.URLSessionDataTaskProtocol {
 }
 public protocol URLSessionProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> any PaxMposSDK.URLSessionDataTaskProtocol
-  #endif
 }
 extension Foundation.URLSession : PaxMposSDK.URLSessionProtocol {
-  #if compiler(>=5.3) && $NonescapableTypes
   public func dataTask(with request: Foundation.URLRequest, completionHandler: @escaping @Sendable (Foundation.Data?, Foundation.URLResponse?, (any Swift.Error)?) -> Swift.Void) -> any PaxMposSDK.URLSessionDataTaskProtocol
-  #endif
 }
 extension PaxMposSDK.CardSearchMode : Swift.Equatable {}
 extension PaxMposSDK.CardSearchMode : Swift.Hashable {}
