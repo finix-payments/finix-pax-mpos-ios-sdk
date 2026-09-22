@@ -19074,8 +19074,15 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 392,
+      "length": 10,
+      "value": "\"-iOS-PAX\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Constants.swift",
       "kind": "BooleanLiteral",
-      "offset": 468,
+      "offset": 603,
       "length": 4,
       "value": "true"
     },
