@@ -8201,6 +8201,67 @@
           },
           {
             "kind": "Var",
+            "name": "logref",
+            "printedName": "logref",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaxMposSDK10FinixErrorV6logrefSSSgvp",
+            "mangledName": "$s10PaxMposSDK10FinixErrorV6logrefSSSgvp",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaxMposSDK10FinixErrorV6logrefSSSgvg",
+                "mangledName": "$s10PaxMposSDK10FinixErrorV6logrefSSSgvg",
+                "moduleName": "PaxMposSDK",
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
             "name": "errorDescription",
             "printedName": "errorDescription",
             "children": [
@@ -18634,63 +18695,63 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17494,
+      "offset": 17737,
       "length": 18,
       "value": "\"amount_requested\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17545,
+      "offset": 17788,
       "length": 15,
       "value": "\"approval_code\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17615,
+      "offset": 17858,
       "length": 14,
       "value": "\"failure_code\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17664,
+      "offset": 17907,
       "length": 17,
       "value": "\"failure_message\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17721,
+      "offset": 17964,
       "length": 23,
       "value": "\"masked_account_number\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17795,
+      "offset": 18038,
       "length": 10,
       "value": "\"trace_id\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17837,
+      "offset": 18080,
       "length": 14,
       "value": "\"emv_response\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17906,
+      "offset": 18149,
       "length": 17,
       "value": "\"split_transfers\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReaderTransfer.swift",
       "kind": "StringLiteral",
-      "offset": 8677,
+      "offset": 8781,
       "length": 12,
       "value": "\"log_ref_no\""
     },

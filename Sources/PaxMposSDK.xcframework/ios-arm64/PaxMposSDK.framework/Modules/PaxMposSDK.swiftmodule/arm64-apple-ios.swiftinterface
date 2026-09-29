@@ -315,6 +315,7 @@ public enum Finix {
 public struct FinixError : Foundation.LocalizedError {
   public let code: PaxMposSDK.FinixError.Code
   public let message: Swift.String
+  public let logref: Swift.String?
   public var errorDescription: Swift.String? {
     get
   }
