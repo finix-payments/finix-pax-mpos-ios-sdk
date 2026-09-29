@@ -2181,30 +2181,21 @@
         "name": "DatadogCore",
         "printedName": "DatadogCore",
         "declKind": "Import",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "AccessControl"
-        ]
+        "moduleName": "PaxMposSDK"
       },
       {
         "kind": "Import",
         "name": "DatadogLogs",
         "printedName": "DatadogLogs",
         "declKind": "Import",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "AccessControl"
-        ]
+        "moduleName": "PaxMposSDK"
       },
       {
         "kind": "Import",
         "name": "DatadogCrashReporting",
         "printedName": "DatadogCrashReporting",
         "declKind": "Import",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "AccessControl"
-        ]
+        "moduleName": "PaxMposSDK"
       },
       {
         "kind": "TypeDecl",
@@ -19150,42 +19141,42 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1165,
+      "offset": 1138,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1170,
+      "offset": 1143,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1219,
+      "offset": 1192,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1224,
+      "offset": 1197,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1276,
+      "offset": 1249,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1281,
+      "offset": 1254,
       "length": 1,
       "value": "2"
     },
