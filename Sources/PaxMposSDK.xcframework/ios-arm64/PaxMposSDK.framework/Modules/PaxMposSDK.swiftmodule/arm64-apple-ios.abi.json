@@ -20716,14 +20716,14 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Public\/FinixClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 10438,
+      "offset": 10488,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Public\/FinixClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 11185,
+      "offset": 11235,
       "length": 4,
       "value": "true"
     }
