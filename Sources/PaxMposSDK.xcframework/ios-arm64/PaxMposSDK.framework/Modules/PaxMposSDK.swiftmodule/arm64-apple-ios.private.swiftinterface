@@ -2,9 +2,6 @@
 // swift-compiler-version: Apple Swift version 6.3.3 effective-5.10 (swiftlang-6.3.3.1.3 clang-2100.1.1.101)
 // swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -O -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name PaxMposSDK
 // swift-module-flags-ignorable: -no-verify-emitted-module-interface -formal-cxx-interoperability-mode=off -interface-compiler-version 6.3.3
-import DatadogCore
-import DatadogCrashReporting
-import DatadogLogs
 import Foundation
 @_exported import PaxMposSDK
 import Security
@@ -145,6 +142,30 @@ public protocol FinixLoggerProtocol {
   func http(response: Foundation.HTTPURLResponse, attributes: [Swift.String : any Swift.Encodable]?)
   func http(responseData data: Foundation.Data?, attributes: [Swift.String : any Swift.Encodable]?)
   func setDeviceSerialNumber(_ serialNumber: Swift.String)
+}
+@_spi(FinixDatadog) @frozen public enum DatadogLogLevel {
+  @_spi(FinixDatadog) case debug
+  @_spi(FinixDatadog) case info
+  @_spi(FinixDatadog) case warn
+  @_spi(FinixDatadog) case error
+  @_spi(FinixDatadog) public static func == (a: PaxMposSDK.DatadogLogLevel, b: PaxMposSDK.DatadogLogLevel) -> Swift.Bool
+  @_spi(FinixDatadog) public func hash(into hasher: inout Swift.Hasher)
+  @_spi(FinixDatadog) public var hashValue: Swift.Int {
+    @_spi(FinixDatadog) get
+  }
+}
+@_spi(FinixDatadog) public protocol DatadogLogSinking {
+  @_spi(FinixDatadog) func log(level: PaxMposSDK.DatadogLogLevel, message: Swift.String, attributes: [Swift.String : any Swift.Encodable]?)
+}
+@_spi(FinixDatadog) public protocol DatadogBootstrapping {
+  @_spi(FinixDatadog) func isInitialized(instanceName: Swift.String) -> Swift.Bool
+  @_spi(FinixDatadog) func isDefaultInstanceInitialized() -> Swift.Bool
+  @_spi(FinixDatadog) func initialize(instanceName: Swift.String, clientToken: Swift.String, env: Swift.String, service: Swift.String, version: Swift.String)
+  @_spi(FinixDatadog) func stop(instanceName: Swift.String)
+  @_spi(FinixDatadog) func setUserInfo(instanceName: Swift.String, id: Swift.String, extraInfo: [Swift.String : Swift.String])
+  @_spi(FinixDatadog) func enableLogs(instanceName: Swift.String)
+  @_spi(FinixDatadog) func enableCrashReporting(instanceName: Swift.String)
+  @_spi(FinixDatadog) func makeLogger(instanceName: Swift.String, service: Swift.String, name: Swift.String, remoteLogThreshold: PaxMposSDK.DatadogLogLevel, consoleLogPrefix: Swift.String?) -> any PaxMposSDK.DatadogLogSinking
 }
 @_hasMissingDesignatedInitializers public class DeviceUpdateManager {
   public enum UpdateComponent : Swift.String, Swift.CaseIterable {
@@ -573,6 +594,10 @@ extension PaxMposSDK.TransactionStatus : Swift.RawRepresentable {}
 extension PaxMposSDK.FinixClient.TransactionType : Swift.Equatable {}
 extension PaxMposSDK.FinixClient.TransactionType : Swift.Hashable {}
 extension PaxMposSDK.FinixClient.TransactionType : Swift.RawRepresentable {}
+@_spi(FinixDatadog) extension PaxMposSDK.DatadogLogLevel : Swift.Equatable {}
+@_spi(FinixDatadog) extension PaxMposSDK.DatadogLogLevel : Swift.Hashable {}
+@_spi(FinixDatadog) extension PaxMposSDK.DatadogLogLevel : Swift.Sendable {}
+@_spi(FinixDatadog) extension PaxMposSDK.DatadogLogLevel : Swift.BitwiseCopyable {}
 extension PaxMposSDK.DeviceUpdateManager.UpdateComponent : Swift.Equatable {}
 extension PaxMposSDK.DeviceUpdateManager.UpdateComponent : Swift.Hashable {}
 extension PaxMposSDK.DeviceUpdateManager.UpdateComponent : Swift.RawRepresentable {}

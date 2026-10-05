@@ -2177,27 +2177,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "DatadogCore",
-        "printedName": "DatadogCore",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "DatadogLogs",
-        "printedName": "DatadogLogs",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK"
-      },
-      {
-        "kind": "Import",
-        "name": "DatadogCrashReporting",
-        "printedName": "DatadogCrashReporting",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK"
-      },
-      {
         "kind": "TypeDecl",
         "name": "FinixLoggerProtocol",
         "printedName": "FinixLoggerProtocol",
@@ -2662,6 +2641,799 @@
         "moduleName": "PaxMposSDK",
         "declAttributes": [
           "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DatadogLogLevel",
+        "printedName": "DatadogLogLevel",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "debug",
+            "printedName": "debug",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.DatadogLogLevel.Type) -> PaxMposSDK.DatadogLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DatadogLogLevel",
+                    "printedName": "PaxMposSDK.DatadogLogLevel",
+                    "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.DatadogLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DatadogLogLevel",
+                        "printedName": "PaxMposSDK.DatadogLogLevel",
+                        "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK15DatadogLogLevelO5debugyA2CmF",
+            "mangledName": "$s10PaxMposSDK15DatadogLogLevelO5debugyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "fixedbinaryorder": 0,
+            "spi_group_names": [
+              "FinixDatadog"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "info",
+            "printedName": "info",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.DatadogLogLevel.Type) -> PaxMposSDK.DatadogLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DatadogLogLevel",
+                    "printedName": "PaxMposSDK.DatadogLogLevel",
+                    "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.DatadogLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DatadogLogLevel",
+                        "printedName": "PaxMposSDK.DatadogLogLevel",
+                        "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK15DatadogLogLevelO4infoyA2CmF",
+            "mangledName": "$s10PaxMposSDK15DatadogLogLevelO4infoyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "fixedbinaryorder": 1,
+            "spi_group_names": [
+              "FinixDatadog"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "warn",
+            "printedName": "warn",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.DatadogLogLevel.Type) -> PaxMposSDK.DatadogLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DatadogLogLevel",
+                    "printedName": "PaxMposSDK.DatadogLogLevel",
+                    "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.DatadogLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DatadogLogLevel",
+                        "printedName": "PaxMposSDK.DatadogLogLevel",
+                        "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK15DatadogLogLevelO4warnyA2CmF",
+            "mangledName": "$s10PaxMposSDK15DatadogLogLevelO4warnyA2CmF",
+            "moduleName": "PaxMposSDK",
+            "fixedbinaryorder": 2,
+            "spi_group_names": [
+              "FinixDatadog"
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "error",
+            "printedName": "error",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(PaxMposSDK.DatadogLogLevel.Type) -> PaxMposSDK.DatadogLogLevel",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "DatadogLogLevel",
+                    "printedName": "PaxMposSDK.DatadogLogLevel",
+                    "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "PaxMposSDK.DatadogLogLevel.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "DatadogLogLevel",
+                        "printedName": "PaxMposSDK.DatadogLogLevel",
+                        "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:10PaxMposSDK15DatadogLogLevelO5erroryA2CmF",
+            "mangledName": "$s10PaxMposSDK15DatadogLogLevelO5erroryA2CmF",
+            "moduleName": "PaxMposSDK",
+            "fixedbinaryorder": 3,
+            "spi_group_names": [
+              "FinixDatadog"
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogLogLevel",
+                "printedName": "PaxMposSDK.DatadogLogLevel",
+                "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogLogLevel",
+                "printedName": "PaxMposSDK.DatadogLogLevel",
+                "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK15DatadogLogLevelO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s10PaxMposSDK15DatadogLogLevelO2eeoiySbAC_ACtFZ",
+            "moduleName": "PaxMposSDK",
+            "static": true,
+            "implicit": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "hashValue",
+            "printedName": "hashValue",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaxMposSDK15DatadogLogLevelO9hashValueSivp",
+            "mangledName": "$s10PaxMposSDK15DatadogLogLevelO9hashValueSivp",
+            "moduleName": "PaxMposSDK",
+            "implicit": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaxMposSDK15DatadogLogLevelO9hashValueSivg",
+                "mangledName": "$s10PaxMposSDK15DatadogLogLevelO9hashValueSivg",
+                "moduleName": "PaxMposSDK",
+                "implicit": true,
+                "spi_group_names": [
+                  "FinixDatadog"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "hash",
+            "printedName": "hash(into:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Hasher",
+                "printedName": "Swift.Hasher",
+                "paramValueOwnership": "InOut",
+                "usr": "s:s6HasherV"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK15DatadogLogLevelO4hash4intoys6HasherVz_tF",
+            "mangledName": "$s10PaxMposSDK15DatadogLogLevelO4hash4intoys6HasherVz_tF",
+            "moduleName": "PaxMposSDK",
+            "implicit": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10PaxMposSDK15DatadogLogLevelO",
+        "mangledName": "$s10PaxMposSDK15DatadogLogLevelO",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "AccessControl",
+          "Frozen",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "FinixDatadog"
+        ],
+        "isEnumExhaustive": true,
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "BitwiseCopyable",
+            "printedName": "BitwiseCopyable",
+            "usr": "s:s15BitwiseCopyableP",
+            "mangledName": "$ss15BitwiseCopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DatadogLogSinking",
+        "printedName": "DatadogLogSinking",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "log",
+            "printedName": "log(level:message:attributes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogLogLevel",
+                "printedName": "PaxMposSDK.DatadogLogLevel",
+                "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.String : any Swift.Encodable]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : any Swift.Encodable]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Encodable",
+                        "printedName": "any Swift.Encodable",
+                        "usr": "s:SE"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK17DatadogLogSinkingP3log5level7message10attributesyAA0dE5LevelO_SSSDySSSE_pGSgtF",
+            "mangledName": "$s10PaxMposSDK17DatadogLogSinkingP3log5level7message10attributesyAA0dE5LevelO_SSSDySSSE_pGSgtF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.DatadogLogSinking>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.DatadogLogSinking>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10PaxMposSDK17DatadogLogSinkingP",
+        "mangledName": "$s10PaxMposSDK17DatadogLogSinkingP",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "FinixDatadog"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "DatadogBootstrapping",
+        "printedName": "DatadogBootstrapping",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "isInitialized",
+            "printedName": "isInitialized(instanceName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK20DatadogBootstrappingP13isInitialized12instanceNameSbSS_tF",
+            "mangledName": "$s10PaxMposSDK20DatadogBootstrappingP13isInitialized12instanceNameSbSS_tF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "isDefaultInstanceInitialized",
+            "printedName": "isDefaultInstanceInitialized()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK20DatadogBootstrappingP28isDefaultInstanceInitializedSbyF",
+            "mangledName": "$s10PaxMposSDK20DatadogBootstrappingP28isDefaultInstanceInitializedSbyF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.DatadogBootstrapping>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment"
+            ],
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "initialize",
+            "printedName": "initialize(instanceName:clientToken:env:service:version:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK20DatadogBootstrappingP10initialize12instanceName11clientToken3env7service7versionySS_S4StF",
+            "mangledName": "$s10PaxMposSDK20DatadogBootstrappingP10initialize12instanceName11clientToken3env7service7versionySS_S4StF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "stop",
+            "printedName": "stop(instanceName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK20DatadogBootstrappingP4stop12instanceNameySS_tF",
+            "mangledName": "$s10PaxMposSDK20DatadogBootstrappingP4stop12instanceNameySS_tF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setUserInfo",
+            "printedName": "setUserInfo(instanceName:id:extraInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK20DatadogBootstrappingP11setUserInfo12instanceName2id05extraH0ySS_SSSDyS2SGtF",
+            "mangledName": "$s10PaxMposSDK20DatadogBootstrappingP11setUserInfo12instanceName2id05extraH0ySS_SSSDyS2SGtF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableLogs",
+            "printedName": "enableLogs(instanceName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK20DatadogBootstrappingP10enableLogs12instanceNameySS_tF",
+            "mangledName": "$s10PaxMposSDK20DatadogBootstrappingP10enableLogs12instanceNameySS_tF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "enableCrashReporting",
+            "printedName": "enableCrashReporting(instanceName:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK20DatadogBootstrappingP20enableCrashReporting12instanceNameySS_tF",
+            "mangledName": "$s10PaxMposSDK20DatadogBootstrappingP20enableCrashReporting12instanceNameySS_tF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "makeLogger",
+            "printedName": "makeLogger(instanceName:service:name:remoteLogThreshold:consoleLogPrefix:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogLogSinking",
+                "printedName": "any PaxMposSDK.DatadogLogSinking",
+                "usr": "s:10PaxMposSDK17DatadogLogSinkingP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "DatadogLogLevel",
+                "printedName": "PaxMposSDK.DatadogLogLevel",
+                "usr": "s:10PaxMposSDK15DatadogLogLevelO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK20DatadogBootstrappingP10makeLogger12instanceName7service4name18remoteLogThreshold07consoleM6PrefixAA0dM7Sinking_pSS_S2SAA0dM5LevelOSSSgtF",
+            "mangledName": "$s10PaxMposSDK20DatadogBootstrappingP10makeLogger12instanceName7service4name18remoteLogThreshold07consoleM6PrefixAA0dM7Sinking_pSS_S2SAA0dM5LevelOSSSgtF",
+            "moduleName": "PaxMposSDK",
+            "genericSig": "<τ_0_0 where τ_0_0 : PaxMposSDK.DatadogBootstrapping>",
+            "sugared_genericSig": "<Self where Self : PaxMposSDK.DatadogBootstrapping>",
+            "protocolReq": true,
+            "spi_group_names": [
+              "FinixDatadog"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:10PaxMposSDK20DatadogBootstrappingP",
+        "mangledName": "$s10PaxMposSDK20DatadogBootstrappingP",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "AccessControl",
+          "SPIAccessControl",
+          "RawDocComment"
+        ],
+        "spi_group_names": [
+          "FinixDatadog"
         ],
         "conformances": [
           {
@@ -18147,28 +18919,6 @@
         "conformances": [
           {
             "kind": "Conformance",
-            "name": "DatadogExtended",
-            "printedName": "DatadogExtended",
-            "children": [
-              {
-                "kind": "TypeWitness",
-                "name": "ExtendedType",
-                "printedName": "ExtendedType",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "URLSessionTask",
-                    "printedName": "Foundation.URLSessionTask",
-                    "usr": "c:objc(cs)NSURLSessionTask"
-                  }
-                ]
-              }
-            ],
-            "usr": "s:15DatadogInternal0A8ExtendedP",
-            "mangledName": "$s15DatadogInternal0A8ExtendedP"
-          },
-          {
-            "kind": "Conformance",
             "name": "_KeyValueCodingAndObserving",
             "printedName": "_KeyValueCodingAndObserving",
             "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
@@ -19120,63 +19870,77 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 249,
+      "offset": 332,
+      "length": 12,
+      "value": "\"PaxMposSDK\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Constants.swift",
+      "kind": "StringLiteral",
+      "offset": 381,
       "length": 18,
       "value": "\"pax-mpos-ios-sdk\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Constants.swift",
       "kind": "StringLiteral",
-      "offset": 392,
+      "offset": 524,
       "length": 10,
       "value": "\"-iOS-PAX\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/Constants.swift",
       "kind": "BooleanLiteral",
-      "offset": 603,
+      "offset": 735,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
+      "kind": "StringLiteral",
+      "offset": 2530,
+      "length": 26,
+      "value": "\"PaxMposSDKDatadogAdapter\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1138,
+      "offset": 4261,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1143,
+      "offset": 4266,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1192,
+      "offset": 4315,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1197,
+      "offset": 4320,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1249,
+      "offset": 4372,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/DebugLogger.swift",
       "kind": "IntegerLiteral",
-      "offset": 1254,
+      "offset": 4377,
       "length": 1,
       "value": "2"
     },
