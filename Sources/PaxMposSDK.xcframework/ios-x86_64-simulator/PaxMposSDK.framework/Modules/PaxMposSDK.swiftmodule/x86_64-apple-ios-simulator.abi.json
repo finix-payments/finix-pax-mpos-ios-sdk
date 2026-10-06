@@ -1990,6 +1990,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "Security",
         "printedName": "Security",
         "declKind": "Import",
@@ -6096,6 +6106,16 @@
       },
       {
         "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
         "name": "UIKit",
         "printedName": "UIKit",
         "declKind": "Import",
@@ -8061,6 +8081,88 @@
           {
             "kind": "Constructor",
             "name": "init",
+            "printedName": "init(environment:credentials:merchantId:deviceType:deviceId:serialNumber:interceptor:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "FinixConfig",
+                "printedName": "PaxMposSDK.FinixConfig",
+                "usr": "s:10PaxMposSDK11FinixConfigV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Environment",
+                "printedName": "PaxMposSDK.Finix.Environment",
+                "usr": "s:10PaxMposSDK5FinixO11EnvironmentO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "APICredentials",
+                "printedName": "PaxMposSDK.Finix.APICredentials",
+                "usr": "s:10PaxMposSDK5FinixO14APICredentialsV"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Device",
+                "printedName": "PaxMposSDK.Finix.Device",
+                "usr": "s:10PaxMposSDK5FinixO6DeviceO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "(any PaxMposSDK.Finix.RequestInterceptor)?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "RequestInterceptor",
+                    "printedName": "any PaxMposSDK.Finix.RequestInterceptor",
+                    "usr": "s:10PaxMposSDK5FinixO18RequestInterceptorP"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "s:10PaxMposSDK11FinixConfigV11environment11credentials10merchantId10deviceType0jI012serialNumber11interceptorAcA0D0O11EnvironmentO_AL14APICredentialsVSSAL6DeviceOS2SSgAL18RequestInterceptor_pSgtcfc",
+            "mangledName": "$s10PaxMposSDK11FinixConfigV11environment11credentials10merchantId10deviceType0jI012serialNumber11interceptorAcA0D0O11EnvironmentO_AL14APICredentialsVSSAL6DeviceOS2SSgAL18RequestInterceptor_pSgtcfc",
+            "moduleName": "PaxMposSDK",
+            "declAttributes": [
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
             "printedName": "init(environment:credentials:merchantId:mid:deviceType:deviceId:serialNumber:interceptor:)",
             "children": [
               {
@@ -8140,8 +8242,10 @@
             "usr": "s:10PaxMposSDK11FinixConfigV11environment11credentials10merchantId3mid10deviceType0kI012serialNumber11interceptorAcA0D0O11EnvironmentO_AM14APICredentialsVS2SAM6DeviceOS2SSgAM18RequestInterceptor_pSgtcfc",
             "mangledName": "$s10PaxMposSDK11FinixConfigV11environment11credentials10merchantId3mid10deviceType0kI012serialNumber11interceptorAcA0D0O11EnvironmentO_AM14APICredentialsVS2SAM6DeviceOS2SSgAM18RequestInterceptor_pSgtcfc",
             "moduleName": "PaxMposSDK",
+            "deprecated": true,
             "declAttributes": [
               "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "init_kind": "Designated"
@@ -10372,6 +10476,46 @@
                 "declKind": "EnumElement",
                 "usr": "s:10PaxMposSDK10FinixErrorV4CodeO22RKIEnvironmentMismatchyAESS_S2StcAEmF",
                 "mangledName": "$s10PaxMposSDK10FinixErrorV4CodeO22RKIEnvironmentMismatchyAESS_S2StcAEmF",
+                "moduleName": "PaxMposSDK",
+                "declAttributes": [
+                  "RawDocComment"
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "MidResolutionFailed",
+                "printedName": "MidResolutionFailed",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(PaxMposSDK.FinixError.Code.Type) -> PaxMposSDK.FinixError.Code",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Code",
+                        "printedName": "PaxMposSDK.FinixError.Code",
+                        "usr": "s:10PaxMposSDK10FinixErrorV4CodeO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Metatype",
+                        "printedName": "PaxMposSDK.FinixError.Code.Type",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Code",
+                            "printedName": "PaxMposSDK.FinixError.Code",
+                            "usr": "s:10PaxMposSDK10FinixErrorV4CodeO"
+                          }
+                        ]
+                      }
+                    ]
+                  }
+                ],
+                "declKind": "EnumElement",
+                "usr": "s:10PaxMposSDK10FinixErrorV4CodeO19MidResolutionFailedyA2EmF",
+                "mangledName": "$s10PaxMposSDK10FinixErrorV4CodeO19MidResolutionFailedyA2EmF",
                 "moduleName": "PaxMposSDK",
                 "declAttributes": [
                   "RawDocComment"
@@ -14780,7 +14924,7 @@
           {
             "kind": "Function",
             "name": "update",
-            "printedName": "update(environment:credentials:merchantId:mid:deviceType:deviceId:serialNumber:)",
+            "printedName": "update(environment:credentials:merchantId:deviceType:deviceId:serialNumber:)",
             "children": [
               {
                 "kind": "TypeNominal",
@@ -14812,21 +14956,6 @@
                     "name": "APICredentials",
                     "printedName": "PaxMposSDK.Finix.APICredentials",
                     "usr": "s:10PaxMposSDK5FinixO14APICredentialsV"
-                  }
-                ],
-                "hasDefaultArg": true,
-                "usr": "s:Sq"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "Optional",
-                "printedName": "Swift.String?",
-                "children": [
-                  {
-                    "kind": "TypeNominal",
-                    "name": "String",
-                    "printedName": "Swift.String",
-                    "usr": "s:SS"
                   }
                 ],
                 "hasDefaultArg": true,
@@ -14894,11 +15023,138 @@
               }
             ],
             "declKind": "Func",
-            "usr": "s:10PaxMposSDK11FinixClientC6update11environment11credentials10merchantId3mid10deviceType0lJ012serialNumberyAA0D0O11EnvironmentOSg_AM14APICredentialsVSgSSSgAtM6DeviceOSgA2TtF",
-            "mangledName": "$s10PaxMposSDK11FinixClientC6update11environment11credentials10merchantId3mid10deviceType0lJ012serialNumberyAA0D0O11EnvironmentOSg_AM14APICredentialsVSgSSSgAtM6DeviceOSgA2TtF",
+            "usr": "s:10PaxMposSDK11FinixClientC6update11environment11credentials10merchantId10deviceType0kJ012serialNumberyAA0D0O11EnvironmentOSg_AL14APICredentialsVSgSSSgAL6DeviceOSgA2StF",
+            "mangledName": "$s10PaxMposSDK11FinixClientC6update11environment11credentials10merchantId10deviceType0kJ012serialNumberyAA0D0O11EnvironmentOSg_AL14APICredentialsVSgSSSgAL6DeviceOSgA2StF",
             "moduleName": "PaxMposSDK",
             "declAttributes": [
               "AccessControl",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "update",
+            "printedName": "update(environment:credentials:merchantId:mid:deviceType:deviceId:serialNumber:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaxMposSDK.Finix.Environment?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Environment",
+                    "printedName": "PaxMposSDK.Finix.Environment",
+                    "usr": "s:10PaxMposSDK5FinixO11EnvironmentO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaxMposSDK.Finix.APICredentials?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "APICredentials",
+                    "printedName": "PaxMposSDK.Finix.APICredentials",
+                    "usr": "s:10PaxMposSDK5FinixO14APICredentialsV"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "PaxMposSDK.Finix.Device?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Device",
+                    "printedName": "PaxMposSDK.Finix.Device",
+                    "usr": "s:10PaxMposSDK5FinixO6DeviceO"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:10PaxMposSDK11FinixClientC6update11environment11credentials10merchantId3mid10deviceType0lJ012serialNumberyAA0D0O11EnvironmentOSg_AM14APICredentialsVSgSSSgAtM6DeviceOSgA2TtF",
+            "mangledName": "$s10PaxMposSDK11FinixClientC6update11environment11credentials10merchantId3mid10deviceType0lJ012serialNumberyAA0D0O11EnvironmentOSg_AM14APICredentialsVSgSSSgAtM6DeviceOSgA2TtF",
+            "moduleName": "PaxMposSDK",
+            "deprecated": true,
+            "declAttributes": [
+              "AccessControl",
+              "Available",
               "RawDocComment"
             ],
             "funcSelfKind": "NonMutating"
@@ -19492,7 +19748,7 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Extension\/FinixClient+CardReaderTransfer.swift",
       "kind": "StringLiteral",
-      "offset": 8781,
+      "offset": 11639,
       "length": 12,
       "value": "\"log_ref_no\""
     },
@@ -20589,6 +20845,20 @@
       "value": "[\"9F02\", \"9F26\", \"9F06\", \"82\", \"9F36\", \"9F09\", \"9F27\", \"84\", \"9F1E\", \"9F10\", \"9F33\", \"9F1A\", \"9F35\", \"95\", \"5F2A\", \"9A\", \"9F41\", \"9C\", \"9F37\", \"DF3F\", \"9F5B\", \"57\", \"5F34\", \"9F6E\", \"50\", \"9F12\", \"9F11\"]"
     },
     {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/MidResolver.swift",
+      "kind": "StringLiteral",
+      "offset": 1539,
+      "length": 34,
+      "value": "\"com.finix.PaxMposSDK.MidResolver\""
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/MidResolver.swift",
+      "kind": "Array",
+      "offset": 1745,
+      "length": 2,
+      "value": "[]"
+    },
+    {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "StringLiteral",
       "offset": 1676,
@@ -20829,70 +21099,49 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixAPI.swift",
       "kind": "StringLiteral",
-      "offset": 845,
+      "offset": 1111,
       "length": 15,
       "value": "\"merchant_name\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixAPI.swift",
       "kind": "StringLiteral",
-      "offset": 918,
+      "offset": 1184,
       "length": 19,
       "value": "\"processor_details\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixAPI.swift",
       "kind": "StringLiteral",
-      "offset": 1290,
-      "length": 12,
-      "value": "\"account_id\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 1336,
-      "length": 4,
-      "value": "\"id\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 1371,
-      "length": 13,
-      "value": "\"acceptor_id\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 1417,
-      "length": 15,
-      "value": "\"account_token\""
-    },
-    {
-      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixAPI.swift",
-      "kind": "StringLiteral",
-      "offset": 1643,
+      "offset": 1570,
       "length": 13,
       "value": "\"terminal_id\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixAPI.swift",
       "kind": "StringLiteral",
-      "offset": 1687,
+      "offset": 1614,
       "length": 19,
       "value": "\"terminal_batch_id\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixConfig.swift",
+      "kind": "BooleanLiteral",
+      "offset": 1064,
+      "length": 5,
+      "value": "false"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixConfig.swift",
       "kind": "StringLiteral",
-      "offset": 10013,
+      "offset": 11734,
       "length": 10,
       "value": "\"DUMMY_V1\""
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Model\/FinixConfig.swift",
       "kind": "StringLiteral",
-      "offset": 10044,
+      "offset": 11765,
       "length": 10,
       "value": "\"FINIX_V1\""
     },
@@ -21472,22 +21721,29 @@
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Public\/FinixClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1173,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Public\/FinixClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 1052,
+      "offset": 1480,
       "length": 5,
       "value": "false"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Public\/FinixClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 10488,
+      "offset": 14313,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Public\/FinixClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 11235,
+      "offset": 15060,
       "length": 4,
       "value": "true"
     }

@@ -280,7 +280,9 @@ public struct EncryptedCardDetails : Swift.Encodable {
   public func encode(to encoder: any Swift.Encoder) throws
 }
 public struct FinixConfig {
-  public init(environment: PaxMposSDK.Finix.Environment, credentials: PaxMposSDK.Finix.APICredentials, merchantId: Swift.String, mid: Swift.String, deviceType: PaxMposSDK.Finix.Device, deviceId: Swift.String, serialNumber: Swift.String? = nil, interceptor: (any PaxMposSDK.Finix.RequestInterceptor)? = nil)
+  public init(environment: PaxMposSDK.Finix.Environment, credentials: PaxMposSDK.Finix.APICredentials, merchantId: Swift.String, deviceType: PaxMposSDK.Finix.Device, deviceId: Swift.String, serialNumber: Swift.String? = nil, interceptor: (any PaxMposSDK.Finix.RequestInterceptor)? = nil)
+  @available(*, deprecated, message: "The SDK resolves the mid from the Finix API and ignores this value. Remove the mid argument.")
+  public init(environment: PaxMposSDK.Finix.Environment, credentials: PaxMposSDK.Finix.APICredentials, merchantId: Swift.String, mid _: Swift.String, deviceType: PaxMposSDK.Finix.Device, deviceId: Swift.String, serialNumber: Swift.String? = nil, interceptor: (any PaxMposSDK.Finix.RequestInterceptor)? = nil)
 }
 public enum Finix {
   public enum Device {
@@ -350,6 +352,7 @@ public struct FinixError : Foundation.LocalizedError {
     case BadCard
     case SplitTransferValidation
     case RKIEnvironmentMismatch(deviceKeyType: Swift.String, currentEnvironment: Swift.String, recommendedEnvironment: Swift.String)
+    case MidResolutionFailed
     public static func == (lhs: PaxMposSDK.FinixError.Code, rhs: PaxMposSDK.FinixError.Code) -> Swift.Bool
   }
 }
@@ -501,7 +504,9 @@ public class FinixClient {
   public init(config: PaxMposSDK.FinixConfig, logger: (any PaxMposSDK.FinixLoggerProtocol)? = nil, session: (any PaxMposSDK.URLSessionProtocol)? = nil, easyLinkController: (any PaxMposSDK.PaxEasyLinkControllerProtocol)? = nil)
   public func isReaderConnected() -> Swift.Bool
   public func stopCurrentOperation()
-  public func update(environment: PaxMposSDK.Finix.Environment? = nil, credentials: PaxMposSDK.Finix.APICredentials? = nil, merchantId: Swift.String? = nil, mid: Swift.String? = nil, deviceType: PaxMposSDK.Finix.Device? = nil, deviceId: Swift.String? = nil, serialNumber: Swift.String? = nil)
+  public func update(environment: PaxMposSDK.Finix.Environment? = nil, credentials: PaxMposSDK.Finix.APICredentials? = nil, merchantId: Swift.String? = nil, deviceType: PaxMposSDK.Finix.Device? = nil, deviceId: Swift.String? = nil, serialNumber: Swift.String? = nil)
+  @available(*, deprecated, message: "The SDK resolves the mid from the Finix API and ignores this value. Use update(environment:credentials:merchantId:deviceType:deviceId:serialNumber:).")
+  public func update(environment: PaxMposSDK.Finix.Environment? = nil, credentials: PaxMposSDK.Finix.APICredentials? = nil, merchantId: Swift.String? = nil, mid _: Swift.String?, deviceType: PaxMposSDK.Finix.Device? = nil, deviceId: Swift.String? = nil, serialNumber: Swift.String? = nil)
   public func configureRKI(enabled: Swift.Bool = true)
   @objc deinit
 }
