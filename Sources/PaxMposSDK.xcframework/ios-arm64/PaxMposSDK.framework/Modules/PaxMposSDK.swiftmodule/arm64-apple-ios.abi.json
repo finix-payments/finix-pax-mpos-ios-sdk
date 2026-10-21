@@ -6152,16 +6152,6 @@
         ]
       },
       {
-        "kind": "Import",
-        "name": "Foundation",
-        "printedName": "Foundation",
-        "declKind": "Import",
-        "moduleName": "PaxMposSDK",
-        "declAttributes": [
-          "RawDocComment"
-        ]
-      },
-      {
         "kind": "TypeDecl",
         "name": "Currency",
         "printedName": "Currency",
@@ -20938,14 +20928,14 @@
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 35472,
+      "offset": 35314,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Volumes\/workspace\/repository\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 41075,
+      "offset": 40917,
       "length": 1,
       "value": "3"
     },

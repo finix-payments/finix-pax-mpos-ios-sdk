@@ -26,7 +26,7 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		+3wsEEk3J95SxOhlF22Bquc6pWw=
+		k0Mi7HAF+8GB+7vFnwvvMNhQdeQ=
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
@@ -42,7 +42,7 @@
 		</data>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		hiJ4zO4rKxmvdD9JV89X0DUOCz4=
+		U+2UvLC2g9OFRmPNctT+X0ilFtA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -107,7 +107,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ZYwPVwUhVZfNsI8aLIKkfpcuH+eiVA1HSf/c6yNbkFQ=
+			/BpgzzL2P6+YAMtPJxliy3MTBiFarui4iBGy+rqEd7Y=
 			</data>
 		</dict>
 		<key>Modules/PaxMposSDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
@@ -135,7 +135,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			el+Yl9hI0fKwnIk4EsPjYi7uM8oqaezm7U3qQuZOlXg=
+			UcOhd9kdKuGsQkOtgEjCOOHe/2WFxsnD1ket9FuZiAw=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
