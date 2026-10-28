@@ -22,9 +22,20 @@ final class PaxMposSDKDatadogAdapter: NSObject, DatadogBootstrapping {
         Datadog.isInitialized()
     }
 
-    func initialize(instanceName: String, clientToken: String, env: String, service: String, version: String) {
+    func initialize(
+        instanceName: String,
+        clientToken: String,
+        env: String,
+        service: String,
+        version: String
+    ) {
         Datadog.initialize(
-            with: Datadog.Configuration(clientToken: clientToken, env: env, service: service, version: version),
+            with: Datadog.Configuration(
+                clientToken: clientToken,
+                env: env,
+                service: service,
+                version: version
+            ),
             trackingConsent: .granted,
             instanceName: instanceName
         )
@@ -35,7 +46,11 @@ final class PaxMposSDKDatadogAdapter: NSObject, DatadogBootstrapping {
     }
 
     func setUserInfo(instanceName: String, id: String, extraInfo: [String: String]) {
-        Datadog.setUserInfo(id: id, extraInfo: extraInfo, in: Datadog.sdkInstance(named: instanceName))
+        Datadog.setUserInfo(
+            id: id,
+            extraInfo: extraInfo,
+            in: Datadog.sdkInstance(named: instanceName)
+        )
     }
 
     func enableLogs(instanceName: String) {
@@ -72,14 +87,14 @@ private struct LogSink: DatadogLogSinking {
 
     func log(level: DatadogLogLevel, message: String, attributes: [String: Encodable]?) {
         switch level {
-        case .debug:
-            logger.debug(message, attributes: attributes)
-        case .info:
-            logger.info(message, attributes: attributes)
-        case .warn:
-            logger.warn(message, attributes: attributes)
-        case .error:
-            logger.error(message, attributes: attributes)
+            case .debug:
+                logger.debug(message, attributes: attributes)
+            case .info:
+                logger.info(message, attributes: attributes)
+            case .warn:
+                logger.warn(message, attributes: attributes)
+            case .error:
+                logger.error(message, attributes: attributes)
         }
     }
 }
@@ -87,14 +102,14 @@ private struct LogSink: DatadogLogSinking {
 private extension DatadogLogLevel {
     var logLevel: DatadogLogs.LogLevel {
         switch self {
-        case .debug:
-            .debug
-        case .info:
-            .info
-        case .warn:
-            .warn
-        case .error:
-            .error
+            case .debug:
+                .debug
+            case .info:
+                .info
+            case .warn:
+                .warn
+            case .error:
+                .error
         }
     }
 }

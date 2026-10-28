@@ -1,85 +1,48 @@
-# finix-pax-mpos-ios-sdk
+# PaxMposSDK iOS SDK
 
-## Overview
-This guide helps iOS developers integrate **finix-pax-mpos-ios-sdk** into their applications for communicating with mPOS devices.
-
-## Table of Contents
-- [Installation](#installation)
-- [Pre-requisites](#pre-requisites)
-- [Integration Guide](#integration-guide)
-- [Sample App](#sample-app)
+Binary distribution of the PaxMposSDK iOS SDK via Swift Package Manager.
 
 ## Installation
-Add the SDK to your project via Swift Package Manager using:
-```
-https://github.com/finix-payments/finix-pax-mpos-ios-sdk
-```
 
-## Pre-requisites
-- iOS 15.6 or later
-- Real iOS device (ARM64 simulator support coming soon)
-- Add Bluetooth permission in Info.plist using key `Privacy - Bluetooth Always Usage Description`
+### Swift Package Manager
 
-## Integration Guide
-### 1. Initialize the SDK
+Add the following to your `Package.swift`:
+
 ```swift
-import PaxMposSDK
-
-let finixClient = FinixClient(config: FinixConfig(
-            environment: TEST_ENVIRONMENT,
-            credentials: Finix.APICredentials(username: TEST_USERNAME, password: TEST_PASSWORD),
-            merchantId: TEST_MERCHANT_ID,
-            mid: TEST_MERCHANT_MID,
-            deviceType: .Pax,
-            deviceId: "")
-)
-finixClient.delegate = self
-finixClient.interactionDelegate = self
+dependencies: [
+    .package(url: "https://github.com/finix-payments/finix-pax-mpos-ios-sdk.git", from: "1.31.2")
+],
+targets: [
+    .target(
+        name: "YourApp",
+        dependencies: [
+            .product(name: "PaxMposSDK", package: "finix-pax-mpos-ios-sdk")
+        ]
+    )
+]
 ```
 
-### 2. Scan for devices
-```swift
-finixClient.startScan()
+Or in Xcode:
+1. File → Add Package Dependencies
+2. Enter: `https://github.com/finix-payments/finix-pax-mpos-ios-sdk`
+3. Select version `1.31.2` or later
 
-extension ViewController: FinixDelegate {
-    func didDiscoverDevice(_ deviceInfo: DeviceInfo) {
-        devices.append(deviceInfo)
-    }
-}
-```
+## Requirements
 
-### 3. Connect to device
-The device will display:
-- Orange light: Ready for pairing
-- Green light: Battery full
-- After connection: Only green light remains
-```swift
-finixClient.connectDevice(device.id)
+- iOS 15.0+
+- Xcode 15.0+
 
-extension ViewController: FinixDelegate {
-    func deviceDidConnect(_ deviceInfo: DeviceInfo) {
-        connectedDevice = deviceInfo
-    }
-}
-```
+## Datadog
 
-### 4. Start a Transaction
-First, update the client with the device ID:
-```swift
-finixClient.update(deviceId: TEST_DEVICE_ID)
-```
-Then initiate the transaction:
-```swift
-let transactionAmount = Currency(amount: Int(amountDouble * 100), code: .USD)
-finixClient.startTransaction(amount: transactionAmount, type: transactionType) { transferResponse, error in
-    Task { @MainActor in
-        // Handle using transferResponse and error
-    }
-}
-```
-Device status:
-- Blue light: Waiting for card interaction
-- Light turns off + beeping: Card detected
+The package depends on Datadog's `dd-sdk-ios` for diagnostics. Swift Package Manager adds it for you.
+If your app also uses Datadog, both share one copy, and the SDK logs to its own Datadog instance
+without touching yours.
 
-## Sample App
-[finix-pax-mpos-ios-sdk-demo-app](https://github.com/finix-payments/finix-pax-mpos-ios-sdk-demo-app)
+## Support
+
+- Email: developers@finixpayments.com
+- Documentation: https://www.finix.com/docs/guides/payments/
+
+## License
+
+Apache License 2.0
