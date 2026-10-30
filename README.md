@@ -29,8 +29,8 @@ Or in Xcode:
 
 ## Requirements
 
-- iOS 15.0+
-- Xcode 15.0+
+- iOS 15.6+
+- Xcode 26.3+
 
 ## Datadog
 
@@ -42,7 +42,3 @@ without touching yours.
 
 - Email: developers@finixpayments.com
 - Documentation: https://www.finix.com/docs/guides/payments/
-
-## License
-
-Apache License 2.0
