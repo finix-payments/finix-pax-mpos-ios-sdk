@@ -10,7 +10,7 @@ Add the following to your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/finix-payments/finix-pax-mpos-ios-sdk.git", from: "1.31.2")
+    .package(url: "https://github.com/finix-payments/finix-pax-mpos-ios-sdk.git", from: "1.31.3")
 ],
 targets: [
     .target(
@@ -25,7 +25,7 @@ targets: [
 Or in Xcode:
 1. File → Add Package Dependencies
 2. Enter: `https://github.com/finix-payments/finix-pax-mpos-ios-sdk`
-3. Select version `1.31.2` or later
+3. Select version `1.31.3` or later
 
 ## Requirements
 
