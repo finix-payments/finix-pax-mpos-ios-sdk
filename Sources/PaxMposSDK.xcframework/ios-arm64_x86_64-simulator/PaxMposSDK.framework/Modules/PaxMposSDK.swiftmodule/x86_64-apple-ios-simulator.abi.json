@@ -19486,77 +19486,77 @@
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 14560,
+      "offset": 14629,
       "length": 6,
       "value": "\"SALE\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 14587,
+      "offset": 14656,
       "length": 15,
       "value": "\"AUTHORIZATION\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 14625,
+      "offset": 14694,
       "length": 8,
       "value": "\"REFUND\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17034,
+      "offset": 17103,
       "length": 18,
       "value": "\"amount_requested\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17085,
+      "offset": 17154,
       "length": 15,
       "value": "\"approval_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17155,
+      "offset": 17224,
       "length": 14,
       "value": "\"failure_code\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17204,
+      "offset": 17273,
       "length": 17,
       "value": "\"failure_message\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17261,
+      "offset": 17330,
       "length": 23,
       "value": "\"masked_account_number\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17335,
+      "offset": 17404,
       "length": 10,
       "value": "\"trace_id\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17377,
+      "offset": 17446,
       "length": 14,
       "value": "\"emv_response\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Extension\/FinixClient+CardReader.swift",
       "kind": "StringLiteral",
-      "offset": 17446,
+      "offset": 17515,
       "length": 17,
       "value": "\"split_transfers\""
     },
@@ -19829,49 +19829,49 @@
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "BooleanLiteral",
-      "offset": 2457,
+      "offset": 2446,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "StringLiteral",
-      "offset": 20100,
+      "offset": 17223,
       "length": 10,
       "value": "\"ffff9876\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "StringLiteral",
-      "offset": 20235,
+      "offset": 17358,
       "length": 6,
       "value": "\"ffff\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 20467,
+      "offset": 17590,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "StringLiteral",
-      "offset": 20900,
+      "offset": 18023,
       "length": 11,
       "value": "\"PROD_KEYS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "StringLiteral",
-      "offset": 20932,
+      "offset": 18055,
       "length": 11,
       "value": "\"TEST_KEYS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "StringLiteral",
-      "offset": 20968,
+      "offset": 18091,
       "length": 15,
       "value": "\"EXTERNAL_KEYS\""
     },
@@ -20207,121 +20207,184 @@
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "StringLiteral",
-      "offset": 11789,
-      "length": 63,
-      "value": "\"📁 Starting parameter upload (EMV + CLSS) with verification\""
+      "offset": 11582,
+      "length": 11,
+      "value": "\"emv_param\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11614,
+      "length": 5,
+      "value": "\"emv\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11624,
+      "length": 6,
+      "value": "\"none\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11672,
+      "length": 12,
+      "value": "\"clss_param\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11705,
+      "length": 6,
+      "value": "\"clss\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11716,
+      "length": 6,
+      "value": "\"none\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11874,
+      "length": 36,
+      "value": "\"[UPLOAD] Starting parameter upload\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11938,
+      "length": 12,
+      "value": "\"before_emv\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 11975,
+      "length": 13,
+      "value": "\"before_clss\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12014,
+      "length": 12,
+      "value": "\"target_emv\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12051,
+      "length": 13,
+      "value": "\"target_clss\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12022,
+      "offset": 12257,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12295,
+      "length": 6,
+      "value": "\"none\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 12339,
+      "length": 6,
+      "value": "\"none\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12095,
+      "offset": 12491,
       "length": 1,
       "value": "2"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
-      "kind": "StringLiteral",
-      "offset": 12333,
-      "length": 55,
-      "value": "\"📁 Parameter upload: \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
-      "kind": "StringLiteral",
-      "offset": 12364,
-      "length": 1,
-      "value": "\" - \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
-      "kind": "StringLiteral",
-      "offset": 12378,
-      "length": 1,
-      "value": "\"\/\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
-      "kind": "StringLiteral",
-      "offset": 12387,
-      "length": 2,
-      "value": "\"\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12595,
+      "offset": 12904,
       "length": 1,
       "value": "1"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12782,
+      "offset": 13091,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12827,
+      "offset": 13136,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 12834,
+      "offset": 13143,
       "length": 1,
       "value": "0"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13087,
+      "offset": 13396,
       "length": 3,
       "value": "100"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "FloatLiteral",
-      "offset": 13300,
+      "offset": 13609,
       "length": 5,
       "value": "100.0"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "StringLiteral",
-      "offset": 13404,
-      "length": 80,
-      "value": "\"📊 Calling outer progressCallback: Uploading Parameters - \""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
-      "kind": "StringLiteral",
-      "offset": 13482,
-      "length": 1,
-      "value": "\"%\""
-    },
-    {
-      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
-      "kind": "StringLiteral",
-      "offset": 13540,
+      "offset": 13671,
       "length": 22,
       "value": "\"Uploading Parameters\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 13580,
+      "offset": 13711,
       "length": 3,
       "value": "100"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 19705,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 19745,
+      "length": 9,
+      "value": "\"unknown\""
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/ElegantBatchUploadManager.swift",
+      "kind": "StringLiteral",
+      "offset": 22303,
+      "length": 9,
+      "value": "\"unknown\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/EMVDetails.swift",
@@ -20627,28 +20690,28 @@
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/EMVUtil.swift",
       "kind": "Array",
-      "offset": 4776,
+      "offset": 4759,
       "length": 253,
       "value": "[\"9F02\", \"9F26\", \"82\", \"9F36\", \"84\", \"9F10\", \"9F33\", \"9F1A\", \"95\", \"5F2A\", \"9A\", \"9C\", \"9F37\", \"9F5B\", \"9F27\", \"5F34\", \"9F6E\", \"9F7C\", \"50\", \"9F12\", \"9F11\", \"57\", \"9F06\", \"9F1E\", \"9F35\", \"9F34\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/EMVUtil.swift",
       "kind": "Array",
-      "offset": 5062,
+      "offset": 5045,
       "length": 195,
       "value": "[\"9F02\", \"9F26\", \"82\", \"9F36\", \"9F34\", \"9F27\", \"84\", \"9F10\", \"9F33\", \"9F1A\", \"95\", \"5F2A\", \"9A\", \"9C\", \"9F37\", \"9F09\", \"5F34\", \"50\", \"9F12\", \"9F11\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/EMVUtil.swift",
       "kind": "Array",
-      "offset": 5295,
+      "offset": 5278,
       "length": 205,
       "value": "[\"9F02\", \"9F26\", \"82\", \"5F34\", \"9F36\", \"9F27\", \"9F10\", \"9F1A\", \"95\", \"5F2A\", \"9A\", \"9C\", \"9F37\", \"9F06\", \"50\", \"9F12\", \"9F11\", \"9F1E\", \"9F35\", \"9F34\", \"9F33\"]"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/EMVUtil.swift",
       "kind": "Array",
-      "offset": 5531,
+      "offset": 5514,
       "length": 261,
       "value": "[\"9F02\", \"9F26\", \"9F06\", \"82\", \"9F36\", \"9F09\", \"9F27\", \"84\", \"9F1E\", \"9F10\", \"9F33\", \"9F1A\", \"9F35\", \"95\", \"5F2A\", \"9A\", \"9F41\", \"9C\", \"9F37\", \"DF3F\", \"9F5B\", \"57\", \"5F34\", \"9F6E\", \"50\", \"9F12\", \"9F11\"]"
     },
@@ -20746,14 +20809,14 @@
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 32883,
+      "offset": 36158,
       "length": 1,
       "value": "3"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 39239,
+      "offset": 40959,
       "length": 1,
       "value": "3"
     },
@@ -20774,7 +20837,7 @@
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/PaxSyncAndProcessListener.swift",
       "kind": "BooleanLiteral",
-      "offset": 1888,
+      "offset": 1937,
       "length": 4,
       "value": "true"
     },
@@ -21516,14 +21579,14 @@
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Public\/FinixClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 14675,
+      "offset": 14749,
       "length": 4,
       "value": "true"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Public\/FinixClient.swift",
       "kind": "BooleanLiteral",
-      "offset": 15453,
+      "offset": 15528,
       "length": 4,
       "value": "true"
     }
