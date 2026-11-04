@@ -18509,6 +18509,95 @@
       },
       {
         "kind": "TypeDecl",
+        "name": "PaxMposSDKMetadata",
+        "printedName": "PaxMposSDKMetadata",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "version",
+            "printedName": "version",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:10PaxMposSDK0aB11SDKMetadataO7versionSSvpZ",
+            "mangledName": "$s10PaxMposSDK0aB11SDKMetadataO7versionSSvpZ",
+            "moduleName": "PaxMposSDK",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "HasStorage",
+              "AccessControl",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:10PaxMposSDK0aB11SDKMetadataO7versionSSvgZ",
+                "mangledName": "$s10PaxMposSDK0aB11SDKMetadataO7versionSSvgZ",
+                "moduleName": "PaxMposSDK",
+                "static": true,
+                "implicit": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:10PaxMposSDK0aB11SDKMetadataO",
+        "mangledName": "$s10PaxMposSDK0aB11SDKMetadataO",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "PaxMposSDK",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
         "name": "URLSessionDataTaskProtocol",
         "printedName": "URLSessionDataTaskProtocol",
         "children": [
@@ -21589,6 +21678,13 @@
       "offset": 15528,
       "length": 4,
       "value": "true"
+    },
+    {
+      "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Public\/PaxMposSDKMetadata.swift",
+      "kind": "StringLiteral",
+      "offset": 374,
+      "length": 8,
+      "value": "\"1.31.3\""
     }
   ]
 }

@@ -681,6 +681,9 @@ extension PaxMposSDK.PaxEasyLinkController : PaxMposSDK.PaxEasyLinkControllerPro
   public func performRKIUnbindDevice(host: Swift.String, port: Swift.String, delegate: (any PaxMposSDK.RKIStatusDelegate)?) throws -> Swift.Bool
   #endif
 }
+public enum PaxMposSDKMetadata {
+  public static let version: Swift.String
+}
 public protocol URLSessionDataTaskProtocol {
   func resume()
 }
