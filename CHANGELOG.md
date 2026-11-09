@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.31.4] - 2026-11-09
+
+### Changed
+
+- Only `info`, `warn` and `error` logs go to Datadog. `debug` logs stay on the device
+- RKI and device lifecycle logs (`[RKI]`, `[DEVICE]`, `[OS]`, `[EMV]`, `[PARAMS]`, `[RESET]`) moved from `debug` to `info`, so they reach Datadog
+- The device ID no longer appears in the text of the EMV and CLSS version check logs
+- Device reset logs no longer include the raw device response
+- The Datadog console output is on in debug builds of the host app only. Release builds print no logs
+
 ## [1.31.3] - 2026-11-04
 
 ### Changed
