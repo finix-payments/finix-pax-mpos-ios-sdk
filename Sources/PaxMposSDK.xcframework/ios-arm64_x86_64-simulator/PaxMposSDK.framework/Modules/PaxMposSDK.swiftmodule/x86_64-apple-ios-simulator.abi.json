@@ -19925,42 +19925,42 @@
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "StringLiteral",
-      "offset": 17223,
+      "offset": 17208,
       "length": 10,
       "value": "\"ffff9876\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "StringLiteral",
-      "offset": 17358,
+      "offset": 17343,
       "length": 6,
       "value": "\"ffff\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "IntegerLiteral",
-      "offset": 17590,
+      "offset": 17575,
       "length": 1,
       "value": "8"
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "StringLiteral",
-      "offset": 18023,
+      "offset": 18008,
       "length": 11,
       "value": "\"PROD_KEYS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "StringLiteral",
-      "offset": 18055,
+      "offset": 18040,
       "length": 11,
       "value": "\"TEST_KEYS\""
     },
     {
       "filePath": "\/Users\/runner\/work\/pax-mpos-ios-sdk\/pax-mpos-ios-sdk\/PaxMposSDK\/Internal\/RKI\/RKIManager.swift",
       "kind": "StringLiteral",
-      "offset": 18091,
+      "offset": 18076,
       "length": 15,
       "value": "\"EXTERNAL_KEYS\""
     },
